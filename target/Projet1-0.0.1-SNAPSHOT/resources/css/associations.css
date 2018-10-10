@@ -1,0 +1,27 @@
+
+/*-----------------------------------------------------------------------------*/
+/*                              Association                                    -*/
+/*-----------------------------------------------------------------------------*/
+#filtresAssociation {
+	margin: 0px 0px 30px 30px;
+}
+
+#containerAssociation {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	align-content: flex-start;
+}
+
+.elementAssociation {
+	border: 2px solid ;
+	border-radius: 10px;
+	background: #408080;
+	color: white;
+	padding: 5px;
+  	width: 350px;
+  	height: 280px;
+  	margin: 10px;
+}
