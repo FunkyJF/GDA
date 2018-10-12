@@ -27,7 +27,6 @@ import lombok.ToString;
 @Inheritance(strategy=InheritanceType.SINGLE_TABLE)
 @DiscriminatorColumn(name="typePack",
                      discriminatorType=DiscriminatorType.STRING)
-@DiscriminatorValue("Pack")
 public abstract class Pack 
 {
 	@Id

@@ -1,6 +1,27 @@
-2018-10-10 12:40:20 - constructeur de ServicePersonneImpl appelé avant injections  avec personneDao=null
-2018-10-10 12:40:20 - initBean() appelée après injection avec @PostConstruct  avec personneDao=fr.afcepf.al32.dao.PersonneDaoJpa@6088451e
-2018-10-10 12:40:21 - p=Personne(id=2, prenom=alain, nom=Therieur, email=at@gmail.com, telephone=null, connexion=null, adresse=null)
-2018-10-10 12:42:48 - constructeur de ServicePersonneImpl appelé avant injections  avec personneDao=null
-2018-10-10 12:42:48 - initBean() appelée après injection avec @PostConstruct  avec personneDao=fr.afcepf.al32.dao.PersonneDaoJpa@7b61bf11
-2018-10-10 12:42:48 - p=Personne(id=2, prenom=alain, nom=Therieur, email=at@gmail.com, telephone=null, connexion=null, adresse=null)
+2018-10-12 11:31:44 - constructeur de ServicePersonneImpl appelé avant injections  avec personneDao=null
+2018-10-12 11:31:44 - initBean() appelée après injection avec @PostConstruct  avec personneDao=fr.afcepf.al32.dao.PersonneDaoJpa@441fbe89
+2018-10-12 11:31:45 - p=Personne(id=2, prenom=alain, nom=Therieur, email=at@gmail.com, telephone=null, connexion=null, adresse=null)
+2018-10-12 11:43:45 - constructeur de ServicePersonneImpl appelé avant injections  avec personneDao=null
+2018-10-12 11:43:45 - initBean() appelée après injection avec @PostConstruct  avec personneDao=fr.afcepf.al32.dao.PersonneDaoJpa@45ab3bdd
+2018-10-12 11:43:45 - p=Personne(id=2, prenom=alain, nom=Therieur, email=at@gmail.com, telephone=null, connexion=null, adresse=null)
+2018-10-12 14:44:46 - constructeur de ServicePersonneImpl appelé avant injections  avec personneDao=null
+2018-10-12 14:44:46 - initBean() appelée après injection avec @PostConstruct  avec personneDao=fr.afcepf.al32.dao.PersonneDaoJpa@2f10f633
+2018-10-12 14:44:46 - p=Personne(id=2, prenom=alain, nom=Therieur, email=at@gmail.com, telephone=null, connexion=null, adresse=null)
+2018-10-12 14:50:57 - constructeur de ServicePersonneImpl appelé avant injections  avec personneDao=null
+2018-10-12 14:50:57 - initBean() appelée après injection avec @PostConstruct  avec personneDao=fr.afcepf.al32.dao.PersonneDaoJpa@2f10f633
+2018-10-12 14:50:57 - p=Personne(id=2, prenom=alain, nom=Therieur, email=at@gmail.com, telephone=null, connexion=null, adresse=null)
+2018-10-12 14:52:30 - constructeur de ServicePersonneImpl appelé avant injections  avec personneDao=null
+2018-10-12 14:52:30 - initBean() appelée après injection avec @PostConstruct  avec personneDao=fr.afcepf.al32.dao.PersonneDaoJpa@2f10f633
+2018-10-12 14:52:30 - p=Personne(id=2, prenom=alain, nom=Therieur, email=at@gmail.com, telephone=null, connexion=null, adresse=null)
+2018-10-12 14:56:25 - constructeur de ServicePersonneImpl appelé avant injections  avec personneDao=null
+2018-10-12 14:56:25 - initBean() appelée après injection avec @PostConstruct  avec personneDao=fr.afcepf.al32.dao.PersonneDaoJpa@45ab3bdd
+2018-10-12 14:56:25 - p=Personne(id=2, prenom=alain, nom=Therieur, email=at@gmail.com, telephone=null, connexion=null, adresse=null)
+2018-10-12 14:58:21 - constructeur de ServicePersonneImpl appelé avant injections  avec personneDao=null
+2018-10-12 14:58:21 - initBean() appelée après injection avec @PostConstruct  avec personneDao=fr.afcepf.al32.dao.PersonneDaoJpa@14c93774
+2018-10-12 14:58:21 - p=Personne(id=2, prenom=alain, nom=Therieur, email=at@gmail.com, telephone=null, connexion=null, adresse=null)
+2018-10-12 15:00:28 - constructeur de ServicePersonneImpl appelé avant injections  avec personneDao=null
+2018-10-12 15:00:28 - initBean() appelée après injection avec @PostConstruct  avec personneDao=fr.afcepf.al32.dao.PersonneDaoJpa@2f10f633
+2018-10-12 15:00:28 - p=Personne(id=2, prenom=alain, nom=Therieur, email=at@gmail.com, telephone=null, connexion=null, adresse=null)
+2018-10-12 15:05:04 - constructeur de ServicePersonneImpl appelé avant injections  avec personneDao=null
+2018-10-12 15:05:04 - initBean() appelée après injection avec @PostConstruct  avec personneDao=fr.afcepf.al32.dao.PersonneDaoJpa@14c93774
+2018-10-12 15:05:04 - p=Personne(id=2, prenom=alain, nom=Therieur, email=at@gmail.com, telephone=null, connexion=null, adresse=null)

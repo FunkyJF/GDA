@@ -1,0 +1,6 @@
+2018-10-10 12:40:20 - constructeur de ServicePersonneImpl appelé avant injections  avec personneDao=null
+2018-10-10 12:40:20 - initBean() appelée après injection avec @PostConstruct  avec personneDao=fr.afcepf.al32.dao.PersonneDaoJpa@6088451e
+2018-10-10 12:40:21 - p=Personne(id=2, prenom=alain, nom=Therieur, email=at@gmail.com, telephone=null, connexion=null, adresse=null)
+2018-10-10 12:42:48 - constructeur de ServicePersonneImpl appelé avant injections  avec personneDao=null
+2018-10-10 12:42:48 - initBean() appelée après injection avec @PostConstruct  avec personneDao=fr.afcepf.al32.dao.PersonneDaoJpa@7b61bf11
+2018-10-10 12:42:48 - p=Personne(id=2, prenom=alain, nom=Therieur, email=at@gmail.com, telephone=null, connexion=null, adresse=null)
