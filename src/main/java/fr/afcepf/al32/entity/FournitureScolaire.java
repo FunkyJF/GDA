@@ -13,9 +13,6 @@ import lombok.Setter;
 @Entity @Getter @Setter
 @DiscriminatorValue("FournitureScolaire")
 public class FournitureScolaire extends Produit {
-
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private Long id;
 	
 	@ManyToOne
 	@JoinColumn(name="idNatureFourniture")

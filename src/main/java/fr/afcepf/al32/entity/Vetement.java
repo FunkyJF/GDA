@@ -14,9 +14,6 @@ import lombok.Setter;
 @DiscriminatorValue("Vetement")
 public class Vetement extends Produit {
 	
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private Long id;
-	
 	private Boolean sexe;
 	private Boolean adulte;
 	
