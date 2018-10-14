@@ -138,5 +138,26 @@ INSERT INTO produit ( typeProduit, id, description, libelle, libelleCourt, prix,
 INSERT INTO produit ( typeProduit, id, description, libelle, libelleCourt, prix, adulte, sexe, idTypeProduit, idNatureAliment, idNatureFourniture, idNatureVetement)VALUES ('F', '93', 'Caractéristiques :\r\n- Ne crisse pas sur le tableau\r\n- Traitées anti poussière\r\n- Boîte de 100 craies\r\n- Forme cylindrique', 'Boîte de 100 craies - Blanc', 'Boîte de 100 craies - Blanc', '5.74', NULL, NULL, '3', NULL, '2', NULL);
 INSERT INTO produit ( typeProduit, id, description, libelle, libelleCourt, prix, adulte, sexe, idTypeProduit, idNatureAliment, idNatureFourniture, idNatureVetement)VALUES ('F', '94', 'Caractéristiques : Calculatrice de poche - TOP-OFFICE - 9x5 cm\r\nType de produit Poche\r\nAlimentation Pile\r\nMémoire Sans mémoire\r\nRouleau papier non\r\nCouleur Blanc\r\nEncreur non\r\nMarque TOP OFFICE\r\nCouleur Assortiment de couleurs\r\n', 'Calculatrice de poche - 9x5 cm', 'Calculatrice de poche', '2.32', NULL, NULL, '3', NULL, '5', NULL);
 INSERT INTO produit ( typeProduit, id, description, libelle, libelleCourt, prix, adulte, sexe, idTypeProduit, idNatureAliment, idNatureFourniture, idNatureVetement)VALUES ('F', '95', 'Caractéristiques de la calculatrice :\r\n- Fonctions de base, fonctions évoluées\r\n- Simplifications des fractions- équations\r\n- Fonctions trigonométriques - Mémoires\r\n- Avec un étui de protection\r\n- Garantie pendant 3 ans', 'Calculatrice scientifique - Collège', 'Calculatrice scientifique ', '14.16', NULL, NULL, '3', NULL, '5', NULL);
-INSERT INTO produit ( typeProduit, id, description, libelle, libelleCourt, prix, adulte, sexe, idTypeProduit, idNatureAliment, idNatureFourniture, idNatureVetement)VALUES ('F', '96', ' Caractéristiques et fonctionnalités : \r\n- Écran 5 lignes\r\n- Messages à l\écran, touches et menus en français\r\n- Écriture et affichage en 2D\r\n- Écriture scientifique\r\n- Décomposition en facteurs premiers\r\n- PGCD/PPCM\r\n- Simplification manuelle', 'Calculatrice scientifique - FX92 Collège 2D', 'Calculatrice scientifique Collège 2D', '18.76', NULL, NULL, '3', NULL, '5', NULL) 
+INSERT INTO produit ( typeProduit, id, description, libelle, libelleCourt, prix, adulte, sexe, idTypeProduit, idNatureAliment, idNatureFourniture, idNatureVetement)VALUES ('F', '96', ' Caractéristiques et fonctionnalités : \r\n- Écran 5 lignes\r\n- Messages à l\écran, touches et menus en français\r\n- Écriture et affichage en 2D\r\n- Écriture scientifique\r\n- Décomposition en facteurs premiers\r\n- PGCD/PPCM\r\n- Simplification manuelle', 'Calculatrice scientifique - FX92 Collège 2D', 'Calculatrice scientifique Collège 2D', '18.74', NULL, NULL, '3', NULL, '5', NULL) 
+  
+=======
+
+INSERT INTO association(raisonSociale,siret,ape,dateAcceptation,dateFin) VALUES ('Croix Rouge','80295478500028','0001A',NULL,NULL);
+INSERT INTO association(raisonSociale,siret,ape,dateAcceptation,dateFin) VALUES ('Resto Du Coeur','80295478500029','0002A',NULL,NULL);
+INSERT INTO association(raisonSociale,siret,ape,dateAcceptation,dateFin) VALUES ('Action Contre La Faim','80295478500030','0011A',NULL,NULL);
+INSERT INTO association(raisonSociale,siret,ape,dateAcceptation,dateFin) VALUES ('Aide Et Action','80295478500050','0070A',NULL,NULL);
+INSERT INTO association(raisonSociale,siret,ape,dateAcceptation,dateFin) VALUES ('Human Appeal','80295478500060','00501A',NULL,NULL);
+INSERT INTO packAssociation(id,dateAjout) VALUES (1,NULL);
+INSERT INTO packAssociation(id,dateAjout) VALUES (2,NULL);
+INSERT INTO packAssociation(id,dateAjout) VALUES (3,NULL);
+INSERT INTO pack(id,libelle,prix) VALUES (1,pack1,10.0);
+INSERT INTO pack(id,libelle,prix) VALUES (2,pack2,20.0);
+INSERT INTO pack(id,libelle,prix) VALUES (3,pack3,30.0);
+INSERT INTO packDonateur(id,dateModification) VALUES (1,NULL);
+INSERT INTO packDonateur(id,dateModification) VALUES (2,NULL);
+INSERT INTO packDonateur(id,dateModification) VALUES (3,NULL);
+INSERT INTO don(id,dateDon) VALUES (1,NULL);
+INSERT INTO don(id,dateDon) VALUES (2,NULL);
+INSERT INTO don(id,dateDon) VALUES (3,NULL);
+>>>>>>> branch 'master' of https://github.com/FunkyJF/GDA.git
  
