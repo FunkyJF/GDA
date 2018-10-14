@@ -58,5 +58,22 @@ INSERT INTO produit ( typeProduit, id, description, libelle, libelleCourt, prix,
 INSERT INTO produit ( typeProduit, id, description, libelle, libelleCourt, prix, adulte, sexe, idTypeProduit, idNatureAliment, idNatureFourniture, idNatureVetement)VALUES ('A',  '22', 'Pois cassés. Peut contenir des traces de gluten', 'Pois cassé 1kg', 'Pois cassé la boite de 1kg', '1.8', NULL, NULL, '1', '1', NULL, NULL);
 INSERT INTO produit ( typeProduit, id, description, libelle, libelleCourt, prix, adulte, sexe, idTypeProduit, idNatureAliment, idNatureFourniture, idNatureVetement)VALUES ('A',  '23', 'Pois cassés. Peut contenir des traces de gluten', 'Pois cassé 2kg', 'Pois cassé la boite de 2kg', '3.5', NULL, NULL, '1', '1', NULL, NULL); 
 INSERT INTO produit ( typeProduit, id, description, libelle, libelleCourt, prix, adulte, sexe, idTypeProduit, idNatureAliment, idNatureFourniture, idNatureVetement)VALUES ('A',  '24', 'Pois cassés. Peut contenir des traces de gluten', 'Pois cassé 5kg', 'Pois cassé la boite de 5kg', '4.5', NULL, NULL, '1', '1', NULL, NULL); 
- 
+
+INSERT INTO association(raisonSociale,siret,ape,dateAcceptation,dateFin) VALUES ('Croix Rouge','80295478500028','0001A',NULL,NULL);
+INSERT INTO association(raisonSociale,siret,ape,dateAcceptation,dateFin) VALUES ('Resto Du Coeur','80295478500029','0002A',NULL,NULL);
+INSERT INTO association(raisonSociale,siret,ape,dateAcceptation,dateFin) VALUES ('Action Contre La Faim','80295478500030','0011A',NULL,NULL);
+INSERT INTO association(raisonSociale,siret,ape,dateAcceptation,dateFin) VALUES ('Aide Et Action','80295478500050','0070A',NULL,NULL);
+INSERT INTO association(raisonSociale,siret,ape,dateAcceptation,dateFin) VALUES ('Human Appeal','80295478500060','00501A',NULL,NULL);
+INSERT INTO packAssociation(id,dateAjout) VALUES (1,NULL);
+INSERT INTO packAssociation(id,dateAjout) VALUES (2,NULL);
+INSERT INTO packAssociation(id,dateAjout) VALUES (3,NULL);
+INSERT INTO pack(id,libelle,prix) VALUES (1,pack1,10.0);
+INSERT INTO pack(id,libelle,prix) VALUES (2,pack2,20.0);
+INSERT INTO pack(id,libelle,prix) VALUES (3,pack3,30.0);
+INSERT INTO packDonateur(id,dateModification) VALUES (1,NULL);
+INSERT INTO packDonateur(id,dateModification) VALUES (2,NULL);
+INSERT INTO packDonateur(id,dateModification) VALUES (3,NULL);
+INSERT INTO don(id,dateDon) VALUES (1,NULL);
+INSERT INTO don(id,dateDon) VALUES (2,NULL);
+INSERT INTO don(id,dateDon) VALUES (3,NULL);
  
