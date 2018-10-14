@@ -1,15 +1,28 @@
-INSERT INTO Personne(typePersonne,id,prenom,nom,email) VALUES('Association',1,'olie','Condor','olie.condor@gmail.com');
-INSERT INTO Personne(typePersonne,id,prenom,nom,email) VALUES('Association',2,'alain','Therieur','at@gmail.com');
-INSERT INTO Personne(typePersonne,id,prenom,nom,email) VALUES('Administrateur',3,'jean','Bon','jb@gmail.com');
-INSERT INTO Personne(typePersonne,id,prenom,nom,email) VALUES('Donateur',4,'jean','Phil','jp@gmail.com');
+INSERT INTO Connexion(login, password) VALUES('admin1','pwd1');
+INSERT INTO Connexion(login, password) VALUES('admin2','pwd2');
+
+INSERT INTO Adresse(numeroVoie, typeVoie, NomVoie, ville, codePostal, pays) VALUES('30','Avenue', 'Bayard', 'Paris', '75001', 'France');
+INSERT INTO Adresse(numeroVoie, typeVoie, NomVoie, ville, codePostal, pays) VALUES('18','Rue', 'du pont', 'Paris', '75004', 'France');
+
+INSERT INTO Personne(id,typePersonne,prenom,nom,email,dateDebut,idConnexion,idAdresse) VALUES(1,'Administrateur','Amin','Istrateur','AminI@gmail.com','2018-1-01 00:00:00',1,1);
+INSERT INTO Personne(id,typePersonne,prenom,nom,email,dateDebut,idConnexion,idAdresse) VALUES(2,'Administrateur','Maude','Erateur','MaudeE@gmail.com','2018-1-01 00:00:00',2,2);
+INSERT INTO Personne(id,typePersonne,prenom,nom,email) VALUES(3,'Donateur','Jacques','Celert','JacquesC@gmail.com');
+INSERT INTO Personne(id,typePersonne,prenom,nom,email) VALUES(4,'Donateur','Eva','Poree','EvaP@gmail.com');
+INSERT INTO Personne(id,typePersonne,prenom,nom,email) VALUES(5,'Donateur','Camille','Onette','CamilleO@gmail.com');
+INSERT INTO Personne(id,typePersonne,prenom,nom,email) VALUES(6,'Donateur','Paul','Ochon','PaulO@gmail.com');
+INSERT INTO Personne(id,typePersonne,prenom,nom,email,raisonSociale,siret,ape,dateAcceptation) VALUES (7,'Association','Marie','Tim','contact@croixRouge.com','Croix Rouge','80295478500028','0001A','2018-1-01 00:00:00');
+INSERT INTO Personne(id,typePersonne,prenom,nom,email,raisonSociale,siret,ape,dateAcceptation) VALUES (8,'Association','Dan','Delion','contact@restoDuCoeur.com','Resto Du Coeur','80295478500029','0002A','2018-1-01 00:00:00');
+INSERT INTO Personne(id,typePersonne,prenom,nom,email,raisonSociale,siret,ape,dateAcceptation) VALUES (9,'Association','Paul','Ochon','contact@aclf.com','Action Contre La Faim','80295478500030','0011A','2018-1-01 00:00:00');
+INSERT INTO Personne(id,typePersonne,prenom,nom,email,raisonSociale,siret,ape,dateAcceptation) VALUES (10,'Association','Guy','Yotine','contact@aideAction.com','Aide Et Action','80295478500050','0070A','2018-1-01 00:00:00');
+INSERT INTO Personne(id,typePersonne,prenom,nom,email,raisonSociale,siret,ape,dateAcceptation) VALUES (11,'Association','Justin','Ptipeu','contact@humanAppeal.com','Human Appeal','80295478500060','00501A','2018-1-01 00:00:00');
 
 INSERT INTO naturealiment (id, nature) VALUES ('1', 'Légumes secs');
 INSERT INTO naturealiment (id, nature) VALUES ('2', 'Féculents');
-INSERT INTO naturealiment (id, nature) VALUES ('3', 'Les matières grasses'); 
-INSERT INTO naturealiment (id, nature) VALUES ('4', 'Les purées en poudre'); 
-INSERT INTO naturealiment (id, nature) VALUES ('5', 'Les conserve légumes');
-INSERT INTO naturealiment (id, nature) VALUES ('6', 'Les conserve viandes');
-INSERT INTO naturealiment (id, nature) VALUES ('7', 'Les plats cuisinés');
+INSERT INTO naturealiment (id, nature) VALUES ('3', 'Matières grasses'); 
+INSERT INTO naturealiment (id, nature) VALUES ('4', 'Purées en poudre'); 
+INSERT INTO naturealiment (id, nature) VALUES ('5', 'Conserves de légumes');
+INSERT INTO naturealiment (id, nature) VALUES ('6', 'Conserves de viandes');
+INSERT INTO naturealiment (id, nature) VALUES ('7', 'Plats cuisinés');
 INSERT INTO naturealiment (id, nature) VALUES ('8', 'Petit déjeuner');
 
 
@@ -59,11 +72,7 @@ INSERT INTO produit ( typeProduit, id, description, libelle, libelleCourt, prix,
 INSERT INTO produit ( typeProduit, id, description, libelle, libelleCourt, prix, adulte, sexe, idTypeProduit, idNatureAliment, idNatureFourniture, idNatureVetement)VALUES ('A',  '23', 'Pois cassés. Peut contenir des traces de gluten', 'Pois cassé 2kg', 'Pois cassé la boite de 2kg', '3.5', NULL, NULL, '1', '1', NULL, NULL); 
 INSERT INTO produit ( typeProduit, id, description, libelle, libelleCourt, prix, adulte, sexe, idTypeProduit, idNatureAliment, idNatureFourniture, idNatureVetement)VALUES ('A',  '24', 'Pois cassés. Peut contenir des traces de gluten', 'Pois cassé 5kg', 'Pois cassé la boite de 5kg', '4.5', NULL, NULL, '1', '1', NULL, NULL); 
 
-INSERT INTO association(raisonSociale,siret,ape,dateAcceptation,dateFin) VALUES ('Croix Rouge','80295478500028','0001A',NULL,NULL);
-INSERT INTO association(raisonSociale,siret,ape,dateAcceptation,dateFin) VALUES ('Resto Du Coeur','80295478500029','0002A',NULL,NULL);
-INSERT INTO association(raisonSociale,siret,ape,dateAcceptation,dateFin) VALUES ('Action Contre La Faim','80295478500030','0011A',NULL,NULL);
-INSERT INTO association(raisonSociale,siret,ape,dateAcceptation,dateFin) VALUES ('Aide Et Action','80295478500050','0070A',NULL,NULL);
-INSERT INTO association(raisonSociale,siret,ape,dateAcceptation,dateFin) VALUES ('Human Appeal','80295478500060','00501A',NULL,NULL);
+
 INSERT INTO packAssociation(id,dateAjout) VALUES (1,NULL);
 INSERT INTO packAssociation(id,dateAjout) VALUES (2,NULL);
 INSERT INTO packAssociation(id,dateAjout) VALUES (3,NULL);

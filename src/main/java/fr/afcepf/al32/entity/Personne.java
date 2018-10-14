@@ -5,6 +5,8 @@ import javax.persistence.DiscriminatorColumn;
 import javax.persistence.DiscriminatorType;
 import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
@@ -24,10 +26,10 @@ import lombok.ToString;
 @Inheritance(strategy=InheritanceType.SINGLE_TABLE)
 @DiscriminatorColumn(name="typePersonne",
                      discriminatorType=DiscriminatorType.STRING)
-@DiscriminatorValue("Personne")//valeur de typePersonne pour cette classe
 public abstract class Personne 
 {
 	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long id;
 
 	private String prenom;
@@ -38,11 +40,11 @@ public abstract class Personne
 	
 	private String telephone;
 	
-	@OneToOne//(cascade = CascadeType.ALL)
+	@OneToOne(cascade = CascadeType.ALL)
 	@JoinColumn(name="idConnexion")
 	private Connexion connexion;
 	
-	@OneToOne//(cascade = CascadeType.ALL)
+	@OneToOne(cascade = CascadeType.ALL)
 	@JoinColumn(name="idAdresse")
 	private Adresse adresse;
 }

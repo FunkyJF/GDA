@@ -21,7 +21,7 @@ public class Connexion {
 	private String login;
 	private String password;
 	
-	@OneToOne(optional=false)
+	@OneToOne
 	@PrimaryKeyJoinColumn
 	private Personne personne;
 	

@@ -25,7 +25,7 @@ public class Adresse {
 	private String nomVoie;
 	private String codePostal;
 	
-	@OneToOne(optional=true)
+	@OneToOne
 	private Personne personne;
 	
 }
