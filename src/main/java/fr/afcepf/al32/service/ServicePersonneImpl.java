@@ -67,6 +67,13 @@ public class ServicePersonneImpl implements IServicePersonne {
 		return personneDao.findOne(num);
 	}
 
+	@Override
+	public void ajouterPersonne(Personne p) {
+		
+		 personneDao.save(p);
+
+	}
+
 	
 
 }

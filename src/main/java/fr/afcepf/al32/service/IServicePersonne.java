@@ -4,5 +4,6 @@ import fr.afcepf.al32.entity.Personne;
 
 public interface IServicePersonne {
 	Personne rechercherPersonneParNumero(Long num);
+	void ajouterPersonne(Personne p);
 	//Client rechercherClientAvecComptes(Long numClient);
 }

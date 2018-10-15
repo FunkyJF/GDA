@@ -11,7 +11,11 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import fr.afcepf.al32.config.ServiceConfig;
 import fr.afcepf.al32.entity.Administrateur;
+import fr.afcepf.al32.entity.Adresse;
+import fr.afcepf.al32.entity.Association;
+import fr.afcepf.al32.entity.Personne;
 import fr.afcepf.al32.service.IServiceAdministrateur;
+import fr.afcepf.al32.service.IServicePersonne;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes= {ServiceConfig.class})
@@ -20,12 +24,13 @@ public class TestServiceAdministrateur {
 	private Logger logger = LoggerFactory.getLogger(TestServiceAdministrateur.class);
 
 	@Autowired
-	private IServiceAdministrateur serviceAdministrateur; //à tester
+	private IServicePersonne serviceAdministrateur;
+	//private IServiceAdministrateur serviceAdministrateur; //à tester
 	
 	
 	@Test
 	public void testRechercheParNum() {
-		Administrateur a = serviceAdministrateur.rechercherAdministrateurParNumero(1L);
+		Administrateur a = (Administrateur) serviceAdministrateur.rechercherPersonneParNumero(1L);
 		Assert.assertTrue(a.getId()==1L);
 		logger.debug("a="+a.toString());
 	}
@@ -35,6 +40,15 @@ public class TestServiceAdministrateur {
 //		Administrateur a = serviceAdministrateur.rechercherAdministrateurParNumero(4L);
 //		Assert.assertFalse(a.getClass().equals(Administrateur.class));
 	}
+	@Test
+	public void AjouterAdministrateur() {
+		System.out.println("Avt constructeur");
+		Adresse adress = new Adresse();
+		Personne  admin  = new Administrateur("mamadou", "babar", "mamadou@gmail.com", "99999999", adress);
+		System.out.println("Apres constructeur");
+		serviceAdministrateur.ajouterPersonne(admin);
 	
+		logger.debug("a="+admin.toString());
+	}
 
 }

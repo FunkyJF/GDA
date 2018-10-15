@@ -26,7 +26,7 @@ public class Association extends Personne {
 
 	   private String ape;
 
-	   private Date dateAcceptation;
+	   private String dateAcceptation;
 
 	   private Date dateFin;
 	   
@@ -42,5 +42,29 @@ public class Association extends Personne {
 	   @ManyToOne 
 	   @JoinColumn(name="idPaysAide")
 	   private PaysAide paysAide;
+	   
+	   public Association()
+	   {
+		  
+	   }
+
+	   
+	   public Association(String raisonSociale, String siret, String ape, String dateAcceptation)
+	   {
+		   super();
+		   this.raisonSociale = raisonSociale;
+		   this.siret=siret;
+		   this.ape = ape;
+		   this.dateAcceptation = dateAcceptation;
+	   }
+
+
+	@Override
+	public String toString() {
+		return "Association [raisonSociale=" + raisonSociale + ", siret=" + siret + ", ape=" + ape
+				+ ", dateAcceptation=" + dateAcceptation + ", dateFin=" + dateFin + ", packAssociations="
+				+ packAssociations + ", typeProduits=" + typeProduits + ", paysAide=" + paysAide + "]";
+	}
+
 
 }
