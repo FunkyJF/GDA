@@ -9,6 +9,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import fr.afcepf.al32.dao.IPersonneDao;
+import fr.afcepf.al32.entity.Administrateur;
+import fr.afcepf.al32.entity.Association;
+import fr.afcepf.al32.entity.Donateur;
 import fr.afcepf.al32.entity.Personne;
 
 @Component //ou bien @Service qui herite de @Component
@@ -67,6 +70,27 @@ public class ServicePersonneImpl implements IServicePersonne {
 		return personneDao.findOne(num);
 	}
 
+	@Override
+	public Administrateur rechercherAdministrateurParConnexion(String login, String password) {
+		return personneDao.findAdministrateurByConnexion(login, password);
+	}
+
+	@Override
+	public Donateur rechercherDonateurParConnexion(String login, String password) {
+		return personneDao.findDonateurByConnexion(login, password);
+	}
+
+	@Override
+	public Association rechercherAssociationParConnexion(String login, String password) {
+		return personneDao.findAssociationByConnexion(login, password);
+	}
+
+	@Override
+	public Personne rechercherParConnexion(String login, String password) {
+		return personneDao.findByConnexion(login, password);
+	}
+
+	
 	
 
 }

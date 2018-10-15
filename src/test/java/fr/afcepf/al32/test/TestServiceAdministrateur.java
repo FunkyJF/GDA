@@ -23,18 +23,20 @@ public class TestServiceAdministrateur {
 	private IServiceAdministrateur serviceAdministrateur; //à tester
 	
 	
-	@Test
-	public void testRechercheParNum() {
-		Administrateur a = serviceAdministrateur.rechercherAdministrateurParNumero(1L);
-		Assert.assertTrue(a.getId()==1L);
-		logger.debug("a="+a.toString());
-	}
-	
-	@Test
-	public void testRechercheIcorrecte() {
-//		Administrateur a = serviceAdministrateur.rechercherAdministrateurParNumero(4L);
-//		Assert.assertFalse(a.getClass().equals(Administrateur.class));
-	}
+//	@Test
+//	public void testRechercheAdministrateurParConnexion() {
+//		Administrateur a = serviceAdministrateur.rechercherAdministrateurParConnexion("admin1", "pwd1");
+//		Assert.assertTrue(a.getId()==1L);
+//		logger.debug("a="+a.toString());
+//		
+//	}
+//	
+//	@Test
+//	public void testRechercheErroneAdministrateurParConnexion() {
+//		Administrateur a = serviceAdministrateur.rechercherAdministrateurParConnexion("adxscdc1", "pwd1");
+//		Assert.assertTrue(a==null);
+//		
+//	}
 	
 
 }

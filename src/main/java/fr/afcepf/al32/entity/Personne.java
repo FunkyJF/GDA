@@ -3,7 +3,6 @@ package fr.afcepf.al32.entity;
 import javax.persistence.CascadeType;
 import javax.persistence.DiscriminatorColumn;
 import javax.persistence.DiscriminatorType;
-import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -11,6 +10,8 @@ import javax.persistence.Id;
 import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
 import javax.persistence.JoinColumn;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
@@ -22,6 +23,21 @@ import lombok.ToString;
 
 @Getter @Setter @ToString @NoArgsConstructor @AllArgsConstructor
 @Entity
+@NamedQueries({
+	@NamedQuery(name="Administrateur.Connexion", query="SELECT a FROM Administrateur a "
+															+ "WHERE a.connexion.password = :password "
+															+ "and a.connexion.login = :login "),
+	@NamedQuery(name="Association.Connexion", query="SELECT a FROM Association a "
+															+ "WHERE a.connexion.password = :password "
+															+ "and a.connexion.login = :login "),
+	@NamedQuery(name="Donateur.Connexion", query="SELECT d FROM Donateur d "
+															+ "WHERE d.connexion.password = :password "
+															+ "and d.connexion.login = :login "),
+	@NamedQuery(name="Personne.Connexion", query="SELECT p FROM Personne p "
+															+ "WHERE p.connexion.password = :password "
+															+ "and p.connexion.login = :login ")
+			
+})
 @Table(name="Personne")
 @Inheritance(strategy=InheritanceType.SINGLE_TABLE)
 @DiscriminatorColumn(name="typePersonne",

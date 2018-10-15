@@ -20,4 +20,11 @@ public class Donateur extends Personne
 	
 	@OneToMany(mappedBy="donateur",fetch=FetchType.LAZY)//mappedBy = nom "java" de la relation inverse 
 	private List<Don> dons;
+
+	@Override
+	public String toString() {
+		return "Donateur [coordonneesBancaires=" + coordonneesBancaires + "]" + super.toString();
+	}
+	
+	
 }

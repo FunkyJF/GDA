@@ -9,12 +9,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import fr.afcepf.al32.dao.IPersonneDao;
-import fr.afcepf.al32.entity.Administrateur;
+import fr.afcepf.al32.entity.Association;
 
 @Component //ou bien @Service qui herite de @Component
 @Transactional
-public class ServiceAdministrateur implements IServiceAdministrateur {
-	private Logger logger = LoggerFactory.getLogger(ServiceAdministrateur.class);
+public class ServiceAssociation implements IServiceAssociation {
+	private Logger logger = LoggerFactory.getLogger(ServiceAssociation.class);
 	
 	@Autowired
 	private IPersonneDao personneDao=null;
@@ -24,20 +24,20 @@ public class ServiceAdministrateur implements IServiceAdministrateur {
 		this.personneDao = personneDao;
 	}
 	
-	public ServiceAdministrateur() {
-		logger.debug("constructeur de ServiceAdministrateur appelé avant injections "
+	public ServiceAssociation() {
+		logger.debug("constructeur de ServiceAssociation appelé avant injections "
 				+ " avec administrateurDao="+personneDao);
 	}
 	
 	@PostConstruct
 	public void initBean() {
 		logger.debug("initBean() appelée après injection avec @PostConstruct "
-				+ " avec administrateurDao="+personneDao);
+				+ " avec associationDao="+personneDao);
 	}
 
 //	@Override
-//	public Administrateur rechercherAdministrateurParConnexion(String login, String password) {
-//		return personneDao.findAdministrateurByConnexion(login, password);
+//	public Association rechercherAssociationParConnexion(String login, String password) {
+//		return personneDao.findAssociationByConnexion(login, password);
 //	}
 
 	

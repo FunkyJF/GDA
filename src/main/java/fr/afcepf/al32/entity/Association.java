@@ -43,4 +43,11 @@ public class Association extends Personne {
 	   @JoinColumn(name="idPaysAide")
 	   private PaysAide paysAide;
 
+	@Override
+	public String toString() {
+		return "Association [raisonSociale=" + raisonSociale + ", siret=" + siret + ", ape=" + ape
+				+ ", dateAcceptation=" + dateAcceptation + ", dateFin=" + dateFin + "]" +  super.toString();
+	}
+	   
+
 }
