@@ -6,6 +6,7 @@ import fr.afcepf.al32.entity.Donateur;
 import fr.afcepf.al32.entity.Personne;
 
 public interface IServicePersonne {
+	void ajouterPersonne(Personne p);
 	Personne rechercherPersonneParNumero(Long num);
 	
 	/*----------------------------- Connexion ------------------------------*/

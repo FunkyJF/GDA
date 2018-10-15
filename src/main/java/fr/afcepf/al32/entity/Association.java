@@ -26,7 +26,7 @@ public class Association extends Personne {
 
 	   private String ape;
 
-	   private Date dateAcceptation;
+	   private String dateAcceptation;
 
 	   private Date dateFin;
 	   
@@ -48,6 +48,20 @@ public class Association extends Personne {
 		return "Association [raisonSociale=" + raisonSociale + ", siret=" + siret + ", ape=" + ape
 				+ ", dateAcceptation=" + dateAcceptation + ", dateFin=" + dateFin + "]" +  super.toString();
 	}
+	 
+	 public Association()
+	   {
+		  
+	   }
+
 	   
+	   public Association(String raisonSociale, String siret, String ape, String dateAcceptation)
+	   {
+		   super();
+		   this.raisonSociale = raisonSociale;
+		   this.siret=siret;
+		   this.ape = ape;
+		   this.dateAcceptation = dateAcceptation;
+	   }
 
 }

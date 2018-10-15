@@ -63,4 +63,13 @@ public abstract class Personne
 	@OneToOne(cascade = CascadeType.ALL)
 	@JoinColumn(name="idAdresse")
 	private Adresse adresse;
+	
+	public Personne(String prenom, String nom, String email, String telephone, Adresse adresse) {
+		
+		this.prenom = prenom;
+		this.nom = nom;
+		this.email = email;
+		this.telephone = telephone;
+		this.adresse = adresse;
+	}
 }

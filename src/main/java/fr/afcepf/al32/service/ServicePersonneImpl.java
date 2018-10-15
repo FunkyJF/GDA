@@ -69,6 +69,13 @@ public class ServicePersonneImpl implements IServicePersonne {
 		//V2 utilisant dao injecté par spring:
 		return personneDao.findOne(num);
 	}
+	
+	@Override
+	public void ajouterPersonne(Personne p) {
+		
+		 personneDao.save(p);
+
+	}
 
 	@Override
 	public Administrateur rechercherAdministrateurParConnexion(String login, String password) {
@@ -89,8 +96,5 @@ public class ServicePersonneImpl implements IServicePersonne {
 	public Personne rechercherParConnexion(String login, String password) {
 		return personneDao.findByConnexion(login, password);
 	}
-
-	
-	
 
 }
