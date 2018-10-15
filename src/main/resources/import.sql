@@ -152,15 +152,10 @@ INSERT INTO produit ( typeProduit, id, description, libelle, libelleCourt, prix,
 INSERT INTO produit ( typeProduit, id, description, libelle, libelleCourt, prix, adulte, sexe, idTypeProduit, idNatureAliment, idNatureFourniture, idNatureVetement)VALUES ('F', '95', 'Caractéristiques de la calculatrice :\r\n- Fonctions de base, fonctions évoluées\r\n- Simplifications des fractions- équations\r\n- Fonctions trigonométriques - Mémoires\r\n- Avec un étui de protection\r\n- Garantie pendant 3 ans', 'Calculatrice scientifique - Collège', 'Calculatrice scientifique ', '14.16', NULL, NULL, '3', NULL, '5', NULL);
 INSERT INTO produit ( typeProduit, id, description, libelle, libelleCourt, prix, adulte, sexe, idTypeProduit, idNatureAliment, idNatureFourniture, idNatureVetement)VALUES ('F', '96', ' Caractéristiques et fonctionnalités : \r\n- Écran 5 lignes\r\n- Messages à l\écran, touches et menus en français\r\n- Écriture et affichage en 2D\r\n- Écriture scientifique\r\n- Décomposition en facteurs premiers\r\n- PGCD/PPCM\r\n- Simplification manuelle', 'Calculatrice scientifique - FX92 Collège 2D', 'Calculatrice scientifique Collège 2D', '18.74', NULL, NULL, '3', NULL, '5', NULL); 
 
-INSERT INTO packAssociation(id,dateAjout) VALUES (1,NULL);
-INSERT INTO packAssociation(id,dateAjout) VALUES (2,NULL);
-INSERT INTO packAssociation(id,dateAjout) VALUES (3,NULL);
-INSERT INTO pack(id,libelle,prix) VALUES (1,pack1,10.0);
-INSERT INTO pack(id,libelle,prix) VALUES (2,pack2,20.0);
-INSERT INTO pack(id,libelle,prix) VALUES (3,pack3,30.0);
-INSERT INTO packDonateur(id,dateModification) VALUES (1,NULL);
-INSERT INTO packDonateur(id,dateModification) VALUES (2,NULL);
-INSERT INTO packDonateur(id,dateModification) VALUES (3,NULL);
+
+INSERT INTO pack(id,typePack,idTypeProduit,libelle,prix,dateAjout, idAssociation) VALUES (1,'packAssociation', 1, 'pack1',10.0, '2018-1-01 00:00:00', 7);
+INSERT INTO pack(id,typePack,idTypeProduit,libelle,prix,dateModification, idPackAssociation) VALUES (2,'packDonateur', 1, 'pack1modif',15.0, '2018-1-01 00:00:00', 1);
+
 INSERT INTO don(id,dateDon) VALUES (1,NULL);
 INSERT INTO don(id,dateDon) VALUES (2,NULL);
 INSERT INTO don(id,dateDon) VALUES (3,NULL);
