@@ -1,0 +1,30 @@
+2018-10-14 18:51:29 - constructeur de ServicePersonneImpl appelé avant injections  avec personneDao=null
+2018-10-14 18:51:29 - initBean() appelée après injection avec @PostConstruct  avec personneDao=fr.afcepf.al32.dao.PersonneDaoJpa@428bdd72
+2018-10-14 18:56:21 - constructeur de ServicePersonneImpl appelé avant injections  avec personneDao=null
+2018-10-14 18:56:21 - initBean() appelée après injection avec @PostConstruct  avec personneDao=fr.afcepf.al32.dao.PersonneDaoJpa@428bdd72
+2018-10-14 19:02:46 - constructeur de ServicePersonneImpl appelé avant injections  avec personneDao=null
+2018-10-14 19:02:46 - initBean() appelée après injection avec @PostConstruct  avec personneDao=fr.afcepf.al32.dao.PersonneDaoJpa@20eaeaf8
+2018-10-14 19:02:46 - p=Personne(id=2, prenom=Maude, nom=Erateur, email=maudeE@gmail.com, telephone=null, connexion=null, adresse=null)
+2018-10-14 19:46:57 - constructeur de ServicePersonneImpl appelé avant injections  avec personneDao=null
+2018-10-14 19:46:57 - initBean() appelée après injection avec @PostConstruct  avec personneDao=fr.afcepf.al32.dao.PersonneDaoJpa@1835dc92
+2018-10-14 19:46:57 - p=Personne(id=2, prenom=Maude, nom=Erateur, email=MaudeE@gmail.com, telephone=null, connexion=null, adresse=null)
+2018-10-14 19:51:20 - constructeur de ServicePersonneImpl appelé avant injections  avec personneDao=null
+2018-10-14 19:51:20 - initBean() appelée après injection avec @PostConstruct  avec personneDao=fr.afcepf.al32.dao.PersonneDaoJpa@46911148
+2018-10-14 19:51:20 - p=Personne(id=2, prenom=Maude, nom=Erateur, email=MaudeE@gmail.com, telephone=null, connexion=null, adresse=null)
+2018-10-14 20:03:18 - constructeur de ServicePersonneImpl appelé avant injections  avec personneDao=null
+2018-10-14 20:03:18 - initBean() appelée après injection avec @PostConstruct  avec personneDao=fr.afcepf.al32.dao.PersonneDaoJpa@2db33feb
+2018-10-14 20:03:19 - p=Personne(id=2, prenom=Maude, nom=Erateur, email=MaudeE@gmail.com, telephone=null, connexion=null, adresse=null)
+2018-10-14 22:13:09 - constructeur de ServicePersonneImpl appelé avant injections  avec personneDao=null
+2018-10-14 22:13:09 - initBean() appelée après injection avec @PostConstruct  avec personneDao=fr.afcepf.al32.dao.PersonneDaoJpa@4d84049a
+2018-10-14 22:13:10 - p=Personne(id=2, prenom=Maude, nom=Erateur, email=MaudeE@gmail.com, telephone=null, connexion=null, adresse=null)
+2018-10-14 22:15:21 - constructeur de ServicePersonneImpl appelé avant injections  avec personneDao=null
+2018-10-14 22:15:21 - initBean() appelée après injection avec @PostConstruct  avec personneDao=fr.afcepf.al32.dao.PersonneDaoJpa@4d84049a
+2018-10-14 22:15:21 - p=Personne(id=2, prenom=Maude, nom=Erateur, email=MaudeE@gmail.com, telephone=null, connexion=null, adresse=null)
+2018-10-14 22:24:09 - constructeur de ServicePersonneImpl appelé avant injections  avec personneDao=null
+2018-10-14 22:24:09 - initBean() appelée après injection avec @PostConstruct  avec personneDao=fr.afcepf.al32.dao.PersonneDaoJpa@39ee94de
+2018-10-14 22:24:14 - p=Personne(id=2, prenom=Maude, nom=Erateur, email=MaudeE@gmail.com, telephone=null, connexion=null, adresse=null)
+2018-10-14 23:02:30 - constructeur de ServiceAdministrateur appelé avant injections  avec administrateurDao=null
+2018-10-14 23:02:30 - initBean() appelée après injection avec @PostConstruct  avec administrateurDao=fr.afcepf.al32.dao.AdministrateurDao@1bf14704
+2018-10-14 23:02:30 - constructeur de ServicePersonneImpl appelé avant injections  avec personneDao=null
+2018-10-14 23:02:30 - initBean() appelée après injection avec @PostConstruct  avec personneDao=fr.afcepf.al32.dao.PersonneDaoJpa@124dac75
+2018-10-14 23:02:30 - a=Personne(id=1, prenom=Amin, nom=Istrateur, email=AminI@gmail.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@51f18e31, adresse=fr.afcepf.al32.entity.Adresse@2fd72332)
