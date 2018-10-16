@@ -8,4 +8,8 @@ import fr.afcepf.al32.entity.PackAssociation;
 public interface IPackDao extends IGenericDao<Pack> {
 	
 	List<PackAssociation> findAllPackAssociation();
+
+	List<PackAssociation> findAllPackAssociationByType(Long idType);
+	List<PackAssociation> findAllPackAssociationByAssociation(Long id);
+	List<PackAssociation> findAllPackAssociationByAssociationAndType(Long id, Long idType);
 }

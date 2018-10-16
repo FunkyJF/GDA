@@ -58,8 +58,6 @@ public class PersonneDaoJpa implements IPersonneDao {
 		} 
 		catch (NoResultException e) 
 		{
-			// TODO Auto-generated catch block
-			e.printStackTrace();
 			p = null;
 		}	
 		return p;
