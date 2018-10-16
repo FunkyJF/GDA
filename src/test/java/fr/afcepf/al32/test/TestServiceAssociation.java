@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 package fr.afcepf.al32.test;
 
 import org.junit.Assert;
@@ -39,7 +38,6 @@ public class TestServiceAssociation {
 //		
 //	}
 
-=======
 package fr.afcepf.al32.test;
 
 import org.junit.Assert;
@@ -78,7 +76,4 @@ public class TestServiceAssociation {
 		logger.debug("a="+association.toString());
 	}
 	
-	
-
->>>>>>> ff5a8e4f10c5bd060295c5696bc9e43a2aad194c
 }
