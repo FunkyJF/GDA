@@ -41,9 +41,9 @@ public class PersonneDaoJpa implements IPersonneDao {
 	}
 
 	@Override
-	public List<Personne> findAll() {
-		// ...
-		return null;
+	public List<Personne> findAll(String hql) {
+		return entityManager.createNamedQuery(hql, Personne.class)
+	            .getResultList();
 	}
 
 	@Override
@@ -61,6 +61,19 @@ public class PersonneDaoJpa implements IPersonneDao {
 			p = null;
 		}	
 		return p;
+	}
+
+	@Override
+	public List<Personne> findAllByParam(String hql, Long param) {
+		return entityManager.createNamedQuery(hql, Personne.class)
+				.setParameter("id", param)
+	            .getResultList();
+	}
+
+	@Override
+	public List<Personne> findAll() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 

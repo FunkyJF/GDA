@@ -1,5 +1,7 @@
 package fr.afcepf.al32.service;
 
+import java.util.List;
+
 import javax.annotation.PostConstruct;
 import javax.transaction.Transactional;
 
@@ -14,11 +16,13 @@ import fr.afcepf.al32.entity.Personne;
 @Component //ou bien @Service qui herite de @Component
 @Transactional
 public class ServicePersonneImpl implements IServicePersonne {
+	
 	private Logger logger = LoggerFactory.getLogger(ServicePersonneImpl.class);
 	
 	@Autowired //sur le private ou bien sur le set...()
 	//@Autowired demande à spring d'initialiser la référence "personneDao"
 	//en pointant vers un composant spring existant compatible avec l'interface.
+	
 	private IPersonneDao personneDao=null;
 	
 
@@ -55,6 +59,12 @@ public class ServicePersonneImpl implements IServicePersonne {
 	@Override
 	public Personne rechercherParConnexion(String login, String password) {
 		return personneDao.findByConnexion(login, password);
+	}
+
+	//cette methode retourne le resultat de requet hql qui utilise des parametres
+	@Override
+	public List<Personne> recherchePersonneParm(String hql, Long param) {
+		return personneDao.findAllByParam(hql, param);
 	}
 
 

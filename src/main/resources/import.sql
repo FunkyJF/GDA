@@ -226,7 +226,9 @@ INSERT INTO produit ( typeProduit, description, libelle, libelleCourt, prix, adu
 
 INSERT INTO pack(id,typePack,idTypeProduit,libelle,prix,dateAjout, idAssociation) VALUES (1,'packAssociation', 1, 'pack1',10.0, '2018-1-01 00:00:00', 7);
 INSERT INTO pack(id,typePack,idTypeProduit,libelle,prix,dateModification, idPackAssociation) VALUES (2,'packDonateur', 1, 'pack1modif',15.0, '2018-1-01 00:00:00', 1);
-
+--------------Pays Aide --------------------
+INSERT INTO paysaide (id, libelle) VALUES ('1', 'pays loin')
+---------------------------------------
 INSERT INTO don(id,dateDon) VALUES (1,NULL);
 INSERT INTO don(id,dateDon) VALUES (2,NULL);
 INSERT INTO don(id,dateDon) VALUES (3,NULL);

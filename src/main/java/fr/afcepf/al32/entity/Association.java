@@ -10,11 +10,17 @@ import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
 
 import lombok.Getter;
 import lombok.Setter;
 
+@NamedQueries({
+	@NamedQuery(name="AssociationParType", query="SELECT a FROM Association a JOIN a.typeProduits t WHERE a.dateAcceptation is not Null And a.dateFin IS Null And t.id =:id"),
+	@NamedQuery(name="AssociationParPays", query="SELECT a FROM Association a WHERE a.dateAcceptation is not Null And a.dateFin IS Null  And a.paysAide.id =:idPaysAide")
+})													
 @Entity
 @Getter @Setter
 @DiscriminatorValue("Association")//valeur de typePersonne pour cette classe

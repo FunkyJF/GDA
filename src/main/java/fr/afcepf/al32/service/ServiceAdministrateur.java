@@ -1,6 +1,6 @@
 package fr.afcepf.al32.service;
 
-import javax.annotation.PostConstruct;
+
 import javax.transaction.Transactional;
 
 import org.slf4j.Logger;
@@ -18,20 +18,6 @@ public class ServiceAdministrateur implements IServiceAdministrateur {
 	@Autowired
 	private IPersonneDao personneDao=null;
 	
-	//pour injection de dépendance xml:
-	public void setpersonneDao(IPersonneDao personneDao) {
-		this.personneDao = personneDao;
-	}
 	
-	public ServiceAdministrateur() {
-		logger.debug("constructeur de ServiceAdministrateur appelé avant injections "
-				+ " avec administrateurDao="+personneDao);
-	}
-	
-	@PostConstruct
-	public void initBean() {
-		logger.debug("initBean() appelée après injection avec @PostConstruct "
-				+ " avec administrateurDao="+personneDao);
-	}
 
 }
