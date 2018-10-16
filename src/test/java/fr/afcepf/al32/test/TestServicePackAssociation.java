@@ -13,7 +13,6 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import fr.afcepf.al32.config.ServiceConfig;
-import fr.afcepf.al32.entity.Association;
 import fr.afcepf.al32.entity.Pack;
 import fr.afcepf.al32.entity.PackAssociation;
 import fr.afcepf.al32.service.IServicePack;
@@ -50,12 +49,45 @@ public class TestServicePackAssociation {
 	//@Test
 	public void testRechercherPackAssociationTous() {
 		List<PackAssociation> listePacks = servicePackAssociation.rechercherPackAssociation();	
-		//(List<PackAssociation>)
-		//System.out.println("aaa");
-		for(PackAssociation p : listePacks) {
-			System.out.println("aaaaaaaaaaa");
+		for(PackAssociation p : listePacks) 
+		{
+			System.out.println("aaaaaaaaaaa"+p.getLibelle());
 		//System.out.println("Pack: "+p.getLibelle()+" - "+p.getAssociation());			
 ////		//logger.debug("*** Pack= "+p.toString());
+		}	
+		
+	}
+	
+	@Test
+	public void testRechercherPackAssociationParType() {
+		Long type = 1L;
+		List<PackAssociation> listePacks = servicePackAssociation.rechercherPackAssociationParType(type);	
+		for(PackAssociation p : listePacks) 
+		{
+			Assert.assertTrue(p.getTypeProduit().getId()==type);
+		}	
+		
+	}
+	
+	@Test
+	public void testRechercherPackAssociationParAssociation() {
+		Long id = 1L;
+		List<PackAssociation> listePacks = servicePackAssociation.rechercherPackAssociationParAssociation(id);	
+		for(PackAssociation p : listePacks) 
+		{
+			Assert.assertTrue(p.getAssociation().getId()==id);
+		}	
+		
+	}
+	
+	@Test
+	public void testRechercherPackAssociationParAssociationEtType() {
+		Long type = 1L;
+		Long id = 1L;
+		List<PackAssociation> listePacks = servicePackAssociation.rechercherPackAssociationParAssociationEtType(id, type);	
+		for(PackAssociation p : listePacks) 
+		{
+			Assert.assertTrue((p.getAssociation().getId()==id) && (p.getTypeProduit().getId()==type));
 		}	
 		
 	}

@@ -60,6 +60,24 @@ public class ServicePackImpl implements IServicePack {
 	@Override  
 	public List<PackAssociation> rechercherPackAssociation() {		
 		return packDao.findAllPackAssociation();		
+	}
+
+
+	@Override
+	public List<PackAssociation> rechercherPackAssociationParType(Long idType) {
+		return packDao.findAllPackAssociationByType(idType);
+	}
+
+
+	@Override
+	public List<PackAssociation> rechercherPackAssociationParAssociation(Long id) {
+		return packDao.findAllPackAssociationByAssociation(id);
+	}
+
+
+	@Override
+	public List<PackAssociation> rechercherPackAssociationParAssociationEtType(Long id, Long idType) {
+		return packDao.findAllPackAssociationByAssociationAndType(id, idType);
 	}	
 	
 //	@Override

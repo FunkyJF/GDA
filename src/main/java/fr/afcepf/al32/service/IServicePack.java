@@ -18,4 +18,7 @@ public interface IServicePack {
 	//sup PackAssociation rechercherPackAssociationParNumero(Long num);
 	Pack rechercherPackParNumero(Long num);
 	List<PackAssociation> rechercherPackAssociation();	
+	List<PackAssociation> rechercherPackAssociationParType(Long idType);
+	List<PackAssociation> rechercherPackAssociationParAssociation(Long id);
+	List<PackAssociation> rechercherPackAssociationParAssociationEtType(Long id, Long idType);
 }

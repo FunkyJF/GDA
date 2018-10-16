@@ -224,7 +224,6 @@ INSERT INTO produit ( typeProduit, description, libelle, libelleCourt, prix, adu
 INSERT INTO produit ( typeProduit, description, libelle, libelleCourt, prix, adulte, sexe, idTypeProduit, idNatureAliment, idNatureFourniture, idNatureVetement)VALUES ('V', 'Manteau taille Enfant pour Garçon', 'Manteau Garcon', '', 5, FALSE, TRUE, '2', NULL, NULL, '4'); 
 INSERT INTO produit ( typeProduit, description, libelle, libelleCourt, prix, adulte, sexe, idTypeProduit, idNatureAliment, idNatureFourniture, idNatureVetement)VALUES ('V', 'Manteau taille Enfant pour Fille', 'Manteau Fille', '', 5, FALSE, FALSE, '2', NULL, NULL, '4');
 
-
 INSERT INTO pack(id,typePack,idTypeProduit,libelle,prix,dateAjout, idAssociation) VALUES (1,'packAssociation', 1, 'pack1',10.0, '2018-1-01 00:00:00', 7);
 INSERT INTO pack(id,typePack,idTypeProduit,libelle,prix,dateModification, idPackAssociation) VALUES (2,'packDonateur', 1, 'pack1modif',15.0, '2018-1-01 00:00:00', 1);
 

@@ -4,7 +4,6 @@ import java.util.List;
 
 import javax.persistence.DiscriminatorColumn;
 import javax.persistence.DiscriminatorType;
-import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -32,7 +31,17 @@ import lombok.ToString;
                      discriminatorType=DiscriminatorType.STRING)
 @Table(name="Pack")
 @NamedQueries({
-	@NamedQuery(name="PackAssociation.findAll", query="SELECT c FROM PackAssociation c")
+	@NamedQuery(name="PackAssociation.findAll", query="SELECT c FROM PackAssociation c"),
+	
+	@NamedQuery(name="PackAssociation.findAllByType", query="SELECT c FROM PackAssociation c "
+																+ "WHERE c.typeProduit.id = :idType"),
+	
+	@NamedQuery(name="PackAssociation.findAllByAssociation", query="SELECT c FROM PackAssociation c "
+																	+ "WHERE c.association.id = :id"),
+	
+	@NamedQuery(name="PackAssociation.findAllByAssociationAndType", query="SELECT c FROM PackAssociation c "
+																		+ "WHERE c.typeProduit.id = :idType "
+																		+ "And c.association.id = :id")
 })
 public abstract class Pack 
 {
