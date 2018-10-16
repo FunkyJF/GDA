@@ -18,8 +18,9 @@ import lombok.Getter;
 import lombok.Setter;
 
 @NamedQueries({
-	@NamedQuery(name="AssociationParType", query="SELECT a FROM Association a JOIN a.typeProduits t WHERE a.dateAcceptation is not Null And a.dateFin IS Null And t.id =:id"),
-	@NamedQuery(name="AssociationParPays", query="SELECT a FROM Association a WHERE a.dateAcceptation is not Null And a.dateFin IS Null  And a.paysAide.id =:idPaysAide")
+	@NamedQuery(name="AssociationNouvelle", query="SELECT a FROM Association a WHERE a.dateAcceptation is Null And a.dateFin IS Null"),
+	@NamedQuery(name="AssociationParType", query="SELECT a FROM Association a JOIN a.typeProduits t WHERE a.dateAcceptation is not Null And a.dateFin IS Null And t.id =:id")
+	
 })													
 @Entity
 @Getter @Setter
@@ -34,7 +35,7 @@ public class Association extends Personne {
 
 	   private String dateAcceptation;
 
-	   private Date dateFin;
+	   private String dateFin;
 	   
 	   @OneToMany(mappedBy="association",fetch=FetchType.LAZY)
 	   private List<PackAssociation> packAssociations;

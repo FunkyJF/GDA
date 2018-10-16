@@ -11,6 +11,9 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import fr.afcepf.al32.config.ServiceConfig;
 import fr.afcepf.al32.entity.Administrateur;
+import fr.afcepf.al32.entity.Adresse;
+import fr.afcepf.al32.entity.Association;
+import fr.afcepf.al32.entity.Personne;
 import fr.afcepf.al32.service.IServiceAdministrateur;
 
 @RunWith(SpringJUnit4ClassRunner.class)
@@ -22,19 +25,11 @@ public class TestServiceAdministrateur {
 	@Autowired
 	private IServiceAdministrateur serviceAdministrateur; //à tester
 	
-	
-//	@Test
-//	public void testRechercheAdministrateurParConnexion() {
-//		Administrateur a = serviceAdministrateur.rechercherAdministrateurParConnexion("admin1", "pwd1");
-//		Assert.assertTrue(a.getId()==1L);
-//		logger.debug("a="+a.toString());
-//		
-//	}
-//	
-//	@Test
-//	public void testRechercheErroneAdministrateurParConnexion() {
-//		Administrateur a = serviceAdministrateur.rechercherAdministrateurParConnexion("adxscdc1", "pwd1");
-//		Assert.assertTrue(a==null);
-//		
-//	}
+	@Test
+	public void AjouterAdmin() {
+		
+		Personne  administrateur  = new Administrateur( "PrenomAdmin",  "NomAdmin",  "admin@yahou.fr", "010102020", new Adresse());
+		serviceAdministrateur.ajouterModifierAdmin(administrateur);
+		logger.debug("ajout association="+administrateur.toString());
+	}
 }

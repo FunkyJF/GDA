@@ -40,11 +40,7 @@ public class PersonneDaoJpa implements IPersonneDao {
 		entityManager.remove(p);
 	}
 
-	@Override
-	public List<Personne> findAll(String hql) {
-		return entityManager.createNamedQuery(hql, Personne.class)
-	            .getResultList();
-	}
+	
 
 	@Override
 	public Personne findByConnexion(String login, String password) {
@@ -62,11 +58,15 @@ public class PersonneDaoJpa implements IPersonneDao {
 		}	
 		return p;
 	}
-
 	@Override
-	public List<Personne> findAllByParam(String hql, Long param) {
+	public List<Personne> findAll(String hql) {
 		return entityManager.createNamedQuery(hql, Personne.class)
-				.setParameter("id", param)
+	            .getResultList();
+	}
+	@Override
+	public List<Personne> findAllByParam(String hql ,String param, Long valParam) {
+		return entityManager.createNamedQuery(hql, Personne.class)
+				.setParameter(param, valParam)
 	            .getResultList();
 	}
 
@@ -75,7 +75,5 @@ public class PersonneDaoJpa implements IPersonneDao {
 		// TODO Auto-generated method stub
 		return null;
 	}
-
-
 
 }

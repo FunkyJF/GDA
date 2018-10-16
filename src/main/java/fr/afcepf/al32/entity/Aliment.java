@@ -9,10 +9,22 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Entity @Getter @Setter
-@DiscriminatorValue("Aliment")
+@DiscriminatorValue("A")
 public class Aliment extends Produit {
 	
 	@ManyToOne
 	@JoinColumn(name="idNatureAliment")
 	private NatureAliment natureAliment;
+
+	public Aliment() {}
+
+	public Aliment(String libelle, String libelleCourt, Double prix, String description) {
+		super(libelle, libelleCourt, prix, description);		
+	}
+
+	@Override
+	public String toString() {
+		return "Aliment [natureAliment=" + natureAliment + "]";
+	}	
+	
 }

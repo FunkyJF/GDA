@@ -2,10 +2,19 @@ package fr.afcepf.al32.service;
 
 import java.util.List;
 
+
 import fr.afcepf.al32.entity.Personne;
 
 public interface IServiceAssociation  {
+	
+	void ajouterModifierAssociation(Personne a);
+	void supprimerAssociation(Long  num);
+	Personne rechercheAssociation(Long num);
 	List<Personne> rechercheAssociationTypePt( Long param);
 	List<Personne> rechercheAssociationTypePays(Long param);
-	void ajouterPersonne(Personne p);
+	List<Personne> rechercheAssociationNouvelle();
+	Personne rechercherParConnexion(String login, String password);
+	public void accepterAssociation(Long num, String dateAcc);
+	public void refuserAssociation(Long num, String dateFin);
+	
 }
