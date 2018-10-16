@@ -9,7 +9,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import fr.afcepf.al32.dao.IPersonneDao;
-import fr.afcepf.al32.entity.Donateur;
 
 @Component //ou bien @Service qui herite de @Component
 @Transactional
@@ -34,11 +33,6 @@ public class ServiceDonateur implements IServiceDonateur {
 		logger.debug("initBean() appelée après injection avec @PostConstruct "
 				+ " avec DonateurDao="+personneDao);
 	}
-
-//	@Override
-//	public Donateur rechercherDonateurParConnexion(String login, String password) {
-//		return personneDao.findDonateurByConnexion(login, password);
-//	}
 
 	
 

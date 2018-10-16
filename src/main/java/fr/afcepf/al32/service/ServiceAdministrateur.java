@@ -9,7 +9,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import fr.afcepf.al32.dao.IPersonneDao;
-import fr.afcepf.al32.entity.Administrateur;
 
 @Component //ou bien @Service qui herite de @Component
 @Transactional
@@ -34,12 +33,5 @@ public class ServiceAdministrateur implements IServiceAdministrateur {
 		logger.debug("initBean() appelée après injection avec @PostConstruct "
 				+ " avec administrateurDao="+personneDao);
 	}
-
-//	@Override
-//	public Administrateur rechercherAdministrateurParConnexion(String login, String password) {
-//		return personneDao.findAdministrateurByConnexion(login, password);
-//	}
-
-	
 
 }

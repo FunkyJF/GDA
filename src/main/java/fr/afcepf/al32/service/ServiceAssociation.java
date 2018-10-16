@@ -9,7 +9,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import fr.afcepf.al32.dao.IPersonneDao;
-import fr.afcepf.al32.entity.Association;
 
 @Component //ou bien @Service qui herite de @Component
 @Transactional
@@ -34,11 +33,6 @@ public class ServiceAssociation implements IServiceAssociation {
 		logger.debug("initBean() appelée après injection avec @PostConstruct "
 				+ " avec associationDao="+personneDao);
 	}
-
-//	@Override
-//	public Association rechercherAssociationParConnexion(String login, String password) {
-//		return personneDao.findAssociationByConnexion(login, password);
-//	}
 
 	
 
