@@ -9,10 +9,23 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Entity @Getter @Setter
-@DiscriminatorValue("FournitureScolaire")
+@DiscriminatorValue("F")
 public class FournitureScolaire extends Produit {
 	
 	@ManyToOne
 	@JoinColumn(name="idNatureFourniture")
 	private NatureFourniture natureFourniture;
+
+	public FournitureScolaire(String libelle, String libelleCourt, Double prix, String description)
+	{
+		super(libelle, libelleCourt, prix, description);		
+	}
+	
+	public FournitureScolaire() {}
+
+	@Override
+	public String toString() {
+		return "FournitureScolaire [natureFourniture=" + natureFourniture + "]";
+	}	
+	
 }

@@ -43,15 +43,9 @@ public class ServicePackImpl implements IServicePack {
 	@Override
 	public void ajouterPack(Pack p) {
 		packDao.save(p);
-	}
+	}	
 	
-	
-//	@Override  
-//	public List<PackAssociation> rechercherTousLesPacks() {		
-//		return packDao.findAll();
-//		return null;
-//	}	
-//	
+
 	@Override
 	public Pack rechercherPackParNumero(Long num) {			
 		return (PackAssociation)packDao.findOne(num);		
@@ -61,19 +55,6 @@ public class ServicePackImpl implements IServicePack {
 	public List<PackAssociation> rechercherPackAssociation() {		
 		return packDao.findAllPackAssociation();		
 	}	
-	
-//	@Override
-//	public void saveOrUpdatePackAssociation(PackAssociation p) {
-//		
-//		System.out.println("pack="+p.getLibelle()+"--"+p.getId());
-//		
-//		packDao.save(p);
-//		
-//		
-//		System.out.println("pack="+p.getLibelle()+"--"+p.getId());		
-//		
-//	}
-	
 	
 	
 	

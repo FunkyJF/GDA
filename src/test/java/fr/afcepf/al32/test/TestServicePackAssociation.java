@@ -27,7 +27,7 @@ public class TestServicePackAssociation {
 	@Autowired
 	private IServicePack servicePackAssociation;
 	
-	@Test
+	//@Test
     public void ajouterPackAssociation() {
 		
 		Timestamp dteAjout = new Timestamp( System.currentTimeMillis() );		
@@ -47,15 +47,12 @@ public class TestServicePackAssociation {
 		logger.debug("p="+p.toString());			
 	}
 	
-	//@Test
+	@Test
 	public void testRechercherPackAssociationTous() {
-		List<PackAssociation> listePacks = servicePackAssociation.rechercherPackAssociation();	
-		//(List<PackAssociation>)
-		//System.out.println("aaa");
+		List<PackAssociation> listePacks = servicePackAssociation.rechercherPackAssociation();			
 		for(PackAssociation p : listePacks) {
-			System.out.println("aaaaaaaaaaa");
-		//System.out.println("Pack: "+p.getLibelle()+" - "+p.getAssociation());			
-////		//logger.debug("*** Pack= "+p.toString());
+			System.out.println("Pack: "+p.getLibelle()+" - " +p.getAssociation());				
+		    //KO logger.debug("*** Pack= "+p.toString());
 		}	
 		
 	}
