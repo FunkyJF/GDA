@@ -26,5 +26,20 @@ public class PackAssociation extends Pack
 	 
 	 @OneToMany(mappedBy="packAssociation",fetch=FetchType.LAZY)
 	 private List<PackDonateur> packDonateurs;
+	 
+	 public PackAssociation(){		 
+	 } 
+	
+	 public PackAssociation(String libelle, Double prix, Date dateAjout) {
+		super(libelle, prix);
+		this.dateAjout = dateAjout;		
+	 }
+
+	@Override
+	public String toString() {
+		return "PackAssociation [dateAjout=" + dateAjout + ", association=" + association +"]";
+//		return "PackAssociation [dateAjout=" + dateAjout + ", association=" + association + ", packDonateurs="
+//				+ packDonateurs + "]";
+	}	
 	
 }
