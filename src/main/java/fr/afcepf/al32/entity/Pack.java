@@ -15,6 +15,9 @@ import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
+import javax.persistence.Table;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -27,6 +30,10 @@ import lombok.ToString;
 @Inheritance(strategy=InheritanceType.SINGLE_TABLE)
 @DiscriminatorColumn(name="typePack",
                      discriminatorType=DiscriminatorType.STRING)
+@Table(name="Pack")
+@NamedQueries({
+	@NamedQuery(name="PackAssociation.findAll", query="SELECT c FROM PackAssociation c")
+})
 public abstract class Pack 
 {
 	@Id
@@ -49,4 +56,11 @@ public abstract class Pack
 	
 	@ManyToMany(mappedBy="packs")//LAZY par defaut
 	private List<Don> dons;
+	
+    public Pack(String libelle, Double prix) {
+		
+		this.libelle = libelle;
+		this.prix = prix;
+		
+	}
 }

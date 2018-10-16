@@ -177,4 +177,19 @@ INSERT INTO pack(id,typePack,idTypeProduit,libelle,prix,dateModification, idPack
 INSERT INTO don(id,dateDon) VALUES (1,NULL);
 INSERT INTO don(id,dateDon) VALUES (2,NULL);
 INSERT INTO don(id,dateDon) VALUES (3,NULL);
+
+INSERT INTO pack_produit(idProduit,idPack) VALUES (1,1);
+INSERT INTO pack_produit(idProduit,idPack) VALUES (1,2);
+INSERT INTO pack(id,typePack,idTypeProduit,libelle,prix,dateAjout, idAssociation) VALUES (3,'packAssociation', 1, 'pack3',30.0, '2018-1-01 00:00:00', 7);
+INSERT INTO pack_produit(idProduit,idPack) VALUES (1,3);
+INSERT INTO pack(id,typePack,idTypeProduit,libelle,prix,dateAjout, idAssociation) VALUES (4,'packAssociation', 1, 'pack4',40.0, '2018-1-01 00:00:00', 8);
+INSERT INTO pack_produit(idProduit,idPack) VALUES (2,4);
+INSERT INTO pack(id,typePack,idTypeProduit,libelle,prix,dateAjout, idAssociation) VALUES (5,'packAssociation', 1, 'pack5',50.0, '2018-1-01 00:00:00', 8);
+INSERT INTO pack_produit(idProduit,idPack) VALUES (2,5);
+INSERT INTO pack(id,typePack,idTypeProduit,libelle,prix,dateAjout, idAssociation) VALUES (6,'packAssociation', 1, 'pack6',60.0, '2018-1-01 00:00:00', 8);
+INSERT INTO pack_produit(idProduit,idPack) VALUES (3,6);
+INSERT INTO pack(id,typePack,idTypeProduit,libelle,prix,dateAjout, idAssociation) VALUES (7,'packAssociation', 1, 'pack7',70.0, '2018-1-01 00:00:00', 8);
+INSERT INTO pack_produit(idProduit,idPack) VALUES (4,7);
+INSERT INTO pack(id,typePack,idTypeProduit,libelle,prix,dateAjout, idAssociation) VALUES (8,'packAssociation', 1, 'pack8',80.0, '2018-1-01 00:00:00', 8);
+INSERT INTO pack_produit(idProduit,idPack) VALUES (5,8);
  
