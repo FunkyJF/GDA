@@ -17,7 +17,6 @@ public class PackDaoJpa implements IPackDao {
 	@PersistenceContext
 	private EntityManager entityManager;
 
-	
 	@Override
 	public List<PackAssociation> findAllPackAssociation() {
 		System.out.println("PackDaoJpa - findAllPackAssociation ");
@@ -25,6 +24,7 @@ public class PackDaoJpa implements IPackDao {
 		return entityManager.createNamedQuery("PackAssociation.findAll", PackAssociation.class)
 				            .getResultList();			
 	}	
+
 	
 	@Override
 	public List<PackAssociation> findAllPackAssociationByType(Long idType) {
