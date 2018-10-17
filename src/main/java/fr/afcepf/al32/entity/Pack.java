@@ -2,6 +2,7 @@ package fr.afcepf.al32.entity;
 
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.DiscriminatorColumn;
 import javax.persistence.DiscriminatorType;
 import javax.persistence.Entity;
@@ -60,7 +61,10 @@ public abstract class Pack
 	@JoinColumn(name="idTypeProduit")
 	private TypeProduit typeProduit;
 	
-	@ManyToMany
+	@ManyToMany(cascade = { 
+	        CascadeType.PERSIST, 
+	        CascadeType.MERGE
+	    })
 	@JoinTable(name="Pack_Produit",
     joinColumns= {@JoinColumn(name="idPack")},
     inverseJoinColumns = {@JoinColumn(name="idProduit")})
@@ -75,4 +79,13 @@ public abstract class Pack
 		this.prix = prix;
 		
 	}
+  
+    public Pack(String libelle, Double prix, TypeProduit typeProduit, List<Produit> produits) {
+		
+		this.libelle = libelle;
+		this.prix = prix;
+		this.typeProduit = typeProduit;
+		this.produits = produits;
+	}
+
 }

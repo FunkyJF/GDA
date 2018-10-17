@@ -4,7 +4,6 @@ import java.util.List;
 
 import fr.afcepf.al32.entity.Pack;
 import fr.afcepf.al32.entity.PackAssociation;
-import fr.afcepf.al32.entity.Produit;
 
 public interface IPackDao extends IGenericDao<Pack> {
 	

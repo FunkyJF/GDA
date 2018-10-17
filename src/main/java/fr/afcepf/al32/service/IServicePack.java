@@ -12,5 +12,7 @@ public interface IServicePack {
 	List<PackAssociation> rechercherPackAssociation();	
 	List<PackAssociation> rechercherPackAssociationParType(Long idType);
 	List<PackAssociation> rechercherPackAssociationParAssociation(Long id);
-	List<PackAssociation> rechercherPackAssociationParAssociationEtType(Long id, Long idType);	
+	List<PackAssociation> rechercherPackAssociationParAssociationEtType(Long id, Long idType);
+	void desactiverPack(PackAssociation p);
+
 }

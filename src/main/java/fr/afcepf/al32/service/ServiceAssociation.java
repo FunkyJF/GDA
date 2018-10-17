@@ -1,5 +1,6 @@
 package fr.afcepf.al32.service;
 
+import java.util.Date;
 import java.util.List;
 
 import javax.annotation.PostConstruct;
@@ -51,7 +52,11 @@ public class ServiceAssociation implements IServiceAssociation {
 	public List<Personne> rechercheAssociationNouvelle() {
 		return personneDao.findAll("AssociationNouvelle");
 	}
-
+	@Override
+	public List<Personne> rechercheAssociationPxPack(double valParam, double valParam1)
+	{
+		return personneDao.findAllByMoreParam("AssociationParPxPack", "minPx",  valParam, "maxPx",valParam1);
+	}
 	@Override
 	public Personne rechercherParConnexion(String login, String password) {
 		return personneDao.findByConnexion(login, password);
@@ -67,26 +72,20 @@ public class ServiceAssociation implements IServiceAssociation {
 		}else return null;
 		
 	}
-		
-	
 
 	@Override
-	public void accepterAssociation(Long num, String dateAcc ) {
+	public void accepterAssociation(Long num, Date dateAcc ) {
 		Association a = (Association) personneDao.findOne(num);
 		a.setDateAcceptation(dateAcc);
 		 personneDao.save(a);
 	}
 
 	@Override
-	public void refuserAssociation(Long num, String dateFin) {
+	public void refuserAssociation(Long num, Date dateFin) {
 		Association a = (Association) personneDao.findOne(num);
 		a.setDateFin(dateFin);
 		 personneDao.save(a);
 		
-	}
-
-	
-	
-	
+	}	
 
 }

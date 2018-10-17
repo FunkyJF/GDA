@@ -1,6 +1,5 @@
 package fr.afcepf.al32.test;
 
-import java.sql.Timestamp;
 import java.util.List;
 
 import org.junit.Assert;
@@ -15,7 +14,6 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import fr.afcepf.al32.config.ServiceConfig;
 import fr.afcepf.al32.entity.Pack;
 import fr.afcepf.al32.entity.PackAssociation;
-import fr.afcepf.al32.entity.Produit;
 import fr.afcepf.al32.service.IServicePack;
 
 @RunWith(SpringJUnit4ClassRunner.class)
@@ -25,29 +23,26 @@ public class TestServicePackAssociation {
 	private Logger logger = LoggerFactory.getLogger(TestServicePackAssociation.class);
 
 	@Autowired
-	private IServicePack servicePackAssociation;	
+	private IServicePack servicePackAssociation;
 	
-	//@Test
+	@Test
     public void ajouterPackAssociation() {
-		
-		Timestamp dteAjout = new Timestamp( System.currentTimeMillis() );		
-	    //Association a = new Association();		   
 	    
-		Pack pAssociation = new PackAssociation("pack9",90.0,dteAjout);		
+		Pack pAssociation = new PackAssociation("pack9",90.0);		
 		
 		servicePackAssociation.ajouterPack(pAssociation);
 		 
 	    logger.debug("pAssociation="+pAssociation.toString());		
 	}
 	
-	//@Test
+	@Test
 	public void testRechercherPackAssociationParNumero() {		
 		PackAssociation p = (PackAssociation)servicePackAssociation.rechercherPackParNumero(4L);
 		Assert.assertTrue(p.getId()==4L);
 		logger.debug("p="+p.toString());			
 	}
 	
-	//@Test
+	@Test
 	public void testRechercherPackAssociationTous() {
 		List<PackAssociation> listePacks = servicePackAssociation.rechercherPackAssociation();			
 		for(PackAssociation p : listePacks) {
@@ -58,7 +53,7 @@ public class TestServicePackAssociation {
 		
 	}
 	
-	//@Test
+	@Test
 	public void testRechercherPackAssociationParType() {
 		Long type = 1L;
 		List<PackAssociation> listePacks = servicePackAssociation.rechercherPackAssociationParType(type);	
@@ -69,7 +64,7 @@ public class TestServicePackAssociation {
 		
 	}
 	
-	//@Test
+	@Test
 	public void testRechercherPackAssociationParAssociation() {
 		Long id = 1L;
 		List<PackAssociation> listePacks = servicePackAssociation.rechercherPackAssociationParAssociation(id);	
@@ -80,7 +75,7 @@ public class TestServicePackAssociation {
 		
 	}
 	
-	//@Test
+	@Test
 	public void testRechercherPackAssociationParAssociationEtType() {
 		Long type = 1L;
 		Long id = 1L;
@@ -89,6 +84,19 @@ public class TestServicePackAssociation {
 		{
 			Assert.assertTrue((p.getAssociation().getId()==id) && (p.getTypeProduit().getId()==type));
 		}	
-		
-	}	
-}
+
+	}
+	
+		@Test
+		public void testDesactiverPackAssociation() {
+			PackAssociation p = (PackAssociation)servicePackAssociation.rechercherPackParNumero(4L);
+			Assert.assertTrue(p.getDateRetrait() == null);
+			
+			servicePackAssociation.desactiverPack(p);
+			PackAssociation p2 = (PackAssociation)servicePackAssociation.rechercherPackParNumero(4L);
+			Assert.assertTrue(p2.getDateRetrait() != null);
+				
+
+		}
+
+}	

@@ -19,7 +19,8 @@ import lombok.Setter;
 
 @NamedQueries({
 	@NamedQuery(name="AssociationNouvelle", query="SELECT a FROM Association a WHERE a.dateAcceptation is Null And a.dateFin IS Null"),
-	@NamedQuery(name="AssociationParType", query="SELECT a FROM Association a JOIN a.typeProduits t WHERE a.dateAcceptation is not Null And a.dateFin IS Null And t.id =:id")
+	@NamedQuery(name="AssociationParType", query="SELECT a FROM Association a JOIN a.typeProduits t WHERE a.dateAcceptation is not Null And a.dateFin IS Null And t.id =:id"),
+	//@NamedQuery(name="AssociationParPxPack", query="SELECT a FROM Association a JOIN a.packAssociations p WHERE a.dateAcceptation is not Null And a.dateFin IS Null And p.prix  BETWEEN :minPx AND :maxPx ")
 	
 })													
 @Entity
@@ -33,9 +34,9 @@ public class Association extends Personne {
 
 	   private String ape;
 
-	   private String dateAcceptation;
+	   private Date dateAcceptation;
 
-	   private String dateFin;
+	   private Date dateFin;
 	   
 	   @OneToMany(mappedBy="association",fetch=FetchType.LAZY)
 	   private List<PackAssociation> packAssociations;
@@ -62,13 +63,13 @@ public class Association extends Personne {
 	   }
 
 	   
-	   public Association(String raisonSociale, String siret, String ape, String dateAcceptation)
+	   public Association(String raisonSociale, String siret, String ape)
 	   {
 		   super();
 		   this.raisonSociale = raisonSociale;
 		   this.siret=siret;
 		   this.ape = ape;
-		   this.dateAcceptation = dateAcceptation;
+		   
 	   }
 
 }

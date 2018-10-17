@@ -76,4 +76,12 @@ public class PersonneDaoJpa implements IPersonneDao {
 		return null;
 	}
 
+	@Override
+	public List<Personne> findAllByMoreParam(String hql, String param, double valParam, String param1, double valParam1) {
+		return entityManager.createNamedQuery(hql, Personne.class)
+				.setParameter(param, valParam)
+				.setParameter(param1, valParam1)
+	            .getResultList();
+	}
+
 }
