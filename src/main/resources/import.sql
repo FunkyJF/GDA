@@ -244,9 +244,9 @@ INSERT INTO association_typeproduit (idAssociation, idTypeProduit) VALUES ('11',
 INSERT INTO association_typeproduit (idAssociation, idTypeProduit) VALUES ('11', '1');
 
 
-INSERT INTO don(id,dateDon) VALUES (1,NULL);
-INSERT INTO don(id,dateDon) VALUES (2,NULL);
-INSERT INTO don(id,dateDon) VALUES (3,NULL);
+INSERT INTO don(id,dateDon,idDonateur) VALUES (1,'2018-10-02 00:00:00',6);
+INSERT INTO don(id,dateDon,idDonateur) VALUES (2,'2018-10-02 00:00:00',6);
+INSERT INTO don(id,dateDon,idDonateur) VALUES (3,'2018-10-02 00:00:00',6);
 
 INSERT INTO pack_produit(idProduit,idPack) VALUES (1,1);
 INSERT INTO pack_produit(idProduit,idPack) VALUES (1,2);
