@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 2018-10-16 09:49:31 - constructeur de ServiceAdministrateur appelé avant injections  avec administrateurDao=null
 2018-10-16 09:49:31 - initBean() appelée après injection avec @PostConstruct  avec administrateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@9c93d16
 2018-10-16 09:49:31 - constructeur de ServiceAssociation appelé avant injections  avec administrateurDao=null
@@ -133,6 +132,7 @@
 2018-10-16 18:35:05 - initBean() appelée après injection avec @PostConstruct  avec personneDao=fr.afcepf.al32.dao.PersonneDaoJpa@3440e9cd
 2018-10-16 18:35:05 - ajout association=Association [raisonSociale=TestraisonSociale, siret=Testsiret, ape=Testape, dateAcceptation=15/10/2018, dateFin=null]Personne(id=12, prenom=null, nom=null, email=null, telephone=null, connexion=null, adresse=null)
 =======
+>>>>>>> a8717348620ecc7f3c5638b9a2d96afe8d23ea15
 2018-10-16 09:49:31 - constructeur de ServiceAdministrateur appelé avant injections  avec administrateurDao=null
 2018-10-16 09:49:31 - initBean() appelée après injection avec @PostConstruct  avec administrateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@9c93d16
 2018-10-16 09:49:31 - constructeur de ServiceAssociation appelé avant injections  avec administrateurDao=null
@@ -148,6 +148,8 @@
 2018-10-16 09:49:32 - p2=Donateur [coordonneesBancaires=null]Personne(id=4, prenom=Eva, nom=Poree, email=EvaP@gmail.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@4f116ca2, adresse=fr.afcepf.al32.entity.Adresse@19489b27)
 2018-10-16 09:49:32 - p=Administrateur [dateDebut=2018-01-01 00:00:00.0, dateFin=null]Personne(id=1, prenom=Amin, nom=Istrateur, email=AminI@gmail.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@58f2466c, adresse=fr.afcepf.al32.entity.Adresse@78b7f805)
 2018-10-16 09:49:32 - p2=Administrateur [dateDebut=2018-01-01 00:00:00.0, dateFin=null]Personne(id=1, prenom=Amin, nom=Istrateur, email=AminI@gmail.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@62b475e2, adresse=fr.afcepf.al32.entity.Adresse@53747c4a)
+<<<<<<< HEAD
+=======
 2018-10-16 11:16:11 - constructeur de ServiceAdministrateur appelé avant injections  avec administrateurDao=null
 2018-10-16 11:16:11 - initBean() appelée après injection avec @PostConstruct  avec administrateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@6680f714
 2018-10-16 11:16:11 - constructeur de ServiceAssociation appelé avant injections  avec administrateurDao=null
@@ -348,6 +350,7 @@
 2018-10-16 17:07:09 - constructeur de ServiceProduitImpl appelé avant injections  avec produitDao=null
 2018-10-16 17:07:09 - initBean() appelée après injection avec @PostConstruct  avec produitDao=fr.afcepf.al32.dao.ProduitDaoJpa@65a9ea3c
 2018-10-16 17:07:10 - produit Vetement=Vetement [sexe=true, adulte=false, natureVetement=null]
+>>>>>>> a8717348620ecc7f3c5638b9a2d96afe8d23ea15
 2018-10-16 11:36:00 - constructeur de ServiceAdministrateur appelé avant injections  avec administrateurDao=null
 2018-10-16 11:36:00 - initBean() appelée après injection avec @PostConstruct  avec administrateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@6fcd31c3
 2018-10-16 11:36:00 - constructeur de ServiceAssociation appelé avant injections  avec administrateurDao=null
@@ -445,6 +448,8 @@
 2018-10-16 16:45:46 - constructeur de ServicePersonneImpl appelé avant injections  avec personneDao=null
 2018-10-16 16:45:46 - initBean() appelée après injection avec @PostConstruct  avec personneDao=fr.afcepf.al32.dao.PersonneDaoJpa@6cbe68e9
 2018-10-16 16:45:48 - pAssociation=PackAssociation [dateAjout=2018-10-16 16:45:48.25, association=null]
+<<<<<<< HEAD
+=======
 
 >>>>>>> branch 'master' of https://github.com/FunkyJF/GDA.git
 2018-10-16 22:31:05 - constructeur de ServiceDonateur appelé avant injections  avec administrateurDao=null
@@ -605,3 +610,4 @@
 2018-10-16 23:58:52 - constructeur de ServiceProduitImpl appelé avant injections  avec produitDao=null
 2018-10-16 23:58:52 - initBean() appelée après injection avec @PostConstruct  avec produitDao=fr.afcepf.al32.dao.ProduitDaoJpa@68e02f33
 2018-10-16 23:58:53 - ajout association=Administrateur [dateDebut=null, dateFin=null]Personne(id=12, prenom=PrenomAdmin, nom=NomAdmin, email=admin@yahou.fr, telephone=010102020, connexion=null, adresse=fr.afcepf.al32.entity.Adresse@49f3ff41)
+>>>>>>> a8717348620ecc7f3c5638b9a2d96afe8d23ea15

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 2018-10-16 09:49:31 - constructeur de ServiceAdministrateur appelé avant injections  avec administrateurDao=null
 2018-10-16 09:49:31 - initBean() appelée après injection avec @PostConstruct  avec administrateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@9c93d16
 2018-10-16 09:49:31 - constructeur de ServiceAssociation appelé avant injections  avec administrateurDao=null
@@ -118,3 +119,100 @@
 2018-10-17 10:24:49 - initBean() appelée après injection avec @PostConstruct  avec packDao=fr.afcepf.al32.dao.PackDaoJpa@7a9eccc4
 2018-10-17 10:24:49 - constructeur de ServiceProduitImpl appelé avant injections  avec produitDao=null
 2018-10-17 10:24:49 - initBean() appelée après injection avec @PostConstruct  avec produitDao=fr.afcepf.al32.dao.ProduitDaoJpa@50eb4a2c
+=======
+2018-10-17 09:32:18 - constructeur de ServiceAdministrateur appelé avant injections  avec administrateurDao=null
+2018-10-17 09:32:18 - initBean() appelée après injection avec @PostConstruct  avec administrateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@5e230fc6
+2018-10-17 09:32:18 - constructeur de ServiceAssociation appelé avant injections  avec administrateurDao=null
+2018-10-17 09:32:18 - initBean() appelée après injection avec @PostConstruct  avec associationDao=fr.afcepf.al32.dao.PersonneDaoJpa@5e230fc6
+2018-10-17 09:32:18 - constructeur de ServiceDonateur appelé avant injections  avec administrateurDao=null
+2018-10-17 09:32:18 - initBean() appelée après injection avec @PostConstruct  avec DonateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@5e230fc6
+2018-10-17 09:32:18 - constructeur de ServicePackImpl appelé avant injections  avec packDao=null
+2018-10-17 09:32:18 - initBean() appelée après injection avec @PostConstruct  avec packDao=fr.afcepf.al32.dao.PackDaoJpa@467b0f6e
+2018-10-17 09:32:18 - constructeur de ServicePersonneImpl appelé avant injections  avec personneDao=null
+2018-10-17 09:32:18 - initBean() appelée après injection avec @PostConstruct  avec personneDao=fr.afcepf.al32.dao.PersonneDaoJpa@5e230fc6
+2018-10-17 09:32:19 - p=Administrateur [dateDebut=2018-01-01 00:00:00.0, dateFin=null]Personne(id=2, prenom=Maude, nom=Erateur, email=MaudeE@gmail.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@19e21f89, adresse=fr.afcepf.al32.entity.Adresse@feb098f)
+2018-10-17 09:32:19 - p=Association [raisonSociale=Aide Et Action, siret=80295478500050, ape=0070A, dateAcceptation=2018-1-01 00:00:00, dateFin=null]Personne(id=10, prenom=Guy, nom=Yotine, email=contact@aideAction.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@77b3752b, adresse=fr.afcepf.al32.entity.Adresse@5707f613)
+2018-10-17 09:32:19 - p2=Association [raisonSociale=Aide Et Action, siret=80295478500050, ape=0070A, dateAcceptation=2018-1-01 00:00:00, dateFin=null]Personne(id=10, prenom=Guy, nom=Yotine, email=contact@aideAction.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@24c685e7, adresse=fr.afcepf.al32.entity.Adresse@5d508d22)
+2018-10-17 09:32:19 - p=Donateur [coordonneesBancaires=null]Personne(id=4, prenom=Eva, nom=Poree, email=EvaP@gmail.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@3292d91a, adresse=fr.afcepf.al32.entity.Adresse@420a8042)
+2018-10-17 09:32:19 - p2=Donateur [coordonneesBancaires=null]Personne(id=4, prenom=Eva, nom=Poree, email=EvaP@gmail.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@168ad26f, adresse=fr.afcepf.al32.entity.Adresse@3a7c678b)
+2018-10-17 09:32:19 - p=Administrateur [dateDebut=2018-01-01 00:00:00.0, dateFin=null]Personne(id=1, prenom=Amin, nom=Istrateur, email=AminI@gmail.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@58833798, adresse=fr.afcepf.al32.entity.Adresse@61191222)
+2018-10-17 09:32:19 - p2=Administrateur [dateDebut=2018-01-01 00:00:00.0, dateFin=null]Personne(id=1, prenom=Amin, nom=Istrateur, email=AminI@gmail.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@16d07cf3, adresse=fr.afcepf.al32.entity.Adresse@27dc627a)
+2018-10-17 09:32:20 - pAssociation=PackAssociation [dateAjout=2018-10-17 09:32:20.08, association=null]
+2018-10-17 09:50:13 - constructeur de ServiceAdministrateur appelé avant injections  avec administrateurDao=null
+2018-10-17 09:50:13 - initBean() appelée après injection avec @PostConstruct  avec administrateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@a6e4897
+2018-10-17 09:50:13 - constructeur de ServiceAssociation appelé avant injections  avec administrateurDao=null
+2018-10-17 09:50:13 - initBean() appelée après injection avec @PostConstruct  avec associationDao=fr.afcepf.al32.dao.PersonneDaoJpa@a6e4897
+2018-10-17 09:50:13 - constructeur de ServiceDonateur appelé avant injections  avec administrateurDao=null
+2018-10-17 09:50:13 - initBean() appelée après injection avec @PostConstruct  avec DonateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@a6e4897
+2018-10-17 09:50:13 - constructeur de ServicePackImpl appelé avant injections  avec packDao=null
+2018-10-17 09:50:13 - initBean() appelée après injection avec @PostConstruct  avec packDao=fr.afcepf.al32.dao.PackDaoJpa@546394ed
+2018-10-17 09:50:13 - constructeur de ServicePersonneImpl appelé avant injections  avec personneDao=null
+2018-10-17 09:50:13 - initBean() appelée après injection avec @PostConstruct  avec personneDao=fr.afcepf.al32.dao.PersonneDaoJpa@a6e4897
+2018-10-17 09:50:14 - pAssociation=PackAssociation [dateAjout=2018-10-17 09:50:14.181, association=null]
+2018-10-17 09:58:46 - constructeur de ServiceAdministrateur appelé avant injections  avec administrateurDao=null
+2018-10-17 09:58:46 - initBean() appelée après injection avec @PostConstruct  avec administrateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@553da911
+2018-10-17 09:58:46 - constructeur de ServiceAssociation appelé avant injections  avec administrateurDao=null
+2018-10-17 09:58:46 - initBean() appelée après injection avec @PostConstruct  avec associationDao=fr.afcepf.al32.dao.PersonneDaoJpa@553da911
+2018-10-17 09:58:46 - constructeur de ServiceDonateur appelé avant injections  avec administrateurDao=null
+2018-10-17 09:58:46 - initBean() appelée après injection avec @PostConstruct  avec DonateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@553da911
+2018-10-17 09:58:46 - constructeur de ServicePackImpl appelé avant injections  avec packDao=null
+2018-10-17 09:58:46 - initBean() appelée après injection avec @PostConstruct  avec packDao=fr.afcepf.al32.dao.PackDaoJpa@29fe4840
+2018-10-17 09:58:46 - constructeur de ServicePersonneImpl appelé avant injections  avec personneDao=null
+2018-10-17 09:58:46 - initBean() appelée après injection avec @PostConstruct  avec personneDao=fr.afcepf.al32.dao.PersonneDaoJpa@553da911
+2018-10-17 09:58:47 - pAssociation=PackAssociation [dateAjout=2018-10-17 09:58:47.184, association=null]
+2018-10-17 10:09:30 - constructeur de ServiceAdministrateur appelé avant injections  avec administrateurDao=null
+2018-10-17 10:09:30 - initBean() appelée après injection avec @PostConstruct  avec administrateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@67cffead
+2018-10-17 10:09:30 - constructeur de ServiceAssociation appelé avant injections  avec administrateurDao=null
+2018-10-17 10:09:30 - initBean() appelée après injection avec @PostConstruct  avec associationDao=fr.afcepf.al32.dao.PersonneDaoJpa@67cffead
+2018-10-17 10:09:30 - constructeur de ServiceDonateur appelé avant injections  avec administrateurDao=null
+2018-10-17 10:09:30 - initBean() appelée après injection avec @PostConstruct  avec DonateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@67cffead
+2018-10-17 10:09:30 - constructeur de ServicePackImpl appelé avant injections  avec packDao=null
+2018-10-17 10:09:30 - initBean() appelée après injection avec @PostConstruct  avec packDao=fr.afcepf.al32.dao.PackDaoJpa@2c829dbc
+2018-10-17 10:09:30 - constructeur de ServicePersonneImpl appelé avant injections  avec personneDao=null
+2018-10-17 10:09:30 - initBean() appelée après injection avec @PostConstruct  avec personneDao=fr.afcepf.al32.dao.PersonneDaoJpa@67cffead
+2018-10-17 10:09:31 - pAssociation=PackAssociation [dateAjout=2018-10-17 10:09:30.286, association=null]
+2018-10-17 10:11:07 - constructeur de ServiceAdministrateur appelé avant injections  avec administrateurDao=null
+2018-10-17 10:11:07 - initBean() appelée après injection avec @PostConstruct  avec administrateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@76e90da5
+2018-10-17 10:11:07 - constructeur de ServiceAssociation appelé avant injections  avec administrateurDao=null
+2018-10-17 10:11:07 - initBean() appelée après injection avec @PostConstruct  avec associationDao=fr.afcepf.al32.dao.PersonneDaoJpa@76e90da5
+2018-10-17 10:11:07 - constructeur de ServiceDonateur appelé avant injections  avec administrateurDao=null
+2018-10-17 10:11:07 - initBean() appelée après injection avec @PostConstruct  avec DonateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@76e90da5
+2018-10-17 10:11:07 - constructeur de ServicePackImpl appelé avant injections  avec packDao=null
+2018-10-17 10:11:07 - initBean() appelée après injection avec @PostConstruct  avec packDao=fr.afcepf.al32.dao.PackDaoJpa@9dada78
+2018-10-17 10:11:07 - constructeur de ServicePersonneImpl appelé avant injections  avec personneDao=null
+2018-10-17 10:11:07 - initBean() appelée après injection avec @PostConstruct  avec personneDao=fr.afcepf.al32.dao.PersonneDaoJpa@76e90da5
+2018-10-17 10:11:08 - pAssociation=PackAssociation [dateAjout=2018-10-17 10:11:07.999, association=null]
+2018-10-17 10:13:05 - constructeur de ServiceAdministrateur appelé avant injections  avec administrateurDao=null
+2018-10-17 10:13:05 - initBean() appelée après injection avec @PostConstruct  avec administrateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@115ca7de
+2018-10-17 10:13:05 - constructeur de ServiceAssociation appelé avant injections  avec administrateurDao=null
+2018-10-17 10:13:05 - initBean() appelée après injection avec @PostConstruct  avec associationDao=fr.afcepf.al32.dao.PersonneDaoJpa@115ca7de
+2018-10-17 10:13:05 - constructeur de ServiceDonateur appelé avant injections  avec administrateurDao=null
+2018-10-17 10:13:05 - initBean() appelée après injection avec @PostConstruct  avec DonateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@115ca7de
+2018-10-17 10:13:05 - constructeur de ServicePackImpl appelé avant injections  avec packDao=null
+2018-10-17 10:13:05 - initBean() appelée après injection avec @PostConstruct  avec packDao=fr.afcepf.al32.dao.PackDaoJpa@32f5ecc4
+2018-10-17 10:13:05 - constructeur de ServicePersonneImpl appelé avant injections  avec personneDao=null
+2018-10-17 10:13:05 - initBean() appelée après injection avec @PostConstruct  avec personneDao=fr.afcepf.al32.dao.PersonneDaoJpa@115ca7de
+2018-10-17 10:13:06 - pAssociation=PackAssociation [dateAjout=2018-10-17 10:13:06.095, association=null]
+2018-10-17 10:17:47 - constructeur de ServiceAdministrateur appelé avant injections  avec administrateurDao=null
+2018-10-17 10:17:47 - initBean() appelée après injection avec @PostConstruct  avec administrateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@115ca7de
+2018-10-17 10:17:47 - constructeur de ServiceAssociation appelé avant injections  avec administrateurDao=null
+2018-10-17 10:17:47 - initBean() appelée après injection avec @PostConstruct  avec associationDao=fr.afcepf.al32.dao.PersonneDaoJpa@115ca7de
+2018-10-17 10:17:47 - constructeur de ServiceDonateur appelé avant injections  avec administrateurDao=null
+2018-10-17 10:17:47 - initBean() appelée après injection avec @PostConstruct  avec DonateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@115ca7de
+2018-10-17 10:17:47 - constructeur de ServicePackImpl appelé avant injections  avec packDao=null
+2018-10-17 10:17:47 - initBean() appelée après injection avec @PostConstruct  avec packDao=fr.afcepf.al32.dao.PackDaoJpa@32f5ecc4
+2018-10-17 10:17:47 - constructeur de ServicePersonneImpl appelé avant injections  avec personneDao=null
+2018-10-17 10:17:47 - initBean() appelée après injection avec @PostConstruct  avec personneDao=fr.afcepf.al32.dao.PersonneDaoJpa@115ca7de
+2018-10-17 10:17:48 - pAssociation=PackAssociation [dateAjout=2018-10-17 10:17:48.257, association=null]
+2018-10-17 10:19:29 - constructeur de ServiceAdministrateur appelé avant injections  avec administrateurDao=null
+2018-10-17 10:19:29 - initBean() appelée après injection avec @PostConstruct  avec administrateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@115ca7de
+2018-10-17 10:19:29 - constructeur de ServiceAssociation appelé avant injections  avec administrateurDao=null
+2018-10-17 10:19:29 - initBean() appelée après injection avec @PostConstruct  avec associationDao=fr.afcepf.al32.dao.PersonneDaoJpa@115ca7de
+2018-10-17 10:19:29 - constructeur de ServiceDonateur appelé avant injections  avec administrateurDao=null
+2018-10-17 10:19:29 - initBean() appelée après injection avec @PostConstruct  avec DonateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@115ca7de
+2018-10-17 10:19:29 - constructeur de ServicePackImpl appelé avant injections  avec packDao=null
+2018-10-17 10:19:29 - initBean() appelée après injection avec @PostConstruct  avec packDao=fr.afcepf.al32.dao.PackDaoJpa@32f5ecc4
+2018-10-17 10:19:29 - constructeur de ServicePersonneImpl appelé avant injections  avec personneDao=null
+2018-10-17 10:19:29 - initBean() appelée après injection avec @PostConstruct  avec personneDao=fr.afcepf.al32.dao.PersonneDaoJpa@115ca7de
+2018-10-17 10:19:29 - pAssociation=PackAssociation [dateAjout=2018-10-17 10:19:29.492, association=null]
+>>>>>>> branch 'master' of https://github.com/FunkyJF/GDA.git
