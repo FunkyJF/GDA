@@ -1,6 +1,5 @@
 package fr.afcepf.al32.test;
 
-import java.sql.Timestamp;
 import java.util.List;
 
 import org.junit.Assert;
@@ -26,20 +25,17 @@ public class TestServicePackAssociation {
 	@Autowired
 	private IServicePack servicePackAssociation;
 	
-	//@Test
+	@Test
     public void ajouterPackAssociation() {
-		
-		Timestamp dteAjout = new Timestamp( System.currentTimeMillis() );		
-	    //Association a = new Association();		   
 	    
-		Pack pAssociation = new PackAssociation("pack9",90.0,dteAjout);		
+		Pack pAssociation = new PackAssociation("pack9",90.0);		
 		
 		servicePackAssociation.ajouterPack(pAssociation);
 		 
 	    logger.debug("pAssociation="+pAssociation.toString());		
 	}
 	
-	//@Test
+	@Test
 	public void testRechercherPackAssociationParNumero() {		
 		PackAssociation p = (PackAssociation)servicePackAssociation.rechercherPackParNumero(4L);
 		Assert.assertTrue(p.getId()==4L);
@@ -88,7 +84,19 @@ public class TestServicePackAssociation {
 		{
 			Assert.assertTrue((p.getAssociation().getId()==id) && (p.getTypeProduit().getId()==type));
 		}	
-		
+
 	}
 	
-}
+		@Test
+		public void testDesactiverPackAssociation() {
+			PackAssociation p = (PackAssociation)servicePackAssociation.rechercherPackParNumero(4L);
+			Assert.assertTrue(p.getDateRetrait() == null);
+			
+			servicePackAssociation.desactiverPack(p);
+			PackAssociation p2 = (PackAssociation)servicePackAssociation.rechercherPackParNumero(4L);
+			Assert.assertTrue(p2.getDateRetrait() != null);
+				
+
+		}
+
+}	

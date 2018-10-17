@@ -1,5 +1,6 @@
 package fr.afcepf.al32.entity;
 
+import java.sql.Timestamp;
 import java.util.Date;
 import java.util.List;
 
@@ -38,9 +39,14 @@ public class PackAssociation extends Pack
 	 public PackAssociation(){		 
 	 } 
 	
-	 public PackAssociation(String libelle, Double prix, Date dateAjout) {
+	 public PackAssociation(String libelle, Double prix) {
 		super(libelle, prix);
-		this.dateAjout = dateAjout;		
+		this.dateAjout = new Timestamp( System.currentTimeMillis() );
+	 }
+	 
+	 public PackAssociation(String libelle, Double prix, TypeProduit typeProduit, List<Produit> produits) {
+			super(libelle, prix, typeProduit, produits);
+			this.dateAjout = new Timestamp( System.currentTimeMillis() );		
 	 }
 
 	@Override

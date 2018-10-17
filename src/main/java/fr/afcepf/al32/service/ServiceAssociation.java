@@ -72,7 +72,7 @@ public class ServiceAssociation implements IServiceAssociation {
 		}else return null;
 		
 	}
-		
+
 	@Override
 	public void accepterAssociation(Long num, Date dateAcc ) {
 		Association a = (Association) personneDao.findOne(num);
@@ -86,12 +86,6 @@ public class ServiceAssociation implements IServiceAssociation {
 		a.setDateFin(dateFin);
 		 personneDao.save(a);
 		
-	}
-
-
-
-	
-	
-	
+	}	
 
 }

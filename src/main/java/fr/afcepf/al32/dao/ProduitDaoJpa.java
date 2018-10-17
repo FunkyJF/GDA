@@ -51,5 +51,14 @@ public class ProduitDaoJpa implements IProduitDao {
 				.setParameter("idTypeProduit", idTypeProduit)
 				.getResultList();
 	}	
+	
+    @Override
+	public List<Produit> packAvecProduits(Long idPack) {
+		String jpaRequest="SELECT pr FROM Produit pr JOIN pr.packs pa"
+		        + " WHERE pa.id = :idPack";			
+		return entityManager.createQuery(jpaRequest,Produit.class)
+	            .setParameter("idPack",idPack)
+	            .getResultList();
+	}
 
 }

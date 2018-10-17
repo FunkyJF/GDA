@@ -1,3 +1,4 @@
+
 INSERT INTO Connexion(login, password) VALUES('admin1','pwd1');
 INSERT INTO Connexion(login, password) VALUES('admin2','pwd2');
 INSERT INTO Connexion(login, password) VALUES('user1','pwd1');
@@ -10,9 +11,8 @@ INSERT INTO Connexion(login, password) VALUES('assos3','pwd3');
 INSERT INTO Connexion(login, password) VALUES('assos4','pwd4');
 INSERT INTO Connexion(login, password) VALUES('assos5','pwd5');
 
---------------Pays Aide --------------------
+/*----------------------------------------Pays Aide --------------------------------------------*/
 INSERT INTO paysaide (id, libelle) VALUES ('1', 'pays loin')
-----------------------------------------------------------------------------
 
 INSERT INTO Adresse(numeroVoie, typeVoie, NomVoie, ville, codePostal, pays) VALUES('1','Avenue', 'Bayard', 'Paris', '75001', 'France');
 INSERT INTO Adresse(numeroVoie, typeVoie, NomVoie, ville, codePostal, pays) VALUES('2','Rue', 'du pont', 'Paris', '75002', 'France');
@@ -61,6 +61,19 @@ INSERT INTO naturevetement (id, nature) VALUES ('4', 'Survêtement');
 INSERT INTO typeproduit (id, Type)  VALUES ('1', 'Alimentaire');
 INSERT INTO typeproduit (id, Type)  VALUES ('2', 'Vestimentaire');
 INSERT INTO typeproduit (id, Type)  VALUES ('3', 'Fourniture scolaire');
+
+
+/*---------------------------------------Association_TypeProduiy----------------------------------------*/
+INSERT INTO association_typeproduit (idAssociation, idTypeProduit) VALUES ('7', '1');
+INSERT INTO association_typeproduit (idAssociation, idTypeProduit) VALUES ('7', '2');
+INSERT INTO association_typeproduit (idAssociation, idTypeProduit) VALUES ('8', '1');
+INSERT INTO association_typeproduit (idAssociation, idTypeProduit) VALUES ('9', '1');
+INSERT INTO association_typeproduit (idAssociation, idTypeProduit) VALUES ('9', '3');
+INSERT INTO association_typeproduit (idAssociation, idTypeProduit) VALUES ('11', '3');
+INSERT INTO association_typeproduit (idAssociation, idTypeProduit) VALUES ('7', '3');
+INSERT INTO association_typeproduit (idAssociation, idTypeProduit) VALUES ('11', '3');
+INSERT INTO association_typeproduit (idAssociation, idTypeProduit) VALUES ('11', '1');
+
 /*------------------------------------------------------------------------- PRODUIT ALIMENTAIRE ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
 INSERT INTO produit ( typeProduit, id, description, libelle, libelleCourt, prix, adulte, sexe, idTypeProduit, idNatureAliment, idNatureFourniture, idNatureVetement)VALUES ('A', '1', 'Riz Basmati long grain de qualité supérieure\r\nRiz basmati long grain de qualité supérieure. Matière première importée d Inde ou du Pakistan.\r\nSemoule de BLE dur de qualité supérieure.', 'Riz Basmati le paquet 1kg ', 'Riz Basmati ', '0.8', NULL, NULL, '1', '2', NULL, NULL);
@@ -227,26 +240,6 @@ INSERT INTO produit ( typeProduit, description, libelle, libelleCourt, prix, adu
 INSERT INTO produit ( typeProduit, description, libelle, libelleCourt, prix, adulte, sexe, idTypeProduit, idNatureAliment, idNatureFourniture, idNatureVetement)VALUES ('V', 'Manteau taille Enfant pour Garçon', 'Manteau Garcon', '', 5, FALSE, TRUE, '2', NULL, NULL, '4'); 
 INSERT INTO produit ( typeProduit, description, libelle, libelleCourt, prix, adulte, sexe, idTypeProduit, idNatureAliment, idNatureFourniture, idNatureVetement)VALUES ('V', 'Manteau taille Enfant pour Fille', 'Manteau Fille', '', 5, FALSE, FALSE, '2', NULL, NULL, '4');
 
-INSERT INTO pack(id,typePack,idTypeProduit,libelle,prix,dateAjout, idAssociation) VALUES (1,'packAssociation', 1, 'pack1',10.0, '2018-1-01 00:00:00', 7);
-INSERT INTO pack(id,typePack,idTypeProduit,libelle,prix,dateModification, idPackAssociation) VALUES (2,'packDonateur', 1, 'pack1modif',15.0, '2018-1-01 00:00:00', 1);
-
-
------------Association_TypeProduiy-------------------------------
-INSERT INTO association_typeproduit (idAssociation, idTypeProduit) VALUES ('7', '1');
-INSERT INTO association_typeproduit (idAssociation, idTypeProduit) VALUES ('7', '2');
-INSERT INTO association_typeproduit (idAssociation, idTypeProduit) VALUES ('8', '1');
-INSERT INTO association_typeproduit (idAssociation, idTypeProduit) VALUES ('9', '1');
-INSERT INTO association_typeproduit (idAssociation, idTypeProduit) VALUES ('9', '3');
-INSERT INTO association_typeproduit (idAssociation, idTypeProduit) VALUES ('11', '3');
-INSERT INTO association_typeproduit (idAssociation, idTypeProduit) VALUES ('7', '3');
-INSERT INTO association_typeproduit (idAssociation, idTypeProduit) VALUES ('11', '3');
-INSERT INTO association_typeproduit (idAssociation, idTypeProduit) VALUES ('11', '1');
-
-
-INSERT INTO don(id,dateDon,idDonateur) VALUES (1,'2018-10-02 00:00:00',6);
-INSERT INTO don(id,dateDon,idDonateur) VALUES (2,'2018-10-02 00:00:00',6);
-INSERT INTO don(id,dateDon,idDonateur) VALUES (3,'2018-10-02 00:00:00',6);
-
 INSERT INTO pack(typePack,idTypeProduit,libelle,prix,dateAjout, idAssociation) VALUES ('packAssociation', 1, 'Pack Aliment',10.0, '2018-1-01 00:00:00', 7);
 INSERT INTO pack_produit(idPack,idProduit) VALUES (1,1);
 INSERT INTO pack_produit(idPack,idProduit) VALUES (1,2);
@@ -316,5 +309,10 @@ INSERT INTO pack_produit(idPack,idProduit) VALUES (12,74);
 INSERT INTO pack_produit(idPack,idProduit) VALUES (12,86);
 INSERT INTO pack_produit(idPack,idProduit) VALUES (12,73);
 INSERT INTO pack_produit(idPack,idProduit) VALUES (12,88);
+
+
+INSERT INTO don(id,dateDon) VALUES (1,NULL);
+INSERT INTO don(id,dateDon) VALUES (2,NULL);
+INSERT INTO don(id,dateDon) VALUES (3,NULL);
 
  

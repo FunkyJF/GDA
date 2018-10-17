@@ -26,6 +26,6 @@ public class Donateur extends Personne
 	public String toString() {
 		return "Donateur [coordonneesBancaires=" + coordonneesBancaires + "]" + super.toString();
 	}
-	
+
 	
 }

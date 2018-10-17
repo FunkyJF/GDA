@@ -11,6 +11,7 @@ import javax.persistence.Id;
 import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
 import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import javax.persistence.NamedQueries;
@@ -48,8 +49,8 @@ public abstract class Produit {
 	private TypeProduit typeProduit;
 	
 	@ManyToMany(mappedBy="produits")
-	private List<Pack> packs;
-
+	private List<Pack> packs;	
+	
 	public Produit(String libelle, String libelleCourt, Double prix, String description) {		
 		this.libelle = libelle;
 		this.libelleCourt = libelleCourt;

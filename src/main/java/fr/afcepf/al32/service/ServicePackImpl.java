@@ -1,5 +1,6 @@
 package fr.afcepf.al32.service;
 
+import java.sql.Timestamp;
 import java.util.List;
 
 import javax.annotation.PostConstruct;
@@ -72,8 +73,15 @@ public class ServicePackImpl implements IServicePack {
 	@Override
 	public List<PackAssociation> rechercherPackAssociationParAssociationEtType(Long id, Long idType) {
 		return packDao.findAllPackAssociationByAssociationAndType(id, idType);
-	}	
-	
-	
-	
+	}
+
+
+	@Override
+	public void desactiverPack(PackAssociation p) {
+		Timestamp dtefin = new Timestamp( System.currentTimeMillis() );
+		p.setDateRetrait(dtefin);
+		packDao.save(p);
+	}
+
+
 }

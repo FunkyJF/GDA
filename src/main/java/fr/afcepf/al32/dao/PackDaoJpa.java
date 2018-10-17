@@ -78,5 +78,6 @@ public class PackDaoJpa implements IPackDao {
 	public List<Pack> findAll() {
 		// TODO Auto-generated method stub
 		return null;
-	}
+	}	
+	
 }
