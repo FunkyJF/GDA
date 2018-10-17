@@ -8,11 +8,17 @@ import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
 
 import lombok.Getter;
 import lombok.Setter;
 
+@NamedQuery(name="AssociationParPxPack", query="SELECT DISTINCT a FROM Association a JOIN a.packAssociations p  "
+												+ "WHERE a.dateAcceptation is not Null "
+												+ "And a.dateFin IS Null "
+												//+ "And p.prix BETWEEN :minPx AND :maxPx ")
+												+ "And p.prix >=:minPx And p.prix<=:maxPx ")
 @Entity
 @Getter @Setter
 @DiscriminatorValue("PackAssociation")

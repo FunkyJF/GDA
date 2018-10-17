@@ -1,5 +1,6 @@
 package fr.afcepf.al32.test;
 
+import java.sql.Timestamp;
 import java.util.List;
 
 import org.junit.Assert;
@@ -25,10 +26,22 @@ public class TestServiceAssociation {
 	@Autowired
 	private IServiceAssociation serviceAssociation; //à tester
 	
+	Timestamp dteAjout = new Timestamp( System.currentTimeMillis() );	
+	
 	@Test
+	public void listAssociationPxPack()
+	{
+		List<Personne> associations = null;
+		associations = serviceAssociation.rechercheAssociationPxPack(70,80);
+		for(Personne ass: associations )
+		{
+			logger.debug("ListeAss par prix pack: " +ass.toString());
+		}
+	}
+	/*@Test
 	public void AjouterAssociation() {
 		
-		Personne  association  = new Association( "TestraisonSociale",  "Testsiret",  "Testape",  "");
+		Personne  association  = new Association( "TestraisonSociale",  "Testsiret",  "Testape");
 		serviceAssociation.ajouterModifierAssociation(association);
 		logger.debug("ajout association="+association.toString());
 	}
@@ -78,9 +91,11 @@ public class TestServiceAssociation {
 	@Test
 	public void accepterAssoc()
 	{
+		
+		
 		if(serviceAssociation.rechercheAssociation(10L) != null)
 		{
-			serviceAssociation.accepterAssociation(10L, "2022/05/12");
+			serviceAssociation.accepterAssociation(10L, dteAjout);
 		}
 		
 		else logger.debug("Accepter: Association n'existe pas");
@@ -92,11 +107,11 @@ public class TestServiceAssociation {
 	{
 		if(serviceAssociation.rechercheAssociation(7L) != null)
 			{
-				serviceAssociation.refuserAssociation(7L, "2022/05/12");
+				serviceAssociation.refuserAssociation(7L, dteAjout);
 			}
 			
 			else logger.debug("Refuser: Association n'existe pas");
-		}
+		}*/
 //	@Test
 //	public void testRechercheAssociationParConnexion() {
 //		Association a = serviceAssociation.rechercherAssociationParConnexion("assos1", "pwd1"); //Personne (Id = 7)

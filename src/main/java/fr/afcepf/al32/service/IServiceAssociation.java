@@ -1,5 +1,6 @@
 package fr.afcepf.al32.service;
 
+import java.util.Date;
 import java.util.List;
 
 
@@ -13,8 +14,9 @@ public interface IServiceAssociation  {
 	List<Personne> rechercheAssociationTypePt( Long param);
 	List<Personne> rechercheAssociationTypePays(Long param);
 	List<Personne> rechercheAssociationNouvelle();
+	List<Personne> rechercheAssociationPxPack(double valParam, double valParam1);
 	Personne rechercherParConnexion(String login, String password);
-	public void accepterAssociation(Long num, String dateAcc);
-	public void refuserAssociation(Long num, String dateFin);
+	public void accepterAssociation(Long num, Date dateAcc);
+	public void refuserAssociation(Long num, Date dateFin);
 	
 }
