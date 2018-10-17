@@ -575,3 +575,8 @@
 2018-10-17 16:57:49 - donnateur recherche =Donateur [coordonneesBancaires=null]Personne(id=5, prenom=Camille, nom=Onette, email=CamilleO@gmail.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@2199e845, adresse=fr.afcepf.al32.entity.Adresse@35787726)
 2018-10-17 16:57:49 - produit Vetement=Vetement [sexe=true, adulte=false, natureVetement=null]
 >>>>>>> branch 'master' of https://github.com/FunkyJF/GDA.git
+2018-10-17 17:40:11 - constructeur de ServicePackImpl appelé avant injections  avec packDao=null
+2018-10-17 17:40:11 - initBean() appelée après injection avec @PostConstruct  avec packDao=fr.afcepf.al32.dao.PackDaoJpa@3408f695
+2018-10-17 17:40:11 - constructeur de ServiceProduitImpl appelé avant injections  avec produitDao=null
+2018-10-17 17:40:11 - initBean() appelée après injection avec @PostConstruct  avec produitDao=fr.afcepf.al32.dao.ProduitDaoJpa@759de304
+2018-10-17 17:40:12 - donnateur recherche =Donateur [coordonneesBancaires=null]Personne(id=5, prenom=Camille, nom=Onette, email=CamilleO@gmail.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@29fe4840, adresse=fr.afcepf.al32.entity.Adresse@115ca7de)
