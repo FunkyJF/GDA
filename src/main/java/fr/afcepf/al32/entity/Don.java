@@ -11,12 +11,19 @@ import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+@NamedQueries({
+	@NamedQuery(name="ListeDonDonateur", query="SELECT d FROM Don d WHERE d.donateur.id = :idDonateur")
+})
 @Entity
-@Getter @Setter
+@Getter @Setter  @NoArgsConstructor @AllArgsConstructor
 public class Don 
 {
 	
@@ -28,12 +35,17 @@ public class Don
 	
 	@ManyToMany	
 	@JoinTable(name="Don_Pack",
-		     joinColumns= {@JoinColumn(name="idDon")},
-		     inverseJoinColumns = {@JoinColumn(name="idPack")})
+		     joinColumns= {@JoinColumn(name="idPack")},
+		     inverseJoinColumns = {@JoinColumn(name="idDon")})
 	private List<Pack> packs;
 	
 	@ManyToOne
 	@JoinColumn(name="idDonateur")
 	private Donateur donateur;
+
+	@Override
+	public String toString() {
+		return "Don [id=" + id + ", dateDon=" + dateDon + ", donateur=" + donateur + "]";
+	}
 
 }
