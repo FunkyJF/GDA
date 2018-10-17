@@ -1,5 +1,7 @@
 package fr.afcepf.al32.service;
 
+import java.util.List;
+
 import javax.annotation.PostConstruct;
 import javax.transaction.Transactional;
 
@@ -9,6 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import fr.afcepf.al32.dao.IPersonneDao;
+import fr.afcepf.al32.entity.Don;
 import fr.afcepf.al32.entity.Donateur;
 import fr.afcepf.al32.entity.Personne;
 
@@ -51,7 +54,8 @@ public class ServiceDonateur implements IServiceDonateur {
 	public Personne rechercherParConnexion(String login, String password) {
 		return personneDao.findByConnexion(login, password);
 	}
-	
+
+
 	
 	
 
