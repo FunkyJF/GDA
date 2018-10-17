@@ -28,8 +28,8 @@ public class Don
 	
 	@ManyToMany	
 	@JoinTable(name="Don_Pack",
-		     joinColumns= {@JoinColumn(name="idPack")},
-		     inverseJoinColumns = {@JoinColumn(name="idDon")})
+		     joinColumns= {@JoinColumn(name="idDon")},
+		     inverseJoinColumns = {@JoinColumn(name="idPack")})
 	private List<Pack> packs;
 	
 	@ManyToOne

@@ -34,14 +34,17 @@ import lombok.ToString;
 	@NamedQuery(name="PackAssociation.findAll", query="SELECT c FROM PackAssociation c"),
 	
 	@NamedQuery(name="PackAssociation.findAllByType", query="SELECT c FROM PackAssociation c "
-																+ "WHERE c.typeProduit.id = :idType"),
+																+ "WHERE c.typeProduit.id = :idType "
+																+ " and c.dateRetrait is null"),
 	
 	@NamedQuery(name="PackAssociation.findAllByAssociation", query="SELECT c FROM PackAssociation c "
-																	+ "WHERE c.association.id = :id"),
+																	+ "WHERE c.association.id = :id "
+																	+ " and c.dateRetrait is null"),
 	
 	@NamedQuery(name="PackAssociation.findAllByAssociationAndType", query="SELECT c FROM PackAssociation c "
 																		+ "WHERE c.typeProduit.id = :idType "
-																		+ "And c.association.id = :id")
+																		+ "And c.association.id = :id "
+																		+ " and c.dateRetrait is null")
 })
 public abstract class Pack 
 {
@@ -59,8 +62,8 @@ public abstract class Pack
 	
 	@ManyToMany
 	@JoinTable(name="Pack_Produit",
-    joinColumns= {@JoinColumn(name="idProduit")},
-    inverseJoinColumns = {@JoinColumn(name="idPack")})
+    joinColumns= {@JoinColumn(name="idPack")},
+    inverseJoinColumns = {@JoinColumn(name="idProduit")})
 	private List<Produit> produits;
 	
 	@ManyToMany(mappedBy="packs")//LAZY par defaut

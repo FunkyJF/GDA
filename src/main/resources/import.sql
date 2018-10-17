@@ -224,25 +224,78 @@ INSERT INTO produit ( typeProduit, description, libelle, libelleCourt, prix, adu
 INSERT INTO produit ( typeProduit, description, libelle, libelleCourt, prix, adulte, sexe, idTypeProduit, idNatureAliment, idNatureFourniture, idNatureVetement)VALUES ('V', 'Manteau taille Enfant pour Garçon', 'Manteau Garcon', '', 5, FALSE, TRUE, '2', NULL, NULL, '4'); 
 INSERT INTO produit ( typeProduit, description, libelle, libelleCourt, prix, adulte, sexe, idTypeProduit, idNatureAliment, idNatureFourniture, idNatureVetement)VALUES ('V', 'Manteau taille Enfant pour Fille', 'Manteau Fille', '', 5, FALSE, FALSE, '2', NULL, NULL, '4');
 
-INSERT INTO pack(id,typePack,idTypeProduit,libelle,prix,dateAjout, idAssociation) VALUES (1,'packAssociation', 1, 'pack1',10.0, '2018-1-01 00:00:00', 7);
-INSERT INTO pack(id,typePack,idTypeProduit,libelle,prix,dateModification, idPackAssociation) VALUES (2,'packDonateur', 1, 'pack1modif',15.0, '2018-1-01 00:00:00', 1);
+INSERT INTO pack(typePack,idTypeProduit,libelle,prix,dateAjout, idAssociation) VALUES ('packAssociation', 1, 'Pack Aliment',10.0, '2018-1-01 00:00:00', 7);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (1,1);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (1,2);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (1,3);
+
+INSERT INTO pack(typePack,idTypeProduit,libelle,prix,dateModification, idPackAssociation) VALUES ('packDonateur', 1, 'pack1modif',15.0, '2018-1-01 00:00:00', 1);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (2,1);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (2,2);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (2,3);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (2,4);
+
+INSERT INTO pack(typePack,idTypeProduit,libelle,prix,dateAjout, idAssociation) VALUES ('packAssociation', 1, 'Pack Aliment',30.0, '2018-1-01 00:00:00', 8);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (3,6);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (3,7);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (3,8);
+
+INSERT INTO pack(typePack,idTypeProduit,libelle,prix,dateAjout, idAssociation) VALUES ('packAssociation', 1, 'Pack Aliment',40.0, '2018-1-01 00:00:00', 9);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (4,7);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (4,8);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (4,7);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (4,8);
+
+INSERT INTO pack(typePack,idTypeProduit,libelle,prix,dateAjout, idAssociation) VALUES ('packAssociation', 1, 'Pack Aliment',50.0, '2018-1-01 00:00:00', 10);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (5,7);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (5,8);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (5,7);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (5,8);
+
+INSERT INTO pack(typePack,idTypeProduit,libelle,prix,dateAjout, idAssociation) VALUES ('packAssociation', 2, 'Pack Vetement',60.0, '2018-1-01 00:00:00', 8);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (6,97);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (6,98);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (6,99);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (6,100);
+
+INSERT INTO pack(typePack,idTypeProduit,libelle,prix,dateAjout, idAssociation) VALUES ('packAssociation', 2, 'Pack Vetement',70.0, '2018-1-01 00:00:00', 9);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (7,101);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (7,102);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (7,103);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (7,104);
+
+INSERT INTO pack(typePack,idTypeProduit,libelle,prix,dateAjout, idAssociation) VALUES ('packAssociation', 2, 'Pack Vetement',80.0, '2018-1-01 00:00:00', 10);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (8,105);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (8,106);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (8,107);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (8,108);
+
+INSERT INTO pack(typePack,idTypeProduit,libelle,prix,dateAjout, idAssociation) VALUES ('packAssociation', 2, 'Pack Vetement',60.0, '2018-1-01 00:00:00', 11);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (9,109);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (9,110);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (9,111);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (9,112);
+
+INSERT INTO pack(typePack,idTypeProduit,libelle,prix,dateAjout, idAssociation) VALUES ('packAssociation', 3, 'Pack Fourniture',70.0, '2018-1-01 00:00:00', 9);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (10,67);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (10,68);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (10,70);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (10,81);
+
+INSERT INTO pack(typePack,idTypeProduit,libelle,prix,dateAjout, idAssociation) VALUES ('packAssociation', 3, 'Pack Fourniture',80.0, '2018-1-01 00:00:00', 10);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (11,78);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (11,80);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (11,79);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (11,82);
+
+INSERT INTO pack(typePack,idTypeProduit,libelle,prix,dateAjout, idAssociation) VALUES ('packAssociation', 3, 'Pack Fourniture',80.0, '2018-1-01 00:00:00', 11);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (12,74);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (12,86);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (12,73);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (12,88);
 
 INSERT INTO don(id,dateDon) VALUES (1,NULL);
 INSERT INTO don(id,dateDon) VALUES (2,NULL);
 INSERT INTO don(id,dateDon) VALUES (3,NULL);
 
-INSERT INTO pack_produit(idProduit,idPack) VALUES (1,1);
-INSERT INTO pack_produit(idProduit,idPack) VALUES (1,2);
-INSERT INTO pack(id,typePack,idTypeProduit,libelle,prix,dateAjout, idAssociation) VALUES (3,'packAssociation', 1, 'pack3',30.0, '2018-1-01 00:00:00', 7);
-INSERT INTO pack_produit(idProduit,idPack) VALUES (1,3);
-INSERT INTO pack(id,typePack,idTypeProduit,libelle,prix,dateAjout, idAssociation) VALUES (4,'packAssociation', 1, 'pack4',40.0, '2018-1-01 00:00:00', 8);
-INSERT INTO pack_produit(idProduit,idPack) VALUES (2,4);
-INSERT INTO pack(id,typePack,idTypeProduit,libelle,prix,dateAjout, idAssociation) VALUES (5,'packAssociation', 1, 'pack5',50.0, '2018-1-01 00:00:00', 8);
-INSERT INTO pack_produit(idProduit,idPack) VALUES (2,5);
-INSERT INTO pack(id,typePack,idTypeProduit,libelle,prix,dateAjout, idAssociation) VALUES (6,'packAssociation', 1, 'pack6',60.0, '2018-1-01 00:00:00', 8);
-INSERT INTO pack_produit(idProduit,idPack) VALUES (3,6);
-INSERT INTO pack(id,typePack,idTypeProduit,libelle,prix,dateAjout, idAssociation) VALUES (7,'packAssociation', 1, 'pack7',70.0, '2018-1-01 00:00:00', 8);
-INSERT INTO pack_produit(idProduit,idPack) VALUES (4,7);
-INSERT INTO pack(id,typePack,idTypeProduit,libelle,prix,dateAjout, idAssociation) VALUES (8,'packAssociation', 1, 'pack8',80.0, '2018-1-01 00:00:00', 8);
-INSERT INTO pack_produit(idProduit,idPack) VALUES (5,8);
  

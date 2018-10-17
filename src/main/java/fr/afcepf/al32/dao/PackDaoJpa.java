@@ -53,7 +53,6 @@ public class PackDaoJpa implements IPackDao {
 	
 	@Override
 	public void save(Pack p) {
-		System.out.println("PackDaoJpa-Save-getId "+p.getId());
 		if(p.getId()==null) {
 			entityManager.persist(p);
 		}
