@@ -9,6 +9,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import fr.afcepf.al32.dao.IPersonneDao;
+import fr.afcepf.al32.entity.Donateur;
+import fr.afcepf.al32.entity.Personne;
 
 @Component //ou bien @Service qui herite de @Component
 @Transactional
@@ -22,18 +24,35 @@ public class ServiceDonateur implements IServiceDonateur {
 	public void setpersonneDao(IPersonneDao personneDao) {
 		this.personneDao = personneDao;
 	}
-	
-	public ServiceDonateur() {
-		logger.debug("constructeur de ServiceDonateur appelé avant injections "
-				+ " avec administrateurDao="+personneDao);
-	}
-	
-	@PostConstruct
-	public void initBean() {
-		logger.debug("initBean() appelée après injection avec @PostConstruct "
-				+ " avec DonateurDao="+personneDao);
+
+	@Override
+	public void ajouterModifierDonateur(Personne p) {
+		 personneDao.save(p);
+		
 	}
 
+	@Override
+	public void supprimerDonateur(Long num) {
+		personneDao.delete(num);
+		
+	}
+
+	@Override
+	public Personne rechercheDonateur(Long num) {
+		Personne p = personneDao.findOne(num);
+		if(p instanceof Donateur)
+		{
+			return p;
+		}else return null;
+		
+	}
+
+	@Override
+	public Personne rechercherParConnexion(String login, String password) {
+		return personneDao.findByConnexion(login, password);
+	}
+	
+	
 	
 
 }

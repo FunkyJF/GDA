@@ -11,6 +11,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import fr.afcepf.al32.config.ServiceConfig;
 import fr.afcepf.al32.entity.Donateur;
+import fr.afcepf.al32.entity.Personne;
 import fr.afcepf.al32.service.IServiceDonateur;
 
 @RunWith(SpringJUnit4ClassRunner.class)
@@ -22,6 +23,16 @@ public class TestServiceDonateur {
 	@Autowired
 	private IServiceDonateur serviceDonateur; //à tester
 	
+	@Test
+	public void rechercheDonateur()
+	{
+		Personne donnateur = serviceDonateur.rechercheDonateur(5L);
+		if(donnateur!=null)
+		{
+			Assert.assertTrue(donnateur.getId()==5L);
+			logger.debug("donnateur recherche ="+donnateur.toString());
+		} else logger.debug("Donnateur n 'existe pas ");
+	}
 	
 //	@Test
 //	public void testRechercheDonateurParConnexion() {

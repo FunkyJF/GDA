@@ -14,6 +14,9 @@ import javax.persistence.InheritanceType;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
+import javax.persistence.Table;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -25,6 +28,11 @@ import lombok.ToString;
 @Inheritance(strategy=InheritanceType.SINGLE_TABLE)
 @DiscriminatorColumn(name="typeProduit",
                      discriminatorType=DiscriminatorType.STRING)
+@Table(name="Produit")
+@NamedQueries({
+	@NamedQuery(name="Produit.findByTypeProduit", 
+			query="SELECT prod FROM TypeProduit t INNER JOIN t.produits prod WHERE t.id = :idTypeProduit")	
+})
 public abstract class Produit {
 
 	@Id
@@ -42,5 +50,14 @@ public abstract class Produit {
 	
 	@ManyToMany(mappedBy="produits")
 	private List<Pack> packs;
+
+	public Produit(String libelle, String libelleCourt, Double prix, String description) {		
+		this.libelle = libelle;
+		this.libelleCourt = libelleCourt;
+		this.prix = prix;
+		this.description = description;
+	}
+	
+	
 	
 }

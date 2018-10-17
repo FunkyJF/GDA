@@ -110,3 +110,504 @@
 2018-10-16 16:45:46 - constructeur de ServicePersonneImpl appelé avant injections  avec personneDao=null
 2018-10-16 16:45:46 - initBean() appelée après injection avec @PostConstruct  avec personneDao=fr.afcepf.al32.dao.PersonneDaoJpa@6cbe68e9
 2018-10-16 16:45:48 - pAssociation=PackAssociation [dateAjout=2018-10-16 16:45:48.25, association=null]
+2018-10-16 18:26:01 - constructeur de ServiceDonateur appelé avant injections  avec administrateurDao=null
+2018-10-16 18:26:01 - initBean() appelée après injection avec @PostConstruct  avec DonateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@3440e9cd
+2018-10-16 18:26:01 - constructeur de ServicePackImpl appelé avant injections  avec packDao=null
+2018-10-16 18:26:01 - initBean() appelée après injection avec @PostConstruct  avec packDao=fr.afcepf.al32.dao.PackDaoJpa@441fbe89
+2018-10-16 18:26:01 - constructeur de ServicePersonneImpl appelé avant injections  avec personneDao=null
+2018-10-16 18:26:01 - initBean() appelée après injection avec @PostConstruct  avec personneDao=fr.afcepf.al32.dao.PersonneDaoJpa@3440e9cd
+2018-10-16 18:26:01 - a=Association [raisonSociale=TestraisonSociale, siret=Testsiret, ape=Testape, dateAcceptation=15/10/2018, dateFin=null]Personne(id=null, prenom=null, nom=null, email=null, telephone=null, connexion=null, adresse=null)
+2018-10-16 18:29:10 - constructeur de ServiceDonateur appelé avant injections  avec administrateurDao=null
+2018-10-16 18:29:10 - initBean() appelée après injection avec @PostConstruct  avec DonateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@3440e9cd
+2018-10-16 18:29:10 - constructeur de ServicePackImpl appelé avant injections  avec packDao=null
+2018-10-16 18:29:10 - initBean() appelée après injection avec @PostConstruct  avec packDao=fr.afcepf.al32.dao.PackDaoJpa@441fbe89
+2018-10-16 18:29:10 - constructeur de ServicePersonneImpl appelé avant injections  avec personneDao=null
+2018-10-16 18:29:10 - initBean() appelée après injection avec @PostConstruct  avec personneDao=fr.afcepf.al32.dao.PersonneDaoJpa@3440e9cd
+2018-10-16 18:29:10 - ajout association=Association [raisonSociale=TestraisonSociale, siret=Testsiret, ape=Testape, dateAcceptation=15/10/2018, dateFin=null]Personne(id=null, prenom=null, nom=null, email=null, telephone=null, connexion=null, adresse=null)
+2018-10-16 18:35:05 - constructeur de ServiceDonateur appelé avant injections  avec administrateurDao=null
+2018-10-16 18:35:05 - initBean() appelée après injection avec @PostConstruct  avec DonateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@3440e9cd
+2018-10-16 18:35:05 - constructeur de ServicePackImpl appelé avant injections  avec packDao=null
+2018-10-16 18:35:05 - initBean() appelée après injection avec @PostConstruct  avec packDao=fr.afcepf.al32.dao.PackDaoJpa@441fbe89
+2018-10-16 18:35:05 - constructeur de ServicePersonneImpl appelé avant injections  avec personneDao=null
+2018-10-16 18:35:05 - initBean() appelée après injection avec @PostConstruct  avec personneDao=fr.afcepf.al32.dao.PersonneDaoJpa@3440e9cd
+2018-10-16 18:35:05 - ajout association=Association [raisonSociale=TestraisonSociale, siret=Testsiret, ape=Testape, dateAcceptation=15/10/2018, dateFin=null]Personne(id=12, prenom=null, nom=null, email=null, telephone=null, connexion=null, adresse=null)
+=======
+>>>>>>> a8717348620ecc7f3c5638b9a2d96afe8d23ea15
+2018-10-16 09:49:31 - constructeur de ServiceAdministrateur appelé avant injections  avec administrateurDao=null
+2018-10-16 09:49:31 - initBean() appelée après injection avec @PostConstruct  avec administrateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@9c93d16
+2018-10-16 09:49:31 - constructeur de ServiceAssociation appelé avant injections  avec administrateurDao=null
+2018-10-16 09:49:31 - initBean() appelée après injection avec @PostConstruct  avec associationDao=fr.afcepf.al32.dao.PersonneDaoJpa@9c93d16
+2018-10-16 09:49:31 - constructeur de ServiceDonateur appelé avant injections  avec administrateurDao=null
+2018-10-16 09:49:31 - initBean() appelée après injection avec @PostConstruct  avec DonateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@9c93d16
+2018-10-16 09:49:31 - constructeur de ServicePersonneImpl appelé avant injections  avec personneDao=null
+2018-10-16 09:49:31 - initBean() appelée après injection avec @PostConstruct  avec personneDao=fr.afcepf.al32.dao.PersonneDaoJpa@9c93d16
+2018-10-16 09:49:32 - p=Administrateur [dateDebut=2018-01-01 00:00:00.0, dateFin=null]Personne(id=2, prenom=Maude, nom=Erateur, email=MaudeE@gmail.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@7c241a9f, adresse=fr.afcepf.al32.entity.Adresse@2ba1209b)
+2018-10-16 09:49:32 - p=Association [raisonSociale=Aide Et Action, siret=80295478500050, ape=0070A, dateAcceptation=2018-1-01 00:00:00, dateFin=null]Personne(id=10, prenom=Guy, nom=Yotine, email=contact@aideAction.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@1c34365c, adresse=fr.afcepf.al32.entity.Adresse@5042e3d0)
+2018-10-16 09:49:32 - p2=Association [raisonSociale=Aide Et Action, siret=80295478500050, ape=0070A, dateAcceptation=2018-1-01 00:00:00, dateFin=null]Personne(id=10, prenom=Guy, nom=Yotine, email=contact@aideAction.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@59a2388e, adresse=fr.afcepf.al32.entity.Adresse@4bb147ec)
+2018-10-16 09:49:32 - p=Donateur [coordonneesBancaires=null]Personne(id=4, prenom=Eva, nom=Poree, email=EvaP@gmail.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@322e49ee, adresse=fr.afcepf.al32.entity.Adresse@3592c1c4)
+2018-10-16 09:49:32 - p2=Donateur [coordonneesBancaires=null]Personne(id=4, prenom=Eva, nom=Poree, email=EvaP@gmail.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@4f116ca2, adresse=fr.afcepf.al32.entity.Adresse@19489b27)
+2018-10-16 09:49:32 - p=Administrateur [dateDebut=2018-01-01 00:00:00.0, dateFin=null]Personne(id=1, prenom=Amin, nom=Istrateur, email=AminI@gmail.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@58f2466c, adresse=fr.afcepf.al32.entity.Adresse@78b7f805)
+2018-10-16 09:49:32 - p2=Administrateur [dateDebut=2018-01-01 00:00:00.0, dateFin=null]Personne(id=1, prenom=Amin, nom=Istrateur, email=AminI@gmail.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@62b475e2, adresse=fr.afcepf.al32.entity.Adresse@53747c4a)
+<<<<<<< HEAD
+=======
+2018-10-16 11:16:11 - constructeur de ServiceAdministrateur appelé avant injections  avec administrateurDao=null
+2018-10-16 11:16:11 - initBean() appelée après injection avec @PostConstruct  avec administrateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@6680f714
+2018-10-16 11:16:11 - constructeur de ServiceAssociation appelé avant injections  avec administrateurDao=null
+2018-10-16 11:16:11 - initBean() appelée après injection avec @PostConstruct  avec associationDao=fr.afcepf.al32.dao.PersonneDaoJpa@6680f714
+2018-10-16 11:16:11 - constructeur de ServiceDonateur appelé avant injections  avec administrateurDao=null
+2018-10-16 11:16:11 - initBean() appelée après injection avec @PostConstruct  avec DonateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@6680f714
+2018-10-16 11:16:11 - constructeur de ServicePackImpl appelé avant injections  avec packDao=null
+2018-10-16 11:16:11 - initBean() appelée après injection avec @PostConstruct  avec packDao=fr.afcepf.al32.dao.PackDaoJpa@3a6045c6
+2018-10-16 11:16:11 - constructeur de ServicePersonneImpl appelé avant injections  avec personneDao=null
+2018-10-16 11:16:11 - initBean() appelée après injection avec @PostConstruct  avec personneDao=fr.afcepf.al32.dao.PersonneDaoJpa@6680f714
+2018-10-16 11:21:41 - constructeur de ServiceAdministrateur appelé avant injections  avec administrateurDao=null
+2018-10-16 11:21:41 - initBean() appelée après injection avec @PostConstruct  avec administrateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@67022ea
+2018-10-16 11:21:41 - constructeur de ServiceAssociation appelé avant injections  avec administrateurDao=null
+2018-10-16 11:21:41 - initBean() appelée après injection avec @PostConstruct  avec associationDao=fr.afcepf.al32.dao.PersonneDaoJpa@67022ea
+2018-10-16 11:21:41 - constructeur de ServiceDonateur appelé avant injections  avec administrateurDao=null
+2018-10-16 11:21:41 - initBean() appelée après injection avec @PostConstruct  avec DonateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@67022ea
+2018-10-16 11:21:41 - constructeur de ServicePackImpl appelé avant injections  avec packDao=null
+2018-10-16 11:21:41 - initBean() appelée après injection avec @PostConstruct  avec packDao=fr.afcepf.al32.dao.PackDaoJpa@7a3b7122
+2018-10-16 11:21:41 - constructeur de ServicePersonneImpl appelé avant injections  avec personneDao=null
+2018-10-16 11:21:41 - initBean() appelée après injection avec @PostConstruct  avec personneDao=fr.afcepf.al32.dao.PersonneDaoJpa@67022ea
+2018-10-16 11:22:43 - constructeur de ServiceAdministrateur appelé avant injections  avec administrateurDao=null
+2018-10-16 11:22:43 - initBean() appelée après injection avec @PostConstruct  avec administrateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@67022ea
+2018-10-16 11:22:43 - constructeur de ServiceAssociation appelé avant injections  avec administrateurDao=null
+2018-10-16 11:22:43 - initBean() appelée après injection avec @PostConstruct  avec associationDao=fr.afcepf.al32.dao.PersonneDaoJpa@67022ea
+2018-10-16 11:22:43 - constructeur de ServiceDonateur appelé avant injections  avec administrateurDao=null
+2018-10-16 11:22:43 - initBean() appelée après injection avec @PostConstruct  avec DonateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@67022ea
+2018-10-16 11:22:43 - constructeur de ServicePackImpl appelé avant injections  avec packDao=null
+2018-10-16 11:22:43 - initBean() appelée après injection avec @PostConstruct  avec packDao=fr.afcepf.al32.dao.PackDaoJpa@7a3b7122
+2018-10-16 11:22:43 - constructeur de ServicePersonneImpl appelé avant injections  avec personneDao=null
+2018-10-16 11:22:43 - initBean() appelée après injection avec @PostConstruct  avec personneDao=fr.afcepf.al32.dao.PersonneDaoJpa@67022ea
+2018-10-16 11:22:44 - pAssociation=PackAssociation [dateAjout=2018-10-16 11:22:43.648, association=null]
+2018-10-16 14:04:01 - constructeur de ServiceAdministrateur appelé avant injections  avec administrateurDao=null
+2018-10-16 14:04:01 - initBean() appelée après injection avec @PostConstruct  avec administrateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@428bdd72
+2018-10-16 14:04:01 - constructeur de ServiceAssociation appelé avant injections  avec administrateurDao=null
+2018-10-16 14:04:01 - initBean() appelée après injection avec @PostConstruct  avec associationDao=fr.afcepf.al32.dao.PersonneDaoJpa@428bdd72
+2018-10-16 14:04:01 - constructeur de ServiceDonateur appelé avant injections  avec administrateurDao=null
+2018-10-16 14:04:01 - initBean() appelée après injection avec @PostConstruct  avec DonateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@428bdd72
+2018-10-16 14:04:01 - constructeur de ServicePackImpl appelé avant injections  avec packDao=null
+2018-10-16 14:04:01 - initBean() appelée après injection avec @PostConstruct  avec packDao=fr.afcepf.al32.dao.PackDaoJpa@798256c5
+2018-10-16 14:04:01 - constructeur de ServicePersonneImpl appelé avant injections  avec personneDao=null
+2018-10-16 14:04:01 - initBean() appelée après injection avec @PostConstruct  avec personneDao=fr.afcepf.al32.dao.PersonneDaoJpa@428bdd72
+2018-10-16 14:15:20 - constructeur de ServiceAdministrateur appelé avant injections  avec administrateurDao=null
+2018-10-16 14:15:20 - initBean() appelée après injection avec @PostConstruct  avec administrateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@20eaeaf8
+2018-10-16 14:15:20 - constructeur de ServiceAssociation appelé avant injections  avec administrateurDao=null
+2018-10-16 14:15:20 - initBean() appelée après injection avec @PostConstruct  avec associationDao=fr.afcepf.al32.dao.PersonneDaoJpa@20eaeaf8
+2018-10-16 14:15:20 - constructeur de ServiceDonateur appelé avant injections  avec administrateurDao=null
+2018-10-16 14:15:20 - initBean() appelée après injection avec @PostConstruct  avec DonateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@20eaeaf8
+2018-10-16 14:15:20 - constructeur de ServicePackImpl appelé avant injections  avec packDao=null
+2018-10-16 14:15:20 - initBean() appelée après injection avec @PostConstruct  avec packDao=fr.afcepf.al32.dao.PackDaoJpa@748a654a
+2018-10-16 14:15:20 - constructeur de ServicePersonneImpl appelé avant injections  avec personneDao=null
+2018-10-16 14:15:20 - initBean() appelée après injection avec @PostConstruct  avec personneDao=fr.afcepf.al32.dao.PersonneDaoJpa@20eaeaf8
+2018-10-16 14:15:20 - constructeur de ServiceProduitImpl appelé avant injections  avec produitDao=null
+2018-10-16 14:15:20 - initBean() appelée après injection avec @PostConstruct  avec produitDao=fr.afcepf.al32.dao.ProduitDaoJpa@6fff46bf
+2018-10-16 14:17:50 - constructeur de ServiceAdministrateur appelé avant injections  avec administrateurDao=null
+2018-10-16 14:17:50 - initBean() appelée après injection avec @PostConstruct  avec administrateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@20eaeaf8
+2018-10-16 14:17:50 - constructeur de ServiceAssociation appelé avant injections  avec administrateurDao=null
+2018-10-16 14:17:50 - initBean() appelée après injection avec @PostConstruct  avec associationDao=fr.afcepf.al32.dao.PersonneDaoJpa@20eaeaf8
+2018-10-16 14:17:50 - constructeur de ServiceDonateur appelé avant injections  avec administrateurDao=null
+2018-10-16 14:17:50 - initBean() appelée après injection avec @PostConstruct  avec DonateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@20eaeaf8
+2018-10-16 14:17:50 - constructeur de ServicePackImpl appelé avant injections  avec packDao=null
+2018-10-16 14:17:50 - initBean() appelée après injection avec @PostConstruct  avec packDao=fr.afcepf.al32.dao.PackDaoJpa@748a654a
+2018-10-16 14:17:50 - constructeur de ServicePersonneImpl appelé avant injections  avec personneDao=null
+2018-10-16 14:17:50 - initBean() appelée après injection avec @PostConstruct  avec personneDao=fr.afcepf.al32.dao.PersonneDaoJpa@20eaeaf8
+2018-10-16 14:17:51 - constructeur de ServiceProduitImpl appelé avant injections  avec produitDao=null
+2018-10-16 14:17:51 - initBean() appelée après injection avec @PostConstruct  avec produitDao=fr.afcepf.al32.dao.ProduitDaoJpa@6fff46bf
+2018-10-16 14:32:08 - constructeur de ServiceAdministrateur appelé avant injections  avec administrateurDao=null
+2018-10-16 14:32:08 - initBean() appelée après injection avec @PostConstruct  avec administrateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@65a9ea3c
+2018-10-16 14:32:08 - constructeur de ServiceAssociation appelé avant injections  avec administrateurDao=null
+2018-10-16 14:32:08 - initBean() appelée après injection avec @PostConstruct  avec associationDao=fr.afcepf.al32.dao.PersonneDaoJpa@65a9ea3c
+2018-10-16 14:32:08 - constructeur de ServiceDonateur appelé avant injections  avec administrateurDao=null
+2018-10-16 14:32:08 - initBean() appelée après injection avec @PostConstruct  avec DonateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@65a9ea3c
+2018-10-16 14:32:08 - constructeur de ServicePackImpl appelé avant injections  avec packDao=null
+2018-10-16 14:32:08 - initBean() appelée après injection avec @PostConstruct  avec packDao=fr.afcepf.al32.dao.PackDaoJpa@748ac6f3
+2018-10-16 14:32:08 - constructeur de ServicePersonneImpl appelé avant injections  avec personneDao=null
+2018-10-16 14:32:08 - initBean() appelée après injection avec @PostConstruct  avec personneDao=fr.afcepf.al32.dao.PersonneDaoJpa@65a9ea3c
+2018-10-16 14:32:08 - constructeur de ServiceProduitImpl appelé avant injections  avec produitDao=null
+2018-10-16 14:32:08 - initBean() appelée après injection avec @PostConstruct  avec produitDao=fr.afcepf.al32.dao.ProduitDaoJpa@2db1b657
+2018-10-16 14:45:19 - constructeur de ServiceAdministrateur appelé avant injections  avec administrateurDao=null
+2018-10-16 14:45:19 - initBean() appelée après injection avec @PostConstruct  avec administrateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@20eaeaf8
+2018-10-16 14:45:19 - constructeur de ServiceAssociation appelé avant injections  avec administrateurDao=null
+2018-10-16 14:45:19 - initBean() appelée après injection avec @PostConstruct  avec associationDao=fr.afcepf.al32.dao.PersonneDaoJpa@20eaeaf8
+2018-10-16 14:45:19 - constructeur de ServiceDonateur appelé avant injections  avec administrateurDao=null
+2018-10-16 14:45:19 - initBean() appelée après injection avec @PostConstruct  avec DonateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@20eaeaf8
+2018-10-16 14:45:19 - constructeur de ServicePackImpl appelé avant injections  avec packDao=null
+2018-10-16 14:45:19 - initBean() appelée après injection avec @PostConstruct  avec packDao=fr.afcepf.al32.dao.PackDaoJpa@748a654a
+2018-10-16 14:45:19 - constructeur de ServicePersonneImpl appelé avant injections  avec personneDao=null
+2018-10-16 14:45:19 - initBean() appelée après injection avec @PostConstruct  avec personneDao=fr.afcepf.al32.dao.PersonneDaoJpa@20eaeaf8
+2018-10-16 14:45:19 - constructeur de ServiceProduitImpl appelé avant injections  avec produitDao=null
+2018-10-16 14:45:19 - initBean() appelée après injection avec @PostConstruct  avec produitDao=fr.afcepf.al32.dao.ProduitDaoJpa@6fff46bf
+2018-10-16 14:46:22 - constructeur de ServiceAdministrateur appelé avant injections  avec administrateurDao=null
+2018-10-16 14:46:22 - initBean() appelée après injection avec @PostConstruct  avec administrateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@20eaeaf8
+2018-10-16 14:46:22 - constructeur de ServiceAssociation appelé avant injections  avec administrateurDao=null
+2018-10-16 14:46:22 - initBean() appelée après injection avec @PostConstruct  avec associationDao=fr.afcepf.al32.dao.PersonneDaoJpa@20eaeaf8
+2018-10-16 14:46:22 - constructeur de ServiceDonateur appelé avant injections  avec administrateurDao=null
+2018-10-16 14:46:22 - initBean() appelée après injection avec @PostConstruct  avec DonateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@20eaeaf8
+2018-10-16 14:46:22 - constructeur de ServicePackImpl appelé avant injections  avec packDao=null
+2018-10-16 14:46:22 - initBean() appelée après injection avec @PostConstruct  avec packDao=fr.afcepf.al32.dao.PackDaoJpa@748a654a
+2018-10-16 14:46:22 - constructeur de ServicePersonneImpl appelé avant injections  avec personneDao=null
+2018-10-16 14:46:22 - initBean() appelée après injection avec @PostConstruct  avec personneDao=fr.afcepf.al32.dao.PersonneDaoJpa@20eaeaf8
+2018-10-16 14:46:22 - constructeur de ServiceProduitImpl appelé avant injections  avec produitDao=null
+2018-10-16 14:46:22 - initBean() appelée après injection avec @PostConstruct  avec produitDao=fr.afcepf.al32.dao.ProduitDaoJpa@6fff46bf
+2018-10-16 14:48:20 - constructeur de ServiceAdministrateur appelé avant injections  avec administrateurDao=null
+2018-10-16 14:48:20 - initBean() appelée après injection avec @PostConstruct  avec administrateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@20eaeaf8
+2018-10-16 14:48:20 - constructeur de ServiceAssociation appelé avant injections  avec administrateurDao=null
+2018-10-16 14:48:20 - initBean() appelée après injection avec @PostConstruct  avec associationDao=fr.afcepf.al32.dao.PersonneDaoJpa@20eaeaf8
+2018-10-16 14:48:20 - constructeur de ServiceDonateur appelé avant injections  avec administrateurDao=null
+2018-10-16 14:48:20 - initBean() appelée après injection avec @PostConstruct  avec DonateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@20eaeaf8
+2018-10-16 14:48:20 - constructeur de ServicePackImpl appelé avant injections  avec packDao=null
+2018-10-16 14:48:20 - initBean() appelée après injection avec @PostConstruct  avec packDao=fr.afcepf.al32.dao.PackDaoJpa@748a654a
+2018-10-16 14:48:20 - constructeur de ServicePersonneImpl appelé avant injections  avec personneDao=null
+2018-10-16 14:48:20 - initBean() appelée après injection avec @PostConstruct  avec personneDao=fr.afcepf.al32.dao.PersonneDaoJpa@20eaeaf8
+2018-10-16 14:48:20 - constructeur de ServiceProduitImpl appelé avant injections  avec produitDao=null
+2018-10-16 14:48:20 - initBean() appelée après injection avec @PostConstruct  avec produitDao=fr.afcepf.al32.dao.ProduitDaoJpa@6fff46bf
+2018-10-16 15:14:39 - constructeur de ServiceAdministrateur appelé avant injections  avec administrateurDao=null
+2018-10-16 15:14:39 - initBean() appelée après injection avec @PostConstruct  avec administrateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@20eaeaf8
+2018-10-16 15:14:39 - constructeur de ServiceAssociation appelé avant injections  avec administrateurDao=null
+2018-10-16 15:14:39 - initBean() appelée après injection avec @PostConstruct  avec associationDao=fr.afcepf.al32.dao.PersonneDaoJpa@20eaeaf8
+2018-10-16 15:14:39 - constructeur de ServiceDonateur appelé avant injections  avec administrateurDao=null
+2018-10-16 15:14:39 - initBean() appelée après injection avec @PostConstruct  avec DonateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@20eaeaf8
+2018-10-16 15:14:39 - constructeur de ServicePackImpl appelé avant injections  avec packDao=null
+2018-10-16 15:14:39 - initBean() appelée après injection avec @PostConstruct  avec packDao=fr.afcepf.al32.dao.PackDaoJpa@748a654a
+2018-10-16 15:14:39 - constructeur de ServicePersonneImpl appelé avant injections  avec personneDao=null
+2018-10-16 15:14:39 - initBean() appelée après injection avec @PostConstruct  avec personneDao=fr.afcepf.al32.dao.PersonneDaoJpa@20eaeaf8
+2018-10-16 15:14:39 - constructeur de ServiceProduitImpl appelé avant injections  avec produitDao=null
+2018-10-16 15:14:39 - initBean() appelée après injection avec @PostConstruct  avec produitDao=fr.afcepf.al32.dao.ProduitDaoJpa@6fff46bf
+2018-10-16 15:31:48 - constructeur de ServiceAdministrateur appelé avant injections  avec administrateurDao=null
+2018-10-16 15:31:48 - initBean() appelée après injection avec @PostConstruct  avec administrateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@20eaeaf8
+2018-10-16 15:31:48 - constructeur de ServiceAssociation appelé avant injections  avec administrateurDao=null
+2018-10-16 15:31:48 - initBean() appelée après injection avec @PostConstruct  avec associationDao=fr.afcepf.al32.dao.PersonneDaoJpa@20eaeaf8
+2018-10-16 15:31:48 - constructeur de ServiceDonateur appelé avant injections  avec administrateurDao=null
+2018-10-16 15:31:48 - initBean() appelée après injection avec @PostConstruct  avec DonateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@20eaeaf8
+2018-10-16 15:31:48 - constructeur de ServicePackImpl appelé avant injections  avec packDao=null
+2018-10-16 15:31:48 - initBean() appelée après injection avec @PostConstruct  avec packDao=fr.afcepf.al32.dao.PackDaoJpa@748a654a
+2018-10-16 15:31:48 - constructeur de ServicePersonneImpl appelé avant injections  avec personneDao=null
+2018-10-16 15:31:48 - initBean() appelée après injection avec @PostConstruct  avec personneDao=fr.afcepf.al32.dao.PersonneDaoJpa@20eaeaf8
+2018-10-16 15:31:48 - constructeur de ServiceProduitImpl appelé avant injections  avec produitDao=null
+2018-10-16 15:31:48 - initBean() appelée après injection avec @PostConstruct  avec produitDao=fr.afcepf.al32.dao.ProduitDaoJpa@6fff46bf
+2018-10-16 15:33:16 - constructeur de ServiceAdministrateur appelé avant injections  avec administrateurDao=null
+2018-10-16 15:33:16 - initBean() appelée après injection avec @PostConstruct  avec administrateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@20eaeaf8
+2018-10-16 15:33:16 - constructeur de ServiceAssociation appelé avant injections  avec administrateurDao=null
+2018-10-16 15:33:16 - initBean() appelée après injection avec @PostConstruct  avec associationDao=fr.afcepf.al32.dao.PersonneDaoJpa@20eaeaf8
+2018-10-16 15:33:16 - constructeur de ServiceDonateur appelé avant injections  avec administrateurDao=null
+2018-10-16 15:33:16 - initBean() appelée après injection avec @PostConstruct  avec DonateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@20eaeaf8
+2018-10-16 15:33:16 - constructeur de ServicePackImpl appelé avant injections  avec packDao=null
+2018-10-16 15:33:16 - initBean() appelée après injection avec @PostConstruct  avec packDao=fr.afcepf.al32.dao.PackDaoJpa@748a654a
+2018-10-16 15:33:16 - constructeur de ServicePersonneImpl appelé avant injections  avec personneDao=null
+2018-10-16 15:33:16 - initBean() appelée après injection avec @PostConstruct  avec personneDao=fr.afcepf.al32.dao.PersonneDaoJpa@20eaeaf8
+2018-10-16 15:33:16 - constructeur de ServiceProduitImpl appelé avant injections  avec produitDao=null
+2018-10-16 15:33:16 - initBean() appelée après injection avec @PostConstruct  avec produitDao=fr.afcepf.al32.dao.ProduitDaoJpa@6fff46bf
+2018-10-16 15:45:18 - constructeur de ServiceAdministrateur appelé avant injections  avec administrateurDao=null
+2018-10-16 15:45:18 - initBean() appelée après injection avec @PostConstruct  avec administrateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@20eaeaf8
+2018-10-16 15:45:18 - constructeur de ServiceAssociation appelé avant injections  avec administrateurDao=null
+2018-10-16 15:45:18 - initBean() appelée après injection avec @PostConstruct  avec associationDao=fr.afcepf.al32.dao.PersonneDaoJpa@20eaeaf8
+2018-10-16 15:45:18 - constructeur de ServiceDonateur appelé avant injections  avec administrateurDao=null
+2018-10-16 15:45:18 - initBean() appelée après injection avec @PostConstruct  avec DonateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@20eaeaf8
+2018-10-16 15:45:18 - constructeur de ServicePackImpl appelé avant injections  avec packDao=null
+2018-10-16 15:45:18 - initBean() appelée après injection avec @PostConstruct  avec packDao=fr.afcepf.al32.dao.PackDaoJpa@748a654a
+2018-10-16 15:45:18 - constructeur de ServicePersonneImpl appelé avant injections  avec personneDao=null
+2018-10-16 15:45:18 - initBean() appelée après injection avec @PostConstruct  avec personneDao=fr.afcepf.al32.dao.PersonneDaoJpa@20eaeaf8
+2018-10-16 15:45:18 - constructeur de ServiceProduitImpl appelé avant injections  avec produitDao=null
+2018-10-16 15:45:18 - initBean() appelée après injection avec @PostConstruct  avec produitDao=fr.afcepf.al32.dao.ProduitDaoJpa@6fff46bf
+2018-10-16 16:33:10 - constructeur de ServiceAdministrateur appelé avant injections  avec administrateurDao=null
+2018-10-16 16:33:10 - initBean() appelée après injection avec @PostConstruct  avec administrateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@748ac6f3
+2018-10-16 16:33:10 - constructeur de ServiceAssociation appelé avant injections  avec administrateurDao=null
+2018-10-16 16:33:10 - initBean() appelée après injection avec @PostConstruct  avec associationDao=fr.afcepf.al32.dao.PersonneDaoJpa@748ac6f3
+2018-10-16 16:33:10 - constructeur de ServiceDonateur appelé avant injections  avec administrateurDao=null
+2018-10-16 16:33:10 - initBean() appelée après injection avec @PostConstruct  avec DonateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@748ac6f3
+2018-10-16 16:33:10 - constructeur de ServicePackImpl appelé avant injections  avec packDao=null
+2018-10-16 16:33:10 - initBean() appelée après injection avec @PostConstruct  avec packDao=fr.afcepf.al32.dao.PackDaoJpa@1d8b0500
+2018-10-16 16:33:10 - constructeur de ServicePersonneImpl appelé avant injections  avec personneDao=null
+2018-10-16 16:33:10 - initBean() appelée après injection avec @PostConstruct  avec personneDao=fr.afcepf.al32.dao.PersonneDaoJpa@748ac6f3
+2018-10-16 16:33:10 - constructeur de ServiceProduitImpl appelé avant injections  avec produitDao=null
+2018-10-16 16:33:10 - initBean() appelée après injection avec @PostConstruct  avec produitDao=fr.afcepf.al32.dao.ProduitDaoJpa@1835dc92
+2018-10-16 16:33:10 - produit Aliment=Aliment [natureAliment=null]
+2018-10-16 16:46:11 - constructeur de ServiceAdministrateur appelé avant injections  avec administrateurDao=null
+2018-10-16 16:46:11 - initBean() appelée après injection avec @PostConstruct  avec administrateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@68f6e55d
+2018-10-16 16:46:11 - constructeur de ServiceAssociation appelé avant injections  avec administrateurDao=null
+2018-10-16 16:46:11 - initBean() appelée après injection avec @PostConstruct  avec associationDao=fr.afcepf.al32.dao.PersonneDaoJpa@68f6e55d
+2018-10-16 16:46:11 - constructeur de ServiceDonateur appelé avant injections  avec administrateurDao=null
+2018-10-16 16:46:11 - initBean() appelée après injection avec @PostConstruct  avec DonateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@68f6e55d
+2018-10-16 16:46:11 - constructeur de ServicePackImpl appelé avant injections  avec packDao=null
+2018-10-16 16:46:11 - initBean() appelée après injection avec @PostConstruct  avec packDao=fr.afcepf.al32.dao.PackDaoJpa@76544c0a
+2018-10-16 16:46:11 - constructeur de ServicePersonneImpl appelé avant injections  avec personneDao=null
+2018-10-16 16:46:11 - initBean() appelée après injection avec @PostConstruct  avec personneDao=fr.afcepf.al32.dao.PersonneDaoJpa@68f6e55d
+2018-10-16 16:46:11 - constructeur de ServiceProduitImpl appelé avant injections  avec produitDao=null
+2018-10-16 16:46:11 - initBean() appelée après injection avec @PostConstruct  avec produitDao=fr.afcepf.al32.dao.ProduitDaoJpa@3aaa3c39
+2018-10-16 16:46:12 - produit Scolaire=FournitureScolaire [natureFourniture=null]
+2018-10-16 17:07:09 - constructeur de ServiceAdministrateur appelé avant injections  avec administrateurDao=null
+2018-10-16 17:07:09 - initBean() appelée après injection avec @PostConstruct  avec administrateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@6fff46bf
+2018-10-16 17:07:09 - constructeur de ServiceAssociation appelé avant injections  avec administrateurDao=null
+2018-10-16 17:07:09 - initBean() appelée après injection avec @PostConstruct  avec associationDao=fr.afcepf.al32.dao.PersonneDaoJpa@6fff46bf
+2018-10-16 17:07:09 - constructeur de ServiceDonateur appelé avant injections  avec administrateurDao=null
+2018-10-16 17:07:09 - initBean() appelée après injection avec @PostConstruct  avec DonateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@6fff46bf
+2018-10-16 17:07:09 - constructeur de ServicePackImpl appelé avant injections  avec packDao=null
+2018-10-16 17:07:09 - initBean() appelée après injection avec @PostConstruct  avec packDao=fr.afcepf.al32.dao.PackDaoJpa@428bdd72
+2018-10-16 17:07:09 - constructeur de ServicePersonneImpl appelé avant injections  avec personneDao=null
+2018-10-16 17:07:09 - initBean() appelée après injection avec @PostConstruct  avec personneDao=fr.afcepf.al32.dao.PersonneDaoJpa@6fff46bf
+2018-10-16 17:07:09 - constructeur de ServiceProduitImpl appelé avant injections  avec produitDao=null
+2018-10-16 17:07:09 - initBean() appelée après injection avec @PostConstruct  avec produitDao=fr.afcepf.al32.dao.ProduitDaoJpa@65a9ea3c
+2018-10-16 17:07:10 - produit Vetement=Vetement [sexe=true, adulte=false, natureVetement=null]
+>>>>>>> a8717348620ecc7f3c5638b9a2d96afe8d23ea15
+2018-10-16 11:36:00 - constructeur de ServiceAdministrateur appelé avant injections  avec administrateurDao=null
+2018-10-16 11:36:00 - initBean() appelée après injection avec @PostConstruct  avec administrateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@6fcd31c3
+2018-10-16 11:36:00 - constructeur de ServiceAssociation appelé avant injections  avec administrateurDao=null
+2018-10-16 11:36:00 - initBean() appelée après injection avec @PostConstruct  avec associationDao=fr.afcepf.al32.dao.PersonneDaoJpa@6fcd31c3
+2018-10-16 11:36:00 - constructeur de ServiceDonateur appelé avant injections  avec administrateurDao=null
+2018-10-16 11:36:00 - initBean() appelée après injection avec @PostConstruct  avec DonateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@6fcd31c3
+2018-10-16 11:36:00 - constructeur de ServicePackImpl appelé avant injections  avec packDao=null
+2018-10-16 11:36:00 - initBean() appelée après injection avec @PostConstruct  avec packDao=fr.afcepf.al32.dao.PackDaoJpa@2fd72332
+2018-10-16 11:36:00 - constructeur de ServicePersonneImpl appelé avant injections  avec personneDao=null
+2018-10-16 11:36:00 - initBean() appelée après injection avec @PostConstruct  avec personneDao=fr.afcepf.al32.dao.PersonneDaoJpa@6fcd31c3
+2018-10-16 11:36:00 - p=Administrateur [dateDebut=2018-01-01 00:00:00.0, dateFin=null]Personne(id=2, prenom=Maude, nom=Erateur, email=MaudeE@gmail.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@3b0c3951, adresse=fr.afcepf.al32.entity.Adresse@637791d)
+2018-10-16 11:36:00 - p=Association [raisonSociale=Aide Et Action, siret=80295478500050, ape=0070A, dateAcceptation=2018-1-01 00:00:00, dateFin=null]Personne(id=10, prenom=Guy, nom=Yotine, email=contact@aideAction.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@174721c4, adresse=fr.afcepf.al32.entity.Adresse@cde8c6c)
+2018-10-16 11:36:00 - p2=Association [raisonSociale=Aide Et Action, siret=80295478500050, ape=0070A, dateAcceptation=2018-1-01 00:00:00, dateFin=null]Personne(id=10, prenom=Guy, nom=Yotine, email=contact@aideAction.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@1376883, adresse=fr.afcepf.al32.entity.Adresse@12219f6a)
+2018-10-16 11:36:00 - p=Donateur [coordonneesBancaires=null]Personne(id=4, prenom=Eva, nom=Poree, email=EvaP@gmail.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@3e046e39, adresse=fr.afcepf.al32.entity.Adresse@3c770db4)
+2018-10-16 11:36:00 - p2=Donateur [coordonneesBancaires=null]Personne(id=4, prenom=Eva, nom=Poree, email=EvaP@gmail.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@62b3a2f6, adresse=fr.afcepf.al32.entity.Adresse@6f25bf88)
+2018-10-16 11:36:00 - p=Administrateur [dateDebut=2018-01-01 00:00:00.0, dateFin=null]Personne(id=1, prenom=Amin, nom=Istrateur, email=AminI@gmail.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@6048e26a, adresse=fr.afcepf.al32.entity.Adresse@62a54948)
+2018-10-16 11:36:00 - p2=Administrateur [dateDebut=2018-01-01 00:00:00.0, dateFin=null]Personne(id=1, prenom=Amin, nom=Istrateur, email=AminI@gmail.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@2ad99cf3, adresse=fr.afcepf.al32.entity.Adresse@8f40022)
+2018-10-16 11:36:01 - pAssociation=PackAssociation [dateAjout=2018-10-16 11:36:00.955, association=null]
+2018-10-16 14:05:45 - constructeur de ServiceAdministrateur appelé avant injections  avec administrateurDao=null
+2018-10-16 14:05:45 - initBean() appelée après injection avec @PostConstruct  avec administrateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@6dee8ae6
+2018-10-16 14:05:45 - constructeur de ServiceAssociation appelé avant injections  avec administrateurDao=null
+2018-10-16 14:05:45 - initBean() appelée après injection avec @PostConstruct  avec associationDao=fr.afcepf.al32.dao.PersonneDaoJpa@6dee8ae6
+2018-10-16 14:05:45 - constructeur de ServiceDonateur appelé avant injections  avec administrateurDao=null
+2018-10-16 14:05:45 - initBean() appelée après injection avec @PostConstruct  avec DonateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@6dee8ae6
+2018-10-16 14:05:45 - constructeur de ServicePackImpl appelé avant injections  avec packDao=null
+2018-10-16 14:05:45 - initBean() appelée après injection avec @PostConstruct  avec packDao=fr.afcepf.al32.dao.PackDaoJpa@52226e57
+2018-10-16 14:05:45 - constructeur de ServicePersonneImpl appelé avant injections  avec personneDao=null
+2018-10-16 14:05:45 - initBean() appelée après injection avec @PostConstruct  avec personneDao=fr.afcepf.al32.dao.PersonneDaoJpa@6dee8ae6
+2018-10-16 14:05:46 - p=Administrateur [dateDebut=2018-01-01 00:00:00.0, dateFin=null]Personne(id=2, prenom=Maude, nom=Erateur, email=MaudeE@gmail.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@53747c4a, adresse=fr.afcepf.al32.entity.Adresse@3e546734)
+2018-10-16 14:05:46 - p=Association [raisonSociale=Aide Et Action, siret=80295478500050, ape=0070A, dateAcceptation=2018-1-01 00:00:00, dateFin=null]Personne(id=10, prenom=Guy, nom=Yotine, email=contact@aideAction.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@3249e278, adresse=fr.afcepf.al32.entity.Adresse@2b736fee)
+2018-10-16 14:05:46 - p2=Association [raisonSociale=Aide Et Action, siret=80295478500050, ape=0070A, dateAcceptation=2018-1-01 00:00:00, dateFin=null]Personne(id=10, prenom=Guy, nom=Yotine, email=contact@aideAction.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@73c48264, adresse=fr.afcepf.al32.entity.Adresse@315c081)
+2018-10-16 14:05:46 - p=Donateur [coordonneesBancaires=null]Personne(id=4, prenom=Eva, nom=Poree, email=EvaP@gmail.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@721d5b74, adresse=fr.afcepf.al32.entity.Adresse@1f66d8e1)
+2018-10-16 14:05:46 - p2=Donateur [coordonneesBancaires=null]Personne(id=4, prenom=Eva, nom=Poree, email=EvaP@gmail.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@519c6fcc, adresse=fr.afcepf.al32.entity.Adresse@6d6ac396)
+2018-10-16 14:05:46 - p=Administrateur [dateDebut=2018-01-01 00:00:00.0, dateFin=null]Personne(id=1, prenom=Amin, nom=Istrateur, email=AminI@gmail.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@5707f613, adresse=fr.afcepf.al32.entity.Adresse@11787b64)
+2018-10-16 14:05:46 - p2=Administrateur [dateDebut=2018-01-01 00:00:00.0, dateFin=null]Personne(id=1, prenom=Amin, nom=Istrateur, email=AminI@gmail.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@309dcdf3, adresse=fr.afcepf.al32.entity.Adresse@357bc488)
+2018-10-16 14:05:46 - pAssociation=PackAssociation [dateAjout=2018-10-16 14:05:46.726, association=null]
+2018-10-16 14:09:16 - constructeur de ServiceAdministrateur appelé avant injections  avec administrateurDao=null
+2018-10-16 14:09:16 - initBean() appelée après injection avec @PostConstruct  avec administrateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@217c23ce
+2018-10-16 14:09:16 - constructeur de ServiceAssociation appelé avant injections  avec administrateurDao=null
+2018-10-16 14:09:16 - initBean() appelée après injection avec @PostConstruct  avec associationDao=fr.afcepf.al32.dao.PersonneDaoJpa@217c23ce
+2018-10-16 14:09:16 - constructeur de ServiceDonateur appelé avant injections  avec administrateurDao=null
+2018-10-16 14:09:16 - initBean() appelée après injection avec @PostConstruct  avec DonateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@217c23ce
+2018-10-16 14:09:16 - constructeur de ServicePackImpl appelé avant injections  avec packDao=null
+2018-10-16 14:09:16 - initBean() appelée après injection avec @PostConstruct  avec packDao=fr.afcepf.al32.dao.PackDaoJpa@76e90da5
+2018-10-16 14:09:16 - constructeur de ServicePersonneImpl appelé avant injections  avec personneDao=null
+2018-10-16 14:09:16 - initBean() appelée après injection avec @PostConstruct  avec personneDao=fr.afcepf.al32.dao.PersonneDaoJpa@217c23ce
+2018-10-16 14:09:18 - p=Administrateur [dateDebut=2018-01-01 00:00:00.0, dateFin=null]Personne(id=2, prenom=Maude, nom=Erateur, email=MaudeE@gmail.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@1c240cf2, adresse=fr.afcepf.al32.entity.Adresse@581b1c08)
+2018-10-16 14:09:18 - p=Association [raisonSociale=Aide Et Action, siret=80295478500050, ape=0070A, dateAcceptation=2018-1-01 00:00:00, dateFin=null]Personne(id=10, prenom=Guy, nom=Yotine, email=contact@aideAction.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@317890ea, adresse=fr.afcepf.al32.entity.Adresse@202898d7)
+2018-10-16 14:09:18 - p2=Association [raisonSociale=Aide Et Action, siret=80295478500050, ape=0070A, dateAcceptation=2018-1-01 00:00:00, dateFin=null]Personne(id=10, prenom=Guy, nom=Yotine, email=contact@aideAction.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@59c500f7, adresse=fr.afcepf.al32.entity.Adresse@7f42e06e)
+2018-10-16 14:09:18 - p=Donateur [coordonneesBancaires=null]Personne(id=4, prenom=Eva, nom=Poree, email=EvaP@gmail.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@6b2dd3df, adresse=fr.afcepf.al32.entity.Adresse@315c081)
+2018-10-16 14:09:18 - p2=Donateur [coordonneesBancaires=null]Personne(id=4, prenom=Eva, nom=Poree, email=EvaP@gmail.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@3421debd, adresse=fr.afcepf.al32.entity.Adresse@1bbddada)
+2018-10-16 14:09:18 - p=Administrateur [dateDebut=2018-01-01 00:00:00.0, dateFin=null]Personne(id=1, prenom=Amin, nom=Istrateur, email=AminI@gmail.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@6d6ac396, adresse=fr.afcepf.al32.entity.Adresse@1f782c05)
+2018-10-16 14:09:18 - p2=Administrateur [dateDebut=2018-01-01 00:00:00.0, dateFin=null]Personne(id=1, prenom=Amin, nom=Istrateur, email=AminI@gmail.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@6367a688, adresse=fr.afcepf.al32.entity.Adresse@62aeddc8)
+2018-10-16 15:44:57 - constructeur de ServiceAdministrateur appelé avant injections  avec administrateurDao=null
+2018-10-16 15:44:58 - initBean() appelée après injection avec @PostConstruct  avec administrateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@7e7e962d
+2018-10-16 15:44:58 - constructeur de ServiceAssociation appelé avant injections  avec administrateurDao=null
+2018-10-16 15:44:58 - initBean() appelée après injection avec @PostConstruct  avec associationDao=fr.afcepf.al32.dao.PersonneDaoJpa@7e7e962d
+2018-10-16 15:44:58 - constructeur de ServiceDonateur appelé avant injections  avec administrateurDao=null
+2018-10-16 15:44:58 - initBean() appelée après injection avec @PostConstruct  avec DonateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@7e7e962d
+2018-10-16 15:44:58 - constructeur de ServicePackImpl appelé avant injections  avec packDao=null
+2018-10-16 15:44:58 - initBean() appelée après injection avec @PostConstruct  avec packDao=fr.afcepf.al32.dao.PackDaoJpa@5fcd1c5f
+2018-10-16 15:44:58 - constructeur de ServicePersonneImpl appelé avant injections  avec personneDao=null
+2018-10-16 15:44:58 - initBean() appelée après injection avec @PostConstruct  avec personneDao=fr.afcepf.al32.dao.PersonneDaoJpa@7e7e962d
+2018-10-16 15:44:59 - pAssociation=PackAssociation [dateAjout=2018-10-16 15:44:58.622, association=null]
+2018-10-16 15:49:59 - constructeur de ServiceAdministrateur appelé avant injections  avec administrateurDao=null
+2018-10-16 15:49:59 - initBean() appelée après injection avec @PostConstruct  avec administrateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@750a04ec
+2018-10-16 15:49:59 - constructeur de ServiceAssociation appelé avant injections  avec administrateurDao=null
+2018-10-16 15:49:59 - initBean() appelée après injection avec @PostConstruct  avec associationDao=fr.afcepf.al32.dao.PersonneDaoJpa@750a04ec
+2018-10-16 15:50:00 - constructeur de ServiceDonateur appelé avant injections  avec administrateurDao=null
+2018-10-16 15:50:00 - initBean() appelée après injection avec @PostConstruct  avec DonateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@750a04ec
+2018-10-16 15:50:00 - constructeur de ServicePackImpl appelé avant injections  avec packDao=null
+2018-10-16 15:50:00 - initBean() appelée après injection avec @PostConstruct  avec packDao=fr.afcepf.al32.dao.PackDaoJpa@17229821
+2018-10-16 15:50:00 - constructeur de ServicePersonneImpl appelé avant injections  avec personneDao=null
+2018-10-16 15:50:00 - initBean() appelée après injection avec @PostConstruct  avec personneDao=fr.afcepf.al32.dao.PersonneDaoJpa@750a04ec
+2018-10-16 15:50:02 - pAssociation=PackAssociation [dateAjout=2018-10-16 15:50:02.398, association=null]
+2018-10-16 15:58:02 - constructeur de ServiceAdministrateur appelé avant injections  avec administrateurDao=null
+2018-10-16 15:58:02 - initBean() appelée après injection avec @PostConstruct  avec administrateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@6cbe68e9
+2018-10-16 15:58:02 - constructeur de ServiceAssociation appelé avant injections  avec administrateurDao=null
+2018-10-16 15:58:02 - initBean() appelée après injection avec @PostConstruct  avec associationDao=fr.afcepf.al32.dao.PersonneDaoJpa@6cbe68e9
+2018-10-16 15:58:02 - constructeur de ServiceDonateur appelé avant injections  avec administrateurDao=null
+2018-10-16 15:58:02 - initBean() appelée après injection avec @PostConstruct  avec DonateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@6cbe68e9
+2018-10-16 15:58:02 - constructeur de ServicePackImpl appelé avant injections  avec packDao=null
+2018-10-16 15:58:02 - initBean() appelée après injection avec @PostConstruct  avec packDao=fr.afcepf.al32.dao.PackDaoJpa@5af64ce0
+2018-10-16 15:58:02 - constructeur de ServicePersonneImpl appelé avant injections  avec personneDao=null
+2018-10-16 15:58:02 - initBean() appelée après injection avec @PostConstruct  avec personneDao=fr.afcepf.al32.dao.PersonneDaoJpa@6cbe68e9
+2018-10-16 15:58:04 - pAssociation=PackAssociation [dateAjout=2018-10-16 15:58:03.8, association=null]
+2018-10-16 16:45:46 - constructeur de ServiceAdministrateur appelé avant injections  avec administrateurDao=null
+2018-10-16 16:45:46 - initBean() appelée après injection avec @PostConstruct  avec administrateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@6cbe68e9
+2018-10-16 16:45:46 - constructeur de ServiceAssociation appelé avant injections  avec administrateurDao=null
+2018-10-16 16:45:46 - initBean() appelée après injection avec @PostConstruct  avec associationDao=fr.afcepf.al32.dao.PersonneDaoJpa@6cbe68e9
+2018-10-16 16:45:46 - constructeur de ServiceDonateur appelé avant injections  avec administrateurDao=null
+2018-10-16 16:45:46 - initBean() appelée après injection avec @PostConstruct  avec DonateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@6cbe68e9
+2018-10-16 16:45:46 - constructeur de ServicePackImpl appelé avant injections  avec packDao=null
+2018-10-16 16:45:46 - initBean() appelée après injection avec @PostConstruct  avec packDao=fr.afcepf.al32.dao.PackDaoJpa@5af64ce0
+2018-10-16 16:45:46 - constructeur de ServicePersonneImpl appelé avant injections  avec personneDao=null
+2018-10-16 16:45:46 - initBean() appelée après injection avec @PostConstruct  avec personneDao=fr.afcepf.al32.dao.PersonneDaoJpa@6cbe68e9
+2018-10-16 16:45:48 - pAssociation=PackAssociation [dateAjout=2018-10-16 16:45:48.25, association=null]
+<<<<<<< HEAD
+=======
+
+>>>>>>> branch 'master' of https://github.com/FunkyJF/GDA.git
+2018-10-16 22:31:05 - constructeur de ServiceDonateur appelé avant injections  avec administrateurDao=null
+2018-10-16 22:31:05 - initBean() appelée après injection avec @PostConstruct  avec DonateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@726934e2
+2018-10-16 22:31:05 - constructeur de ServicePackImpl appelé avant injections  avec packDao=null
+2018-10-16 22:31:05 - initBean() appelée après injection avec @PostConstruct  avec packDao=fr.afcepf.al32.dao.PackDaoJpa@64e1377c
+2018-10-16 22:31:05 - constructeur de ServiceProduitImpl appelé avant injections  avec produitDao=null
+2018-10-16 22:31:05 - initBean() appelée après injection avec @PostConstruct  avec produitDao=fr.afcepf.al32.dao.ProduitDaoJpa@42f85fa4
+2018-10-16 22:36:12 - constructeur de ServiceDonateur appelé avant injections  avec administrateurDao=null
+2018-10-16 22:36:12 - initBean() appelée après injection avec @PostConstruct  avec DonateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@726934e2
+2018-10-16 22:36:12 - constructeur de ServicePackImpl appelé avant injections  avec packDao=null
+2018-10-16 22:36:12 - initBean() appelée après injection avec @PostConstruct  avec packDao=fr.afcepf.al32.dao.PackDaoJpa@64e1377c
+2018-10-16 22:36:12 - constructeur de ServiceProduitImpl appelé avant injections  avec produitDao=null
+2018-10-16 22:36:12 - initBean() appelée après injection avec @PostConstruct  avec produitDao=fr.afcepf.al32.dao.ProduitDaoJpa@42f85fa4
+2018-10-16 22:36:13 - ajout association=Association [raisonSociale=TestraisonSociale, siret=Testsiret, ape=Testape, dateAcceptation=15/10/2018, dateFin=null]Personne(id=12, prenom=null, nom=null, email=null, telephone=null, connexion=null, adresse=null)
+2018-10-16 22:43:03 - constructeur de ServiceDonateur appelé avant injections  avec administrateurDao=null
+2018-10-16 22:43:03 - initBean() appelée après injection avec @PostConstruct  avec DonateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@726934e2
+2018-10-16 22:43:03 - constructeur de ServicePackImpl appelé avant injections  avec packDao=null
+2018-10-16 22:43:03 - initBean() appelée après injection avec @PostConstruct  avec packDao=fr.afcepf.al32.dao.PackDaoJpa@64e1377c
+2018-10-16 22:43:03 - constructeur de ServiceProduitImpl appelé avant injections  avec produitDao=null
+2018-10-16 22:43:03 - initBean() appelée après injection avec @PostConstruct  avec produitDao=fr.afcepf.al32.dao.ProduitDaoJpa@42f85fa4
+2018-10-16 22:43:03 - Supprimer: Association n'existe pas
+2018-10-16 22:43:03 - ajout association=Association [raisonSociale=TestraisonSociale, siret=Testsiret, ape=Testape, dateAcceptation=15/10/2018, dateFin=null]Personne(id=12, prenom=null, nom=null, email=null, telephone=null, connexion=null, adresse=null)
+2018-10-16 22:49:34 - constructeur de ServiceDonateur appelé avant injections  avec administrateurDao=null
+2018-10-16 22:49:34 - initBean() appelée après injection avec @PostConstruct  avec DonateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@4bdf
+2018-10-16 22:49:34 - constructeur de ServicePackImpl appelé avant injections  avec packDao=null
+2018-10-16 22:49:34 - initBean() appelée après injection avec @PostConstruct  avec packDao=fr.afcepf.al32.dao.PackDaoJpa@6968bcec
+2018-10-16 22:49:34 - constructeur de ServiceProduitImpl appelé avant injections  avec produitDao=null
+2018-10-16 22:49:34 - initBean() appelée après injection avec @PostConstruct  avec produitDao=fr.afcepf.al32.dao.ProduitDaoJpa@7a9eccc4
+2018-10-16 22:49:34 - Supprimer: Association n'existe pas
+2018-10-16 22:49:34 - ListeAss par typeAssociation [raisonSociale=Croix Rouge, siret=80295478500028, ape=0001A, dateAcceptation=2018-1-01 00:00:00, dateFin=null]Personne(id=7, prenom=Marie, nom=Tim, email=contact@croixRouge.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@25be445f, adresse=fr.afcepf.al32.entity.Adresse@478b0739)
+2018-10-16 22:49:34 - ListeAss par typeAssociation [raisonSociale=Resto Du Coeur, siret=80295478500029, ape=0002A, dateAcceptation=2018-1-01 00:00:00, dateFin=null]Personne(id=8, prenom=Dan, nom=Delion, email=contact@restoDuCoeur.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@77d381e6, adresse=fr.afcepf.al32.entity.Adresse@53f0d09c)
+2018-10-16 22:49:34 - ListeAss par typeAssociation [raisonSociale=Action Contre La Faim, siret=80295478500030, ape=0011A, dateAcceptation=2018-1-01 00:00:00, dateFin=null]Personne(id=9, prenom=Paul, nom=Ochon, email=contact@aclf.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@5d512ddb, adresse=fr.afcepf.al32.entity.Adresse@73fbdf68)
+2018-10-16 22:49:34 - ListeAss par typeAssociation [raisonSociale=Human Appeal, siret=80295478500060, ape=00501A, dateAcceptation=2018-1-01 00:00:00, dateFin=null]Personne(id=11, prenom=Justin, nom=Ptipeu, email=contact@humanAppeal.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@2291d9a0, adresse=fr.afcepf.al32.entity.Adresse@5974b7e8)
+2018-10-16 22:49:35 - ajout association=Association [raisonSociale=TestraisonSociale, siret=Testsiret, ape=Testape, dateAcceptation=15/10/2018, dateFin=null]Personne(id=12, prenom=null, nom=null, email=null, telephone=null, connexion=null, adresse=null)
+2018-10-16 22:58:54 - constructeur de ServiceDonateur appelé avant injections  avec administrateurDao=null
+2018-10-16 22:58:54 - initBean() appelée après injection avec @PostConstruct  avec DonateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@4bdf
+2018-10-16 22:58:54 - constructeur de ServicePackImpl appelé avant injections  avec packDao=null
+2018-10-16 22:58:54 - initBean() appelée après injection avec @PostConstruct  avec packDao=fr.afcepf.al32.dao.PackDaoJpa@6968bcec
+2018-10-16 22:58:54 - constructeur de ServiceProduitImpl appelé avant injections  avec produitDao=null
+2018-10-16 22:58:54 - initBean() appelée après injection avec @PostConstruct  avec produitDao=fr.afcepf.al32.dao.ProduitDaoJpa@7a9eccc4
+2018-10-16 22:58:55 - Supprimer: Association n'existe pas
+2018-10-16 22:58:55 - ListeAss par type: Association [raisonSociale=Croix Rouge, siret=80295478500028, ape=0001A, dateAcceptation=2018-1-01 00:00:00, dateFin=null]Personne(id=7, prenom=Marie, nom=Tim, email=contact@croixRouge.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@25be445f, adresse=fr.afcepf.al32.entity.Adresse@478b0739)
+2018-10-16 22:58:55 - ListeAss par type: Association [raisonSociale=Resto Du Coeur, siret=80295478500029, ape=0002A, dateAcceptation=2018-1-01 00:00:00, dateFin=null]Personne(id=8, prenom=Dan, nom=Delion, email=contact@restoDuCoeur.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@77d381e6, adresse=fr.afcepf.al32.entity.Adresse@53f0d09c)
+2018-10-16 22:58:55 - ListeAss par type: Association [raisonSociale=Action Contre La Faim, siret=80295478500030, ape=0011A, dateAcceptation=2018-1-01 00:00:00, dateFin=null]Personne(id=9, prenom=Paul, nom=Ochon, email=contact@aclf.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@5d512ddb, adresse=fr.afcepf.al32.entity.Adresse@73fbdf68)
+2018-10-16 22:58:55 - ListeAss par type: Association [raisonSociale=Human Appeal, siret=80295478500060, ape=00501A, dateAcceptation=2018-1-01 00:00:00, dateFin=null]Personne(id=11, prenom=Justin, nom=Ptipeu, email=contact@humanAppeal.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@2291d9a0, adresse=fr.afcepf.al32.entity.Adresse@5974b7e8)
+2018-10-16 22:58:55 - ajout association=Association [raisonSociale=TestraisonSociale, siret=Testsiret, ape=Testape, dateAcceptation=15/10/2018, dateFin=null]Personne(id=12, prenom=null, nom=null, email=null, telephone=null, connexion=null, adresse=null)
+2018-10-16 23:06:46 - constructeur de ServiceDonateur appelé avant injections  avec administrateurDao=null
+2018-10-16 23:06:46 - initBean() appelée après injection avec @PostConstruct  avec DonateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@6a1ef65c
+2018-10-16 23:06:46 - constructeur de ServicePackImpl appelé avant injections  avec packDao=null
+2018-10-16 23:06:46 - initBean() appelée après injection avec @PostConstruct  avec packDao=fr.afcepf.al32.dao.PackDaoJpa@502a4156
+2018-10-16 23:06:46 - constructeur de ServiceProduitImpl appelé avant injections  avec produitDao=null
+2018-10-16 23:06:46 - initBean() appelée après injection avec @PostConstruct  avec produitDao=fr.afcepf.al32.dao.ProduitDaoJpa@1319bc2a
+2018-10-16 23:06:47 - Supprimer: Association n'existe pas
+2018-10-16 23:06:47 - ajout association=Association [raisonSociale=TestraisonSociale, siret=Testsiret, ape=Testape, dateAcceptation=15/10/2018, dateFin=null]Personne(id=7, prenom=null, nom=null, email=null, telephone=null, connexion=null, adresse=null)
+2018-10-16 23:07:47 - constructeur de ServiceDonateur appelé avant injections  avec administrateurDao=null
+2018-10-16 23:07:47 - initBean() appelée après injection avec @PostConstruct  avec DonateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@6a1ef65c
+2018-10-16 23:07:47 - constructeur de ServicePackImpl appelé avant injections  avec packDao=null
+2018-10-16 23:07:47 - initBean() appelée après injection avec @PostConstruct  avec packDao=fr.afcepf.al32.dao.PackDaoJpa@502a4156
+2018-10-16 23:07:47 - constructeur de ServiceProduitImpl appelé avant injections  avec produitDao=null
+2018-10-16 23:07:47 - initBean() appelée après injection avec @PostConstruct  avec produitDao=fr.afcepf.al32.dao.ProduitDaoJpa@1319bc2a
+2018-10-16 23:07:47 - Supprimer: Association n'existe pas
+2018-10-16 23:07:47 - ajout association=Association [raisonSociale=TestraisonSociale, siret=Testsiret, ape=Testape, dateAcceptation=15/10/2018, dateFin=null]Personne(id=7, prenom=null, nom=null, email=null, telephone=null, connexion=null, adresse=null)
+2018-10-16 23:09:46 - constructeur de ServiceDonateur appelé avant injections  avec administrateurDao=null
+2018-10-16 23:09:46 - initBean() appelée après injection avec @PostConstruct  avec DonateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@4bdf
+2018-10-16 23:09:46 - constructeur de ServicePackImpl appelé avant injections  avec packDao=null
+2018-10-16 23:09:46 - initBean() appelée après injection avec @PostConstruct  avec packDao=fr.afcepf.al32.dao.PackDaoJpa@6968bcec
+2018-10-16 23:09:46 - constructeur de ServiceProduitImpl appelé avant injections  avec produitDao=null
+2018-10-16 23:09:46 - initBean() appelée après injection avec @PostConstruct  avec produitDao=fr.afcepf.al32.dao.ProduitDaoJpa@7a9eccc4
+2018-10-16 23:09:46 - Supprimer: Association n'existe pas
+2018-10-16 23:09:46 - ListeAss par type: Association [raisonSociale=Croix Rouge, siret=80295478500028, ape=0001A, dateAcceptation=2018-1-01 00:00:00, dateFin=null]Personne(id=7, prenom=Marie, nom=Tim, email=contact@croixRouge.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@25be445f, adresse=fr.afcepf.al32.entity.Adresse@478b0739)
+2018-10-16 23:09:46 - ListeAss par type: Association [raisonSociale=Resto Du Coeur, siret=80295478500029, ape=0002A, dateAcceptation=2018-1-01 00:00:00, dateFin=null]Personne(id=8, prenom=Dan, nom=Delion, email=contact@restoDuCoeur.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@3f6f3cc, adresse=fr.afcepf.al32.entity.Adresse@6f8e9d06)
+2018-10-16 23:09:46 - ListeAss par type: Association [raisonSociale=Action Contre La Faim, siret=80295478500030, ape=0011A, dateAcceptation=2018-1-01 00:00:00, dateFin=null]Personne(id=9, prenom=Paul, nom=Ochon, email=contact@aclf.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@4de79b7d, adresse=fr.afcepf.al32.entity.Adresse@236eccd1)
+2018-10-16 23:09:46 - ListeAss par type: Association [raisonSociale=Human Appeal, siret=80295478500060, ape=00501A, dateAcceptation=2018-1-01 00:00:00, dateFin=null]Personne(id=11, prenom=Justin, nom=Ptipeu, email=contact@humanAppeal.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@39666e42, adresse=fr.afcepf.al32.entity.Adresse@66bf40e5)
+2018-10-16 23:09:47 - ajout association=Association [raisonSociale=TestraisonSociale, siret=Testsiret, ape=Testape, dateAcceptation=15/10/2018, dateFin=null]Personne(id=12, prenom=null, nom=null, email=null, telephone=null, connexion=null, adresse=null)
+2018-10-16 23:19:15 - constructeur de ServiceDonateur appelé avant injections  avec administrateurDao=null
+2018-10-16 23:19:15 - initBean() appelée après injection avec @PostConstruct  avec DonateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@4bdf
+2018-10-16 23:19:15 - constructeur de ServicePackImpl appelé avant injections  avec packDao=null
+2018-10-16 23:19:15 - initBean() appelée après injection avec @PostConstruct  avec packDao=fr.afcepf.al32.dao.PackDaoJpa@6968bcec
+2018-10-16 23:19:15 - constructeur de ServiceProduitImpl appelé avant injections  avec produitDao=null
+2018-10-16 23:19:15 - initBean() appelée après injection avec @PostConstruct  avec produitDao=fr.afcepf.al32.dao.ProduitDaoJpa@7a9eccc4
+2018-10-16 23:19:15 - Supprimer: Association n'existe pas
+2018-10-16 23:19:15 - ListeAss par type: Association [raisonSociale=Croix Rouge, siret=80295478500028, ape=0001A, dateAcceptation=2018-1-01 00:00:00, dateFin=null]Personne(id=7, prenom=Marie, nom=Tim, email=contact@croixRouge.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@25be445f, adresse=fr.afcepf.al32.entity.Adresse@478b0739)
+2018-10-16 23:19:15 - ListeAss par type: Association [raisonSociale=Resto Du Coeur, siret=80295478500029, ape=0002A, dateAcceptation=2018-1-01 00:00:00, dateFin=null]Personne(id=8, prenom=Dan, nom=Delion, email=contact@restoDuCoeur.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@3f6f3cc, adresse=fr.afcepf.al32.entity.Adresse@6f8e9d06)
+2018-10-16 23:19:15 - ListeAss par type: Association [raisonSociale=Action Contre La Faim, siret=80295478500030, ape=0011A, dateAcceptation=2018-1-01 00:00:00, dateFin=null]Personne(id=9, prenom=Paul, nom=Ochon, email=contact@aclf.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@4de79b7d, adresse=fr.afcepf.al32.entity.Adresse@236eccd1)
+2018-10-16 23:19:15 - ListeAss par type: Association [raisonSociale=Human Appeal, siret=80295478500060, ape=00501A, dateAcceptation=2018-1-01 00:00:00, dateFin=null]Personne(id=11, prenom=Justin, nom=Ptipeu, email=contact@humanAppeal.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@39666e42, adresse=fr.afcepf.al32.entity.Adresse@66bf40e5)
+2018-10-16 23:19:15 - ajout association=Association [raisonSociale=TestraisonSociale, siret=Testsiret, ape=Testape, dateAcceptation=15/10/2018, dateFin=null]Personne(id=12, prenom=null, nom=null, email=null, telephone=null, connexion=null, adresse=null)
+2018-10-16 23:20:23 - constructeur de ServiceDonateur appelé avant injections  avec administrateurDao=null
+2018-10-16 23:20:23 - initBean() appelée après injection avec @PostConstruct  avec DonateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@4bdf
+2018-10-16 23:20:24 - constructeur de ServicePackImpl appelé avant injections  avec packDao=null
+2018-10-16 23:20:24 - initBean() appelée après injection avec @PostConstruct  avec packDao=fr.afcepf.al32.dao.PackDaoJpa@6968bcec
+2018-10-16 23:20:24 - constructeur de ServiceProduitImpl appelé avant injections  avec produitDao=null
+2018-10-16 23:20:24 - initBean() appelée après injection avec @PostConstruct  avec produitDao=fr.afcepf.al32.dao.ProduitDaoJpa@7a9eccc4
+2018-10-16 23:20:24 - Supprimer: Association n'existe pas
+2018-10-16 23:20:24 - ListeAss par type: Association [raisonSociale=Croix Rouge, siret=80295478500028, ape=0001A, dateAcceptation=2018-1-01 00:00:00, dateFin=null]Personne(id=7, prenom=Marie, nom=Tim, email=contact@croixRouge.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@25be445f, adresse=fr.afcepf.al32.entity.Adresse@478b0739)
+2018-10-16 23:20:24 - ListeAss par type: Association [raisonSociale=Resto Du Coeur, siret=80295478500029, ape=0002A, dateAcceptation=2018-1-01 00:00:00, dateFin=null]Personne(id=8, prenom=Dan, nom=Delion, email=contact@restoDuCoeur.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@3f6f3cc, adresse=fr.afcepf.al32.entity.Adresse@6f8e9d06)
+2018-10-16 23:20:24 - ListeAss par type: Association [raisonSociale=Action Contre La Faim, siret=80295478500030, ape=0011A, dateAcceptation=2018-1-01 00:00:00, dateFin=null]Personne(id=9, prenom=Paul, nom=Ochon, email=contact@aclf.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@4de79b7d, adresse=fr.afcepf.al32.entity.Adresse@236eccd1)
+2018-10-16 23:20:24 - ListeAss par type: Association [raisonSociale=Human Appeal, siret=80295478500060, ape=00501A, dateAcceptation=2018-1-01 00:00:00, dateFin=null]Personne(id=11, prenom=Justin, nom=Ptipeu, email=contact@humanAppeal.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@39666e42, adresse=fr.afcepf.al32.entity.Adresse@66bf40e5)
+2018-10-16 23:20:24 - ListeAss par pays: Association [raisonSociale=Croix Rouge, siret=80295478500028, ape=0001A, dateAcceptation=2018-1-01 00:00:00, dateFin=null]Personne(id=7, prenom=Marie, nom=Tim, email=contact@croixRouge.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@5cd96b41, adresse=fr.afcepf.al32.entity.Adresse@1536ea40)
+2018-10-16 23:20:24 - ListeAss par pays: Association [raisonSociale=Resto Du Coeur, siret=80295478500029, ape=0002A, dateAcceptation=2018-1-01 00:00:00, dateFin=null]Personne(id=8, prenom=Dan, nom=Delion, email=contact@restoDuCoeur.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@14447be, adresse=fr.afcepf.al32.entity.Adresse@6d672bd4)
+2018-10-16 23:20:24 - ListeAss par pays: Association [raisonSociale=Action Contre La Faim, siret=80295478500030, ape=0011A, dateAcceptation=2018-1-01 00:00:00, dateFin=null]Personne(id=9, prenom=Paul, nom=Ochon, email=contact@aclf.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@3a479fda, adresse=fr.afcepf.al32.entity.Adresse@3d620a1)
+2018-10-16 23:20:24 - ListeAss par pays: Association [raisonSociale=Aide Et Action, siret=80295478500050, ape=0070A, dateAcceptation=2018-1-01 00:00:00, dateFin=null]Personne(id=10, prenom=Guy, nom=Yotine, email=contact@aideAction.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@1da1380b, adresse=fr.afcepf.al32.entity.Adresse@76ff68c5)
+2018-10-16 23:20:24 - ListeAss par pays: Association [raisonSociale=Human Appeal, siret=80295478500060, ape=00501A, dateAcceptation=2018-1-01 00:00:00, dateFin=null]Personne(id=11, prenom=Justin, nom=Ptipeu, email=contact@humanAppeal.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@19c1820d, adresse=fr.afcepf.al32.entity.Adresse@83bb0f)
+2018-10-16 23:20:24 - ajout association=Association [raisonSociale=TestraisonSociale, siret=Testsiret, ape=Testape, dateAcceptation=15/10/2018, dateFin=null]Personne(id=12, prenom=null, nom=null, email=null, telephone=null, connexion=null, adresse=null)
+2018-10-16 23:25:50 - constructeur de ServiceDonateur appelé avant injections  avec administrateurDao=null
+2018-10-16 23:25:50 - initBean() appelée après injection avec @PostConstruct  avec DonateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@4bdf
+2018-10-16 23:25:50 - constructeur de ServicePackImpl appelé avant injections  avec packDao=null
+2018-10-16 23:25:50 - initBean() appelée après injection avec @PostConstruct  avec packDao=fr.afcepf.al32.dao.PackDaoJpa@6968bcec
+2018-10-16 23:25:50 - constructeur de ServiceProduitImpl appelé avant injections  avec produitDao=null
+2018-10-16 23:25:50 - initBean() appelée après injection avec @PostConstruct  avec produitDao=fr.afcepf.al32.dao.ProduitDaoJpa@7a9eccc4
+2018-10-16 23:25:51 - Supprimer: Association n'existe pas
+2018-10-16 23:25:51 - ListeAss par nouvelleAssociation [raisonSociale=Aide Et Action, siret=80295478500050, ape=0070A, dateAcceptation=null, dateFin=null]Personne(id=10, prenom=Guy, nom=Yotine, email=contact@aideAction.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@67bd351e, adresse=fr.afcepf.al32.entity.Adresse@6975fb1c)
+2018-10-16 23:25:51 - ListeAss par nouvelleAssociation [raisonSociale=Human Appeal, siret=80295478500060, ape=00501A, dateAcceptation=null, dateFin=null]Personne(id=11, prenom=Justin, nom=Ptipeu, email=contact@humanAppeal.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@2d2b6960, adresse=fr.afcepf.al32.entity.Adresse@25f61c2c)
+2018-10-16 23:25:51 - ListeAss par type: Association [raisonSociale=Croix Rouge, siret=80295478500028, ape=0001A, dateAcceptation=2018-1-01 00:00:00, dateFin=null]Personne(id=7, prenom=Marie, nom=Tim, email=contact@croixRouge.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@4dadd690, adresse=fr.afcepf.al32.entity.Adresse@61db86bf)
+2018-10-16 23:25:51 - ListeAss par type: Association [raisonSociale=Resto Du Coeur, siret=80295478500029, ape=0002A, dateAcceptation=2018-1-01 00:00:00, dateFin=null]Personne(id=8, prenom=Dan, nom=Delion, email=contact@restoDuCoeur.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@7af443a3, adresse=fr.afcepf.al32.entity.Adresse@5eabff6b)
+2018-10-16 23:25:51 - ListeAss par type: Association [raisonSociale=Action Contre La Faim, siret=80295478500030, ape=0011A, dateAcceptation=2018-1-01 00:00:00, dateFin=null]Personne(id=9, prenom=Paul, nom=Ochon, email=contact@aclf.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@1c57f6b2, adresse=fr.afcepf.al32.entity.Adresse@664632e9)
+2018-10-16 23:25:51 - ListeAss par pays: Association [raisonSociale=Croix Rouge, siret=80295478500028, ape=0001A, dateAcceptation=2018-1-01 00:00:00, dateFin=null]Personne(id=7, prenom=Marie, nom=Tim, email=contact@croixRouge.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@5529ff44, adresse=fr.afcepf.al32.entity.Adresse@574059d5)
+2018-10-16 23:25:51 - ListeAss par pays: Association [raisonSociale=Resto Du Coeur, siret=80295478500029, ape=0002A, dateAcceptation=2018-1-01 00:00:00, dateFin=null]Personne(id=8, prenom=Dan, nom=Delion, email=contact@restoDuCoeur.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@8a6631b, adresse=fr.afcepf.al32.entity.Adresse@4f486211)
+2018-10-16 23:25:51 - ListeAss par pays: Association [raisonSociale=Action Contre La Faim, siret=80295478500030, ape=0011A, dateAcceptation=2018-1-01 00:00:00, dateFin=null]Personne(id=9, prenom=Paul, nom=Ochon, email=contact@aclf.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@1095d23a, adresse=fr.afcepf.al32.entity.Adresse@6418e39e)
+2018-10-16 23:25:51 - ajout association=Association [raisonSociale=TestraisonSociale, siret=Testsiret, ape=Testape, dateAcceptation=15/10/2018, dateFin=null]Personne(id=12, prenom=null, nom=null, email=null, telephone=null, connexion=null, adresse=null)
+2018-10-16 23:41:44 - constructeur de ServiceDonateur appelé avant injections  avec administrateurDao=null
+2018-10-16 23:41:44 - initBean() appelée après injection avec @PostConstruct  avec DonateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@4cad79bc
+2018-10-16 23:41:44 - constructeur de ServicePackImpl appelé avant injections  avec packDao=null
+2018-10-16 23:41:44 - initBean() appelée après injection avec @PostConstruct  avec packDao=fr.afcepf.al32.dao.PackDaoJpa@5568c66f
+2018-10-16 23:41:44 - constructeur de ServiceProduitImpl appelé avant injections  avec produitDao=null
+2018-10-16 23:41:44 - initBean() appelée après injection avec @PostConstruct  avec produitDao=fr.afcepf.al32.dao.ProduitDaoJpa@78422efb
+2018-10-16 23:41:44 - Supprimer: Association n'existe pas
+2018-10-16 23:41:44 - ListeAss par nouvelleAssociation [raisonSociale=Aide Et Action, siret=80295478500050, ape=0070A, dateAcceptation=null, dateFin=null]Personne(id=10, prenom=Guy, nom=Yotine, email=contact@aideAction.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@7bc6935c, adresse=fr.afcepf.al32.entity.Adresse@32120956)
+2018-10-16 23:41:44 - ListeAss par nouvelleAssociation [raisonSociale=Human Appeal, siret=80295478500060, ape=00501A, dateAcceptation=null, dateFin=null]Personne(id=11, prenom=Justin, nom=Ptipeu, email=contact@humanAppeal.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@77429040, adresse=fr.afcepf.al32.entity.Adresse@6397248c)
+2018-10-16 23:41:44 - ListeAss par type: Association [raisonSociale=Croix Rouge, siret=80295478500028, ape=0001A, dateAcceptation=2018-1-01 00:00:00, dateFin=null]Personne(id=7, prenom=Marie, nom=Tim, email=contact@croixRouge.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@3e377967, adresse=fr.afcepf.al32.entity.Adresse@45e6d1e0)
+2018-10-16 23:41:44 - ListeAss par type: Association [raisonSociale=Resto Du Coeur, siret=80295478500029, ape=0002A, dateAcceptation=2018-1-01 00:00:00, dateFin=null]Personne(id=8, prenom=Dan, nom=Delion, email=contact@restoDuCoeur.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@4751e8b9, adresse=fr.afcepf.al32.entity.Adresse@2a02e34b)
+2018-10-16 23:41:44 - ListeAss par type: Association [raisonSociale=Action Contre La Faim, siret=80295478500030, ape=0011A, dateAcceptation=2018-1-01 00:00:00, dateFin=null]Personne(id=9, prenom=Paul, nom=Ochon, email=contact@aclf.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@4f379769, adresse=fr.afcepf.al32.entity.Adresse@306c7bf6)
+2018-10-16 23:41:44 - Accepter: Association n'existe pas
+2018-10-16 23:41:44 - ListeAss par pays: Association [raisonSociale=Croix Rouge, siret=80295478500028, ape=0001A, dateAcceptation=2018-1-01 00:00:00, dateFin=null]Personne(id=7, prenom=Marie, nom=Tim, email=contact@croixRouge.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@5099c59b, adresse=fr.afcepf.al32.entity.Adresse@14447be)
+2018-10-16 23:41:44 - ListeAss par pays: Association [raisonSociale=Resto Du Coeur, siret=80295478500029, ape=0002A, dateAcceptation=2018-1-01 00:00:00, dateFin=null]Personne(id=8, prenom=Dan, nom=Delion, email=contact@restoDuCoeur.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@76ff68c5, adresse=fr.afcepf.al32.entity.Adresse@472d0f4)
+2018-10-16 23:41:44 - ListeAss par pays: Association [raisonSociale=Action Contre La Faim, siret=80295478500030, ape=0011A, dateAcceptation=2018-1-01 00:00:00, dateFin=null]Personne(id=9, prenom=Paul, nom=Ochon, email=contact@aclf.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@83bb0f, adresse=fr.afcepf.al32.entity.Adresse@3332c7a5)
+2018-10-16 23:41:44 - ajout association=Association [raisonSociale=TestraisonSociale, siret=Testsiret, ape=Testape, dateAcceptation=, dateFin=null]Personne(id=12, prenom=null, nom=null, email=null, telephone=null, connexion=null, adresse=null)
+2018-10-16 23:44:04 - constructeur de ServiceDonateur appelé avant injections  avec administrateurDao=null
+2018-10-16 23:44:04 - initBean() appelée après injection avec @PostConstruct  avec DonateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@2c63762b
+2018-10-16 23:44:04 - constructeur de ServicePackImpl appelé avant injections  avec packDao=null
+2018-10-16 23:44:04 - initBean() appelée après injection avec @PostConstruct  avec packDao=fr.afcepf.al32.dao.PackDaoJpa@e784320
+2018-10-16 23:44:04 - constructeur de ServiceProduitImpl appelé avant injections  avec produitDao=null
+2018-10-16 23:44:04 - initBean() appelée après injection avec @PostConstruct  avec produitDao=fr.afcepf.al32.dao.ProduitDaoJpa@5f05c8d6
+2018-10-16 23:44:04 - Supprimer: Association n'existe pas
+2018-10-16 23:44:04 - ListeAss par nouvelleAssociation [raisonSociale=Aide Et Action, siret=80295478500050, ape=0070A, dateAcceptation=null, dateFin=null]Personne(id=10, prenom=Guy, nom=Yotine, email=contact@aideAction.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@67bd351e, adresse=fr.afcepf.al32.entity.Adresse@6975fb1c)
+2018-10-16 23:44:04 - ListeAss par nouvelleAssociation [raisonSociale=Human Appeal, siret=80295478500060, ape=00501A, dateAcceptation=null, dateFin=null]Personne(id=11, prenom=Justin, nom=Ptipeu, email=contact@humanAppeal.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@2d2b6960, adresse=fr.afcepf.al32.entity.Adresse@25f61c2c)
+2018-10-16 23:44:04 - ListeAss par type: Association [raisonSociale=Croix Rouge, siret=80295478500028, ape=0001A, dateAcceptation=2018-1-01 00:00:00, dateFin=null]Personne(id=7, prenom=Marie, nom=Tim, email=contact@croixRouge.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@4dadd690, adresse=fr.afcepf.al32.entity.Adresse@61db86bf)
+2018-10-16 23:44:04 - ListeAss par type: Association [raisonSociale=Resto Du Coeur, siret=80295478500029, ape=0002A, dateAcceptation=2018-1-01 00:00:00, dateFin=null]Personne(id=8, prenom=Dan, nom=Delion, email=contact@restoDuCoeur.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@7af443a3, adresse=fr.afcepf.al32.entity.Adresse@5eabff6b)
+2018-10-16 23:44:04 - ListeAss par type: Association [raisonSociale=Action Contre La Faim, siret=80295478500030, ape=0011A, dateAcceptation=2018-1-01 00:00:00, dateFin=null]Personne(id=9, prenom=Paul, nom=Ochon, email=contact@aclf.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@1c57f6b2, adresse=fr.afcepf.al32.entity.Adresse@664632e9)
+2018-10-16 23:44:04 - ListeAss par pays: Association [raisonSociale=Resto Du Coeur, siret=80295478500029, ape=0002A, dateAcceptation=2018-1-01 00:00:00, dateFin=null]Personne(id=8, prenom=Dan, nom=Delion, email=contact@restoDuCoeur.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@4041739c, adresse=fr.afcepf.al32.entity.Adresse@3db432c2)
+2018-10-16 23:44:04 - ListeAss par pays: Association [raisonSociale=Action Contre La Faim, siret=80295478500030, ape=0011A, dateAcceptation=2018-1-01 00:00:00, dateFin=null]Personne(id=9, prenom=Paul, nom=Ochon, email=contact@aclf.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@9accff0, adresse=fr.afcepf.al32.entity.Adresse@5a90265a)
+2018-10-16 23:44:04 - ListeAss par pays: Association [raisonSociale=Aide Et Action, siret=80295478500050, ape=0070A, dateAcceptation=2022/05/12, dateFin=null]Personne(id=10, prenom=Guy, nom=Yotine, email=contact@aideAction.com, telephone=null, connexion=fr.afcepf.al32.entity.Connexion@e700eba, adresse=fr.afcepf.al32.entity.Adresse@1fd7a37)
+2018-10-16 23:44:04 - ajout association=Association [raisonSociale=TestraisonSociale, siret=Testsiret, ape=Testape, dateAcceptation=, dateFin=null]Personne(id=12, prenom=null, nom=null, email=null, telephone=null, connexion=null, adresse=null)
+2018-10-16 23:58:52 - constructeur de ServiceDonateur appelé avant injections  avec administrateurDao=null
+2018-10-16 23:58:52 - initBean() appelée après injection avec @PostConstruct  avec DonateurDao=fr.afcepf.al32.dao.PersonneDaoJpa@7a9eccc4
+2018-10-16 23:58:52 - constructeur de ServicePackImpl appelé avant injections  avec packDao=null
+2018-10-16 23:58:52 - initBean() appelée après injection avec @PostConstruct  avec packDao=fr.afcepf.al32.dao.PackDaoJpa@3f6bf8aa
+2018-10-16 23:58:52 - constructeur de ServiceProduitImpl appelé avant injections  avec produitDao=null
+2018-10-16 23:58:52 - initBean() appelée après injection avec @PostConstruct  avec produitDao=fr.afcepf.al32.dao.ProduitDaoJpa@68e02f33
+2018-10-16 23:58:53 - ajout association=Administrateur [dateDebut=null, dateFin=null]Personne(id=12, prenom=PrenomAdmin, nom=NomAdmin, email=admin@yahou.fr, telephone=010102020, connexion=null, adresse=fr.afcepf.al32.entity.Adresse@49f3ff41)
+>>>>>>> a8717348620ecc7f3c5638b9a2d96afe8d23ea15

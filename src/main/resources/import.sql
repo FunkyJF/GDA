@@ -1,3 +1,4 @@
+
 INSERT INTO Connexion(login, password) VALUES('admin1','pwd1');
 INSERT INTO Connexion(login, password) VALUES('admin2','pwd2');
 INSERT INTO Connexion(login, password) VALUES('user1','pwd1');
@@ -9,6 +10,9 @@ INSERT INTO Connexion(login, password) VALUES('assos2','pwd2');
 INSERT INTO Connexion(login, password) VALUES('assos3','pwd3');
 INSERT INTO Connexion(login, password) VALUES('assos4','pwd4');
 INSERT INTO Connexion(login, password) VALUES('assos5','pwd5');
+
+/*----------------------------------------Pays Aide --------------------------------------------*/
+INSERT INTO paysaide (id, libelle) VALUES ('1', 'pays loin')
 
 INSERT INTO Adresse(numeroVoie, typeVoie, NomVoie, ville, codePostal, pays) VALUES('1','Avenue', 'Bayard', 'Paris', '75001', 'France');
 INSERT INTO Adresse(numeroVoie, typeVoie, NomVoie, ville, codePostal, pays) VALUES('2','Rue', 'du pont', 'Paris', '75002', 'France');
@@ -28,11 +32,11 @@ INSERT INTO Personne(id,typePersonne,prenom,nom,email,idConnexion,idAdresse) VAL
 INSERT INTO Personne(id,typePersonne,prenom,nom,email,idConnexion,idAdresse) VALUES(4,'Donateur','Eva','Poree','EvaP@gmail.com',4,4);
 INSERT INTO Personne(id,typePersonne,prenom,nom,email,idConnexion,idAdresse) VALUES(5,'Donateur','Camille','Onette','CamilleO@gmail.com',5,5);
 INSERT INTO Personne(id,typePersonne,prenom,nom,email,idConnexion,idAdresse) VALUES(6,'Donateur','Paul','Ochon','PaulO@gmail.com',6,6);
-INSERT INTO Personne(id,typePersonne,prenom,nom,email,raisonSociale,siret,ape,dateAcceptation,idConnexion,idAdresse) VALUES (7,'Association','Marie','Tim','contact@croixRouge.com','Croix Rouge','80295478500028','0001A','2018-1-01 00:00:00',7,7);
-INSERT INTO Personne(id,typePersonne,prenom,nom,email,raisonSociale,siret,ape,dateAcceptation,idConnexion,idAdresse) VALUES (8,'Association','Dan','Delion','contact@restoDuCoeur.com','Resto Du Coeur','80295478500029','0002A','2018-1-01 00:00:00',8,8);
-INSERT INTO Personne(id,typePersonne,prenom,nom,email,raisonSociale,siret,ape,dateAcceptation,idConnexion,idAdresse) VALUES (9,'Association','Paul','Ochon','contact@aclf.com','Action Contre La Faim','80295478500030','0011A','2018-1-01 00:00:00',9,9);
-INSERT INTO Personne(id,typePersonne,prenom,nom,email,raisonSociale,siret,ape,dateAcceptation,idConnexion,idAdresse) VALUES (10,'Association','Guy','Yotine','contact@aideAction.com','Aide Et Action','80295478500050','0070A','2018-1-01 00:00:00',10,10);
-INSERT INTO Personne(id,typePersonne,prenom,nom,email,raisonSociale,siret,ape,dateAcceptation,idConnexion,idAdresse) VALUES (11,'Association','Justin','Ptipeu','contact@humanAppeal.com','Human Appeal','80295478500060','00501A','2018-1-01 00:00:00',11,11);
+INSERT INTO Personne(id,typePersonne,prenom,nom,email,raisonSociale,siret,ape,dateAcceptation,idConnexion,idAdresse,idPaysAide) VALUES (7,'Association','Marie','Tim','contact@croixRouge.com','Croix Rouge','80295478500028','0001A','2018-1-01 00:00:00',7,7,1);
+INSERT INTO Personne(id,typePersonne,prenom,nom,email,raisonSociale,siret,ape,dateAcceptation,idConnexion,idAdresse,idPaysAide) VALUES (8,'Association','Dan','Delion','contact@restoDuCoeur.com','Resto Du Coeur','80295478500029','0002A','2018-1-01 00:00:00',8,8,1);
+INSERT INTO Personne(id,typePersonne,prenom,nom,email,raisonSociale,siret,ape,dateAcceptation,idConnexion,idAdresse,idPaysAide) VALUES (9,'Association','Paul','Ochon','contact@aclf.com','Action Contre La Faim','80295478500030','0011A','2018-1-01 00:00:00',9,9,1);
+INSERT INTO Personne(id,typePersonne,prenom,nom,email,raisonSociale,siret,ape,dateAcceptation,idConnexion,idAdresse,idPaysAide) VALUES (10,'Association','Guy','Yotine','contact@aideAction.com','Aide Et Action','80295478500050','0070A',NULL,10,10,1);
+INSERT INTO Personne(id,typePersonne,prenom,nom,email,raisonSociale,siret,ape,dateAcceptation,idConnexion,idAdresse,idPaysAide) VALUES (11,'Association','Justin','Ptipeu','contact@humanAppeal.com','Human Appeal','80295478500060','00501A',NULL,11,11,1);
 
 INSERT INTO naturealiment (id, nature) VALUES ('1', 'Légumes secs');
 INSERT INTO naturealiment (id, nature) VALUES ('2', 'Féculents');
@@ -57,6 +61,18 @@ INSERT INTO naturevetement (id, nature) VALUES ('4', 'Survêtement');
 INSERT INTO typeproduit (id, Type)  VALUES ('1', 'Alimentaire');
 INSERT INTO typeproduit (id, Type)  VALUES ('2', 'Vestimentaire');
 INSERT INTO typeproduit (id, Type)  VALUES ('3', 'Fourniture scolaire');
+
+
+/*---------------------------------------Association_TypeProduiy----------------------------------------*/
+INSERT INTO association_typeproduit (idAssociation, idTypeProduit) VALUES ('7', '1');
+INSERT INTO association_typeproduit (idAssociation, idTypeProduit) VALUES ('7', '2');
+INSERT INTO association_typeproduit (idAssociation, idTypeProduit) VALUES ('8', '1');
+INSERT INTO association_typeproduit (idAssociation, idTypeProduit) VALUES ('9', '1');
+INSERT INTO association_typeproduit (idAssociation, idTypeProduit) VALUES ('9', '3');
+INSERT INTO association_typeproduit (idAssociation, idTypeProduit) VALUES ('11', '3');
+INSERT INTO association_typeproduit (idAssociation, idTypeProduit) VALUES ('7', '3');
+INSERT INTO association_typeproduit (idAssociation, idTypeProduit) VALUES ('11', '3');
+INSERT INTO association_typeproduit (idAssociation, idTypeProduit) VALUES ('11', '1');
 
 /*------------------------------------------------------------------------- PRODUIT ALIMENTAIRE ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -293,6 +309,7 @@ INSERT INTO pack_produit(idPack,idProduit) VALUES (12,74);
 INSERT INTO pack_produit(idPack,idProduit) VALUES (12,86);
 INSERT INTO pack_produit(idPack,idProduit) VALUES (12,73);
 INSERT INTO pack_produit(idPack,idProduit) VALUES (12,88);
+
 
 INSERT INTO don(id,dateDon) VALUES (1,NULL);
 INSERT INTO don(id,dateDon) VALUES (2,NULL);
