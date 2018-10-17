@@ -20,6 +20,8 @@ public class PackAssociation extends Pack
 {
 	 private Date dateAjout;
 	 
+	 private Date dateRetrait;
+	 
 	 @ManyToOne
 	 @JoinColumn(name="idAssociation")
 	 private Association association;

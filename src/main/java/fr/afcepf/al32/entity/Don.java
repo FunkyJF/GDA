@@ -18,13 +18,12 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import lombok.ToString;
 
 @NamedQueries({
 	@NamedQuery(name="ListeDonDonateur", query="SELECT d FROM Don d WHERE d.donateur.id = :idDonateur")
 })
 @Entity
-@Getter @Setter @ToString  @NoArgsConstructor @AllArgsConstructor
+@Getter @Setter  @NoArgsConstructor @AllArgsConstructor
 public class Don 
 {
 	
