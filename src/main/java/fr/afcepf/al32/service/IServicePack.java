@@ -6,16 +6,13 @@ import fr.afcepf.al32.entity.Pack;
 import fr.afcepf.al32.entity.PackAssociation;
 
 
-public interface IServicePack {
-	//List<PackAssociation> rechercherTousLesPacks();	
-	
-	//PackAssociation rechercherPackParNumero(Long num);	
-	
-	//void saveOrUpdatePackAssociation(PackAssociation p);
-	
-	
-	void ajouterPack(Pack p);	
-	//sup PackAssociation rechercherPackAssociationParNumero(Long num);
+public interface IServicePack {		
+	void ajouterPack(Pack p);		
 	Pack rechercherPackParNumero(Long num);
 	List<PackAssociation> rechercherPackAssociation();	
+	List<PackAssociation> rechercherPackAssociationParType(Long idType);
+	List<PackAssociation> rechercherPackAssociationParAssociation(Long id);
+	List<PackAssociation> rechercherPackAssociationParAssociationEtType(Long id, Long idType);
+	void desactiverPack(PackAssociation p);
+
 }

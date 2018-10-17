@@ -2,8 +2,6 @@ package fr.afcepf.al32.entity;
 
 import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
@@ -11,7 +9,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Entity @Getter @Setter
-@DiscriminatorValue("Vetement")
+@DiscriminatorValue("V")
 public class Vetement extends Produit {
 	
 	private Boolean sexe;
@@ -20,4 +18,18 @@ public class Vetement extends Produit {
 	@ManyToOne
 	@JoinColumn(name="idNatureVetement")
 	private NatureVetement natureVetement;
+	
+	public Vetement() {}
+
+	public Vetement(String libelle, String libelleCourt, Double prix, String description, Boolean sexe, Boolean adulte) {
+		super(libelle, libelleCourt, prix, description);
+		this.sexe = sexe;
+		this.adulte = adulte;		
+	}
+
+	@Override
+	public String toString() {
+		return "Vetement [sexe=" + sexe + ", adulte=" + adulte + ", natureVetement=" + natureVetement + "]";
+	}
+	
 }

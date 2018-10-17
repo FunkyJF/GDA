@@ -1,5 +1,6 @@
 package fr.afcepf.al32.service;
 
+import java.sql.Timestamp;
 import java.util.List;
 
 import javax.annotation.PostConstruct;
@@ -43,15 +44,9 @@ public class ServicePackImpl implements IServicePack {
 	@Override
 	public void ajouterPack(Pack p) {
 		packDao.save(p);
-	}
+	}	
 	
-	
-//	@Override  
-//	public List<PackAssociation> rechercherTousLesPacks() {		
-//		return packDao.findAll();
-//		return null;
-//	}	
-//	
+
 	@Override
 	public Pack rechercherPackParNumero(Long num) {			
 		return (PackAssociation)packDao.findOne(num);		
@@ -60,21 +55,33 @@ public class ServicePackImpl implements IServicePack {
 	@Override  
 	public List<PackAssociation> rechercherPackAssociation() {		
 		return packDao.findAllPackAssociation();		
-	}	
-	
-//	@Override
-//	public void saveOrUpdatePackAssociation(PackAssociation p) {
-//		
-//		System.out.println("pack="+p.getLibelle()+"--"+p.getId());
-//		
-//		packDao.save(p);
-//		
-//		
-//		System.out.println("pack="+p.getLibelle()+"--"+p.getId());		
-//		
-//	}
-	
-	
-	
-	
+	}
+
+
+	@Override
+	public List<PackAssociation> rechercherPackAssociationParType(Long idType) {
+		return packDao.findAllPackAssociationByType(idType);
+	}
+
+
+	@Override
+	public List<PackAssociation> rechercherPackAssociationParAssociation(Long id) {
+		return packDao.findAllPackAssociationByAssociation(id);
+	}
+
+
+	@Override
+	public List<PackAssociation> rechercherPackAssociationParAssociationEtType(Long id, Long idType) {
+		return packDao.findAllPackAssociationByAssociationAndType(id, idType);
+	}
+
+
+	@Override
+	public void desactiverPack(PackAssociation p) {
+		Timestamp dtefin = new Timestamp( System.currentTimeMillis() );
+		p.setDateRetrait(dtefin);
+		packDao.save(p);
+	}
+
+
 }

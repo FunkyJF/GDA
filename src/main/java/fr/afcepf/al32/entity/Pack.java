@@ -2,9 +2,9 @@ package fr.afcepf.al32.entity;
 
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.DiscriminatorColumn;
 import javax.persistence.DiscriminatorType;
-import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -32,7 +32,20 @@ import lombok.ToString;
                      discriminatorType=DiscriminatorType.STRING)
 @Table(name="Pack")
 @NamedQueries({
-	@NamedQuery(name="PackAssociation.findAll", query="SELECT c FROM PackAssociation c")
+	@NamedQuery(name="PackAssociation.findAll", query="SELECT c FROM PackAssociation c"),
+	
+	@NamedQuery(name="PackAssociation.findAllByType", query="SELECT c FROM PackAssociation c "
+																+ "WHERE c.typeProduit.id = :idType "
+																+ " and c.dateRetrait is null"),
+	
+	@NamedQuery(name="PackAssociation.findAllByAssociation", query="SELECT c FROM PackAssociation c "
+																	+ "WHERE c.association.id = :id "
+																	+ " and c.dateRetrait is null"),
+	
+	@NamedQuery(name="PackAssociation.findAllByAssociationAndType", query="SELECT c FROM PackAssociation c "
+																		+ "WHERE c.typeProduit.id = :idType "
+																		+ "And c.association.id = :id "
+																		+ " and c.dateRetrait is null")
 })
 public abstract class Pack 
 {
@@ -48,10 +61,13 @@ public abstract class Pack
 	@JoinColumn(name="idTypeProduit")
 	private TypeProduit typeProduit;
 	
-	@ManyToMany
+	@ManyToMany(cascade = { 
+	        CascadeType.PERSIST, 
+	        CascadeType.MERGE
+	    })
 	@JoinTable(name="Pack_Produit",
-    joinColumns= {@JoinColumn(name="idProduit")},
-    inverseJoinColumns = {@JoinColumn(name="idPack")})
+    joinColumns= {@JoinColumn(name="idPack")},
+    inverseJoinColumns = {@JoinColumn(name="idProduit")})
 	private List<Produit> produits;
 	
 	@ManyToMany(mappedBy="packs")//LAZY par defaut
@@ -63,4 +79,13 @@ public abstract class Pack
 		this.prix = prix;
 		
 	}
+  
+    public Pack(String libelle, Double prix, TypeProduit typeProduit, List<Produit> produits) {
+		
+		this.libelle = libelle;
+		this.prix = prix;
+		this.typeProduit = typeProduit;
+		this.produits = produits;
+	}
+
 }

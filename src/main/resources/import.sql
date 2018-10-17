@@ -10,6 +10,10 @@ INSERT INTO Connexion(login, password) VALUES('assos3','pwd3');
 INSERT INTO Connexion(login, password) VALUES('assos4','pwd4');
 INSERT INTO Connexion(login, password) VALUES('assos5','pwd5');
 
+--------------Pays Aide --------------------
+INSERT INTO paysaide (id, libelle) VALUES ('1', 'pays loin')
+----------------------------------------------------------------------------
+
 INSERT INTO Adresse(numeroVoie, typeVoie, NomVoie, ville, codePostal, pays) VALUES('1','Avenue', 'Bayard', 'Paris', '75001', 'France');
 INSERT INTO Adresse(numeroVoie, typeVoie, NomVoie, ville, codePostal, pays) VALUES('2','Rue', 'du pont', 'Paris', '75002', 'France');
 INSERT INTO Adresse(numeroVoie, typeVoie, NomVoie, ville, codePostal, pays) VALUES('3','Boulevard', 'Francois Mitterand', 'Paris', '75003', 'France');
@@ -28,11 +32,11 @@ INSERT INTO Personne(id,typePersonne,prenom,nom,email,idConnexion,idAdresse) VAL
 INSERT INTO Personne(id,typePersonne,prenom,nom,email,idConnexion,idAdresse) VALUES(4,'Donateur','Eva','Poree','EvaP@gmail.com',4,4);
 INSERT INTO Personne(id,typePersonne,prenom,nom,email,idConnexion,idAdresse) VALUES(5,'Donateur','Camille','Onette','CamilleO@gmail.com',5,5);
 INSERT INTO Personne(id,typePersonne,prenom,nom,email,idConnexion,idAdresse) VALUES(6,'Donateur','Paul','Ochon','PaulO@gmail.com',6,6);
-INSERT INTO Personne(id,typePersonne,prenom,nom,email,raisonSociale,siret,ape,dateAcceptation,idConnexion,idAdresse) VALUES (7,'Association','Marie','Tim','contact@croixRouge.com','Croix Rouge','80295478500028','0001A','2018-1-01 00:00:00',7,7);
-INSERT INTO Personne(id,typePersonne,prenom,nom,email,raisonSociale,siret,ape,dateAcceptation,idConnexion,idAdresse) VALUES (8,'Association','Dan','Delion','contact@restoDuCoeur.com','Resto Du Coeur','80295478500029','0002A','2018-1-01 00:00:00',8,8);
-INSERT INTO Personne(id,typePersonne,prenom,nom,email,raisonSociale,siret,ape,dateAcceptation,idConnexion,idAdresse) VALUES (9,'Association','Paul','Ochon','contact@aclf.com','Action Contre La Faim','80295478500030','0011A','2018-1-01 00:00:00',9,9);
-INSERT INTO Personne(id,typePersonne,prenom,nom,email,raisonSociale,siret,ape,dateAcceptation,idConnexion,idAdresse) VALUES (10,'Association','Guy','Yotine','contact@aideAction.com','Aide Et Action','80295478500050','0070A','2018-1-01 00:00:00',10,10);
-INSERT INTO Personne(id,typePersonne,prenom,nom,email,raisonSociale,siret,ape,dateAcceptation,idConnexion,idAdresse) VALUES (11,'Association','Justin','Ptipeu','contact@humanAppeal.com','Human Appeal','80295478500060','00501A','2018-1-01 00:00:00',11,11);
+INSERT INTO Personne(id,typePersonne,prenom,nom,email,raisonSociale,siret,ape,dateAcceptation,idConnexion,idAdresse,idPaysAide) VALUES (7,'Association','Marie','Tim','contact@croixRouge.com','Croix Rouge','80295478500028','0001A','2018-1-01 00:00:00',7,7,1);
+INSERT INTO Personne(id,typePersonne,prenom,nom,email,raisonSociale,siret,ape,dateAcceptation,idConnexion,idAdresse,idPaysAide) VALUES (8,'Association','Dan','Delion','contact@restoDuCoeur.com','Resto Du Coeur','80295478500029','0002A','2018-1-01 00:00:00',8,8,1);
+INSERT INTO Personne(id,typePersonne,prenom,nom,email,raisonSociale,siret,ape,dateAcceptation,idConnexion,idAdresse,idPaysAide) VALUES (9,'Association','Paul','Ochon','contact@aclf.com','Action Contre La Faim','80295478500030','0011A','2018-1-01 00:00:00',9,9,1);
+INSERT INTO Personne(id,typePersonne,prenom,nom,email,raisonSociale,siret,ape,dateAcceptation,idConnexion,idAdresse,idPaysAide) VALUES (10,'Association','Guy','Yotine','contact@aideAction.com','Aide Et Action','80295478500050','0070A',NULL,10,10,1);
+INSERT INTO Personne(id,typePersonne,prenom,nom,email,raisonSociale,siret,ape,dateAcceptation,idConnexion,idAdresse,idPaysAide) VALUES (11,'Association','Justin','Ptipeu','contact@humanAppeal.com','Human Appeal','80295478500060','00501A',NULL,11,11,1);
 
 INSERT INTO naturealiment (id, nature) VALUES ('1', 'Légumes secs');
 INSERT INTO naturealiment (id, nature) VALUES ('2', 'Féculents');
@@ -57,6 +61,7 @@ INSERT INTO naturevetement (id, nature) VALUES ('4', 'Survêtement');
 INSERT INTO typeproduit (id, Type)  VALUES ('1', 'Alimentaire');
 INSERT INTO typeproduit (id, Type)  VALUES ('2', 'Vestimentaire');
 INSERT INTO typeproduit (id, Type)  VALUES ('3', 'Fourniture scolaire');
+/*------------------------------------------------------------------------- PRODUIT ALIMENTAIRE ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
 INSERT INTO produit ( typeProduit, id, description, libelle, libelleCourt, prix, adulte, sexe, idTypeProduit, idNatureAliment, idNatureFourniture, idNatureVetement)VALUES ('A', '1', 'Riz Basmati long grain de qualité supérieure\r\nRiz basmati long grain de qualité supérieure. Matière première importée d Inde ou du Pakistan.\r\nSemoule de BLE dur de qualité supérieure.', 'Riz Basmati le paquet 1kg ', 'Riz Basmati ', '0.8', NULL, NULL, '1', '2', NULL, NULL);
 INSERT INTO produit ( typeProduit, id, description, libelle, libelleCourt, prix, adulte, sexe, idTypeProduit, idNatureAliment, idNatureFourniture, idNatureVetement)VALUES ('A', '2', 'Riz Basmati long grain de qualité supérieure\r\nRiz basmati long grain de qualité supérieure. Matière première importée d Inde ou du Pakistan.\r\nSemoule de BLE dur de qualité supérieure.', 'Riz Basmati le paquetRiz B 2kg ', 'Riz Basmati ', '1', NULL, NULL, '1', '2', NULL, NULL);
@@ -134,6 +139,8 @@ INSERT INTO produit ( typeProduit, id, description, libelle, libelleCourt, prix,
 INSERT INTO produit ( typeProduit, id, description, libelle, libelleCourt, prix, adulte, sexe, idTypeProduit, idNatureAliment, idNatureFourniture, idNatureVetement)VALUES ('A', '61', 'Sucre en morceaux Ingrédients: sucre', 'Sucre en morceaux la boîte de 1kg', 'Sucre en morceaux', '0.75', NULL, NULL, '1', '8', NULL, NULL);
 INSERT INTO produit ( typeProduit, id, description, libelle, libelleCourt, prix, adulte, sexe, idTypeProduit, idNatureAliment, idNatureFourniture, idNatureVetement)VALUES ('A', '62', 'A conserver à l\ abri de la chaleur et de l\ humidité. Une fois entamé conservez le paquet au réfrigérateur.', 'Café moulu familial les 4 paquets de 250 g', 'Café moulu familial ', '3.5', NULL, NULL, '1', '8', NULL, NULL);
 
+/*------------------------------------------------------------------------- PRODUIT FOURNITURE ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
 INSERT INTO produit ( typeProduit, id, description, libelle, libelleCourt, prix, adulte, sexe, idTypeProduit, idNatureAliment, idNatureFourniture, idNatureVetement)VALUES ('F', '63', 'Lot de 50 stylos bille Crystal de couleur bleue.\r\nCaractéristiques :\r\n- Encre de qualité, séchage rapide et écriture douce\r\n- Bille en carbure de tungstène, parfaitement sphérique et très résistante\r\n\- Pointe moyenne : 1,0 mm, largeur de pointe 0,4 mm', 'Lot de 50 stylos bille Cristal - Bleu', 'Lot de 50 stylos Bleu', '7', NULL, NULL, '3', NULL, '2', NULL);
 INSERT INTO produit ( typeProduit, id, description, libelle, libelleCourt, prix, adulte, sexe, idTypeProduit, idNatureAliment, idNatureFourniture, idNatureVetement)VALUES ('F', '64', 'Caractéristiques :\r\n- Quantité : 3 cahiers\r\n- Nombre de pages : 96\r\n- Réglure Grands carreaux \r\n- Gramme papier 90 g ', 'Lot de 3 cahiers A4 - 96 pages - Grands carreaux - 21 x 29,7 cm', 'Lot de 3 cahiers A4-21 x 29,7 cm', '5', NULL, NULL, '3', NULL, '2', NULL);
 INSERT INTO produit ( typeProduit, id, description, libelle, libelleCourt, prix, adulte, sexe, idTypeProduit, idNatureAliment, idNatureFourniture, idNatureVetement)VALUES ('F', '65', 'Caractéristiques :\r\n- Quantité : 3 cahiers\r\n- Nombre de pages : 96\r\n- Réglure Grands carreaux Séyès en 2 couleurs pour une meilleure lisibilité \r\n- Gramme papier 90 g \r\n- Format A5+ : 17 x 22 cm\r\n- Couverture cartonnée\r\n- Assortiment de couleurs ', 'Lot de 3 cahiers - 96 pages - Grands carreaux - 17 x 22 cm', 'Lot de 3 cahiers - 17 x 22 cm', '2', NULL, NULL, '3', NULL, '3', NULL);
@@ -170,26 +177,144 @@ INSERT INTO produit ( typeProduit, id, description, libelle, libelleCourt, prix,
 INSERT INTO produit ( typeProduit, id, description, libelle, libelleCourt, prix, adulte, sexe, idTypeProduit, idNatureAliment, idNatureFourniture, idNatureVetement)VALUES ('F', '95', 'Caractéristiques de la calculatrice :\r\n- Fonctions de base, fonctions évoluées\r\n- Simplifications des fractions- équations\r\n- Fonctions trigonométriques - Mémoires\r\n- Avec un étui de protection\r\n- Garantie pendant 3 ans', 'Calculatrice scientifique - Collège', 'Calculatrice scientifique ', '14.16', NULL, NULL, '3', NULL, '5', NULL);
 INSERT INTO produit ( typeProduit, id, description, libelle, libelleCourt, prix, adulte, sexe, idTypeProduit, idNatureAliment, idNatureFourniture, idNatureVetement)VALUES ('F', '96', ' Caractéristiques et fonctionnalités : \r\n- Écran 5 lignes\r\n- Messages à l\écran, touches et menus en français\r\n- Écriture et affichage en 2D\r\n- Écriture scientifique\r\n- Décomposition en facteurs premiers\r\n- PGCD/PPCM\r\n- Simplification manuelle', 'Calculatrice scientifique - FX92 Collège 2D', 'Calculatrice scientifique Collège 2D', '18.74', NULL, NULL, '3', NULL, '5', NULL); 
 
+/*------------------------------------------------------------------------- PRODUIT VESTIMENTAIRE ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+INSERT INTO produit ( typeProduit, description, libelle, libelleCourt, prix, adulte, sexe, idTypeProduit, idNatureAliment, idNatureFourniture, idNatureVetement)VALUES ('V', 'Basket taille Adulte pour Homme', 'Basket Homme', '', 15, TRUE, TRUE, '2', NULL, NULL, '1'); 
+INSERT INTO produit ( typeProduit, description, libelle, libelleCourt, prix, adulte, sexe, idTypeProduit, idNatureAliment, idNatureFourniture, idNatureVetement)VALUES ('V', 'Basket taille Adulte pour Femme', 'Basket Femme', '', 15, TRUE, FALSE, '2', NULL, NULL, '1'); 
+INSERT INTO produit ( typeProduit, description, libelle, libelleCourt, prix, adulte, sexe, idTypeProduit, idNatureAliment, idNatureFourniture, idNatureVetement)VALUES ('V', 'Basket taille Enfant pour Garçon', 'Basket Garcon', '', 10, FALSE, TRUE, '2', NULL, NULL, '1'); 
+INSERT INTO produit ( typeProduit, description, libelle, libelleCourt, prix, adulte, sexe, idTypeProduit, idNatureAliment, idNatureFourniture, idNatureVetement)VALUES ('V', 'Basket taille Enfant pour Fille', 'Basket Fille', '', 10, FALSE, FALSE, '2', NULL, NULL, '1');
+
+INSERT INTO produit ( typeProduit, description, libelle, libelleCourt, prix, adulte, sexe, idTypeProduit, idNatureAliment, idNatureFourniture, idNatureVetement)VALUES ('V', 'Bottes taille Adulte pour Homme', 'Bottes Homme', '', 13, TRUE, TRUE, '2', NULL, NULL, '1'); 
+INSERT INTO produit ( typeProduit, description, libelle, libelleCourt, prix, adulte, sexe, idTypeProduit, idNatureAliment, idNatureFourniture, idNatureVetement)VALUES ('V', 'Bottes taille Adulte pour Femme', 'Bottes Femme', '', 13, TRUE, FALSE, '2', NULL, NULL, '1'); 
+INSERT INTO produit ( typeProduit, description, libelle, libelleCourt, prix, adulte, sexe, idTypeProduit, idNatureAliment, idNatureFourniture, idNatureVetement)VALUES ('V', 'Bottes taille Enfant pour Garçon', 'Bottes Garcon', '', 7, FALSE, TRUE, '2', NULL, NULL, '1'); 
+INSERT INTO produit ( typeProduit, description, libelle, libelleCourt, prix, adulte, sexe, idTypeProduit, idNatureAliment, idNatureFourniture, idNatureVetement)VALUES ('V', 'Bottes taille Enfant pour Fille', 'Bottes Fille', '', 7, FALSE, FALSE, '2', NULL, NULL, '1'); 
+
+INSERT INTO produit ( typeProduit, description, libelle, libelleCourt, prix, adulte, sexe, idTypeProduit, idNatureAliment, idNatureFourniture, idNatureVetement)VALUES ('V', 'Sandales taille Adulte pour Homme', 'Sandales Homme', '', 5, TRUE, TRUE, '2', NULL, NULL, '1'); 
+INSERT INTO produit ( typeProduit, description, libelle, libelleCourt, prix, adulte, sexe, idTypeProduit, idNatureAliment, idNatureFourniture, idNatureVetement)VALUES ('V', 'Sandales taille Adulte pour Femme', 'Sandales Femme', '', 5, TRUE, FALSE, '2', NULL, NULL, '1'); 
+INSERT INTO produit ( typeProduit, description, libelle, libelleCourt, prix, adulte, sexe, idTypeProduit, idNatureAliment, idNatureFourniture, idNatureVetement)VALUES ('V', 'Sandales taille Enfant pour Garçon', 'Sandales Garcon', '', 3, FALSE, TRUE, '2', NULL, NULL, '1'); 
+INSERT INTO produit ( typeProduit, description, libelle, libelleCourt, prix, adulte, sexe, idTypeProduit, idNatureAliment, idNatureFourniture, idNatureVetement)VALUES ('V', 'Sandales taille Enfant pour Fille', 'Sandales Fille', '', 3, FALSE, FALSE, '2', NULL, NULL, '1'); 
+
+INSERT INTO produit ( typeProduit, description, libelle, libelleCourt, prix, adulte, sexe, idTypeProduit, idNatureAliment, idNatureFourniture, idNatureVetement)VALUES ('V', 'Caleçon taille Adulte', 'Caleçon Homme', '', 3, TRUE, TRUE, '2', NULL, NULL, '2'); 
+INSERT INTO produit ( typeProduit, description, libelle, libelleCourt, prix, adulte, sexe, idTypeProduit, idNatureAliment, idNatureFourniture, idNatureVetement)VALUES ('V', 'Culotte taille Adulte', 'Culotte Femme', '', 3, TRUE, FALSE, '2', NULL, NULL, '2'); 
+INSERT INTO produit ( typeProduit, description, libelle, libelleCourt, prix, adulte, sexe, idTypeProduit, idNatureAliment, idNatureFourniture, idNatureVetement)VALUES ('V', 'Caleçon taille Enfant', 'Caleçon Garcon', '', 2, FALSE, TRUE, '2', NULL, NULL, '2'); 
+INSERT INTO produit ( typeProduit, description, libelle, libelleCourt, prix, adulte, sexe, idTypeProduit, idNatureAliment, idNatureFourniture, idNatureVetement)VALUES ('V', 'Culotte taille Enfant', 'Culotte Fille', '', 2, FALSE, FALSE, '2', NULL, NULL, '2');
+INSERT INTO produit ( typeProduit, description, libelle, libelleCourt, prix, adulte, sexe, idTypeProduit, idNatureAliment, idNatureFourniture, idNatureVetement)VALUES ('V', 'Soutien-gorge taille Adulte', 'Soutien-gorge', '', 3, TRUE, FALSE, '2', NULL, NULL, '2'); 
+
+INSERT INTO produit ( typeProduit, description, libelle, libelleCourt, prix, adulte, sexe, idTypeProduit, idNatureAliment, idNatureFourniture, idNatureVetement)VALUES ('V', 'Pantalon taille Adulte pour Homme', 'Pantalon Homme', '', 15, TRUE, TRUE, '2', NULL, NULL, '3'); 
+INSERT INTO produit ( typeProduit, description, libelle, libelleCourt, prix, adulte, sexe, idTypeProduit, idNatureAliment, idNatureFourniture, idNatureVetement)VALUES ('V', 'Pantalon taille Adulte pour Femme', 'Pantalon Femme', '', 15, TRUE, FALSE, '2', NULL, NULL, '3'); 
+INSERT INTO produit ( typeProduit, description, libelle, libelleCourt, prix, adulte, sexe, idTypeProduit, idNatureAliment, idNatureFourniture, idNatureVetement)VALUES ('V', 'Pantalon taille Enfant pour Garçon', 'Pantalon Garcon', '', 10, FALSE, TRUE, '2', NULL, NULL, '3'); 
+INSERT INTO produit ( typeProduit, description, libelle, libelleCourt, prix, adulte, sexe, idTypeProduit, idNatureAliment, idNatureFourniture, idNatureVetement)VALUES ('V', 'Pantalon taille Enfant pour Fille', 'Pantalon Fille', '', 10, FALSE, FALSE, '2', NULL, NULL, '3');
+
+INSERT INTO produit ( typeProduit, description, libelle, libelleCourt, prix, adulte, sexe, idTypeProduit, idNatureAliment, idNatureFourniture, idNatureVetement)VALUES ('V', 'Short taille Adulte pour Homme', 'Short Homme', '', 7, TRUE, TRUE, '2', NULL, NULL, '3'); 
+INSERT INTO produit ( typeProduit, description, libelle, libelleCourt, prix, adulte, sexe, idTypeProduit, idNatureAliment, idNatureFourniture, idNatureVetement)VALUES ('V', 'Short taille Adulte pour Femme', 'Short Femme', '', 7, TRUE, FALSE, '2', NULL, NULL, '3'); 
+INSERT INTO produit ( typeProduit, description, libelle, libelleCourt, prix, adulte, sexe, idTypeProduit, idNatureAliment, idNatureFourniture, idNatureVetement)VALUES ('V', 'Short taille Enfant pour Garçon', 'Short Garcon', '', 5, FALSE, TRUE, '2', NULL, NULL, '3'); 
+INSERT INTO produit ( typeProduit, description, libelle, libelleCourt, prix, adulte, sexe, idTypeProduit, idNatureAliment, idNatureFourniture, idNatureVetement)VALUES ('V', 'Short taille Enfant pour Fille', 'Short Fille', '', 5, FALSE, FALSE, '2', NULL, NULL, '3');
+INSERT INTO produit ( typeProduit, description, libelle, libelleCourt, prix, adulte, sexe, idTypeProduit, idNatureAliment, idNatureFourniture, idNatureVetement)VALUES ('V', 'Jupe taille Adulte pour Femme', 'Jupe Femme', '', 7, TRUE, FALSE, '2', NULL, NULL, '3'); 
+INSERT INTO produit ( typeProduit, description, libelle, libelleCourt, prix, adulte, sexe, idTypeProduit, idNatureAliment, idNatureFourniture, idNatureVetement)VALUES ('V', 'Jupe taille Enfant pour Fille', 'Jupe Fille', '', 5, FALSE, FALSE, '2', NULL, NULL, '3');
+
+INSERT INTO produit ( typeProduit, description, libelle, libelleCourt, prix, adulte, sexe, idTypeProduit, idNatureAliment, idNatureFourniture, idNatureVetement)VALUES ('V', 'T-shirt taille Adulte pour Homme', 'T-shirt Homme', '', 7, TRUE, TRUE, '2', NULL, NULL, '3'); 
+INSERT INTO produit ( typeProduit, description, libelle, libelleCourt, prix, adulte, sexe, idTypeProduit, idNatureAliment, idNatureFourniture, idNatureVetement)VALUES ('V', 'T-shirt taille Adulte pour Femme', 'T-shirt Femme', '', 7, TRUE, FALSE, '2', NULL, NULL, '3'); 
+INSERT INTO produit ( typeProduit, description, libelle, libelleCourt, prix, adulte, sexe, idTypeProduit, idNatureAliment, idNatureFourniture, idNatureVetement)VALUES ('V', 'T-shirt taille Enfant pour Garçon', 'T-shirt Garcon', '', 5, FALSE, TRUE, '2', NULL, NULL, '3'); 
+INSERT INTO produit ( typeProduit, description, libelle, libelleCourt, prix, adulte, sexe, idTypeProduit, idNatureAliment, idNatureFourniture, idNatureVetement)VALUES ('V', 'T-shirt taille Enfant pour Fille', 'T-shirt Fille', '', 5, FALSE, FALSE, '2', NULL, NULL, '3');
+
+INSERT INTO produit ( typeProduit, description, libelle, libelleCourt, prix, adulte, sexe, idTypeProduit, idNatureAliment, idNatureFourniture, idNatureVetement)VALUES ('V', 'Sweat taille Adulte pour Homme', 'Sweat Homme', '', 16, TRUE, TRUE, '2', NULL, NULL, '3'); 
+INSERT INTO produit ( typeProduit, description, libelle, libelleCourt, prix, adulte, sexe, idTypeProduit, idNatureAliment, idNatureFourniture, idNatureVetement)VALUES ('V', 'Sweat taille Adulte pour Femme', 'Sweat Femme', '', 16, TRUE, FALSE, '2', NULL, NULL, '3'); 
+INSERT INTO produit ( typeProduit, description, libelle, libelleCourt, prix, adulte, sexe, idTypeProduit, idNatureAliment, idNatureFourniture, idNatureVetement)VALUES ('V', 'Sweat taille Enfant pour Garçon', 'Sweat Garcon', '', 10, FALSE, TRUE, '2', NULL, NULL, '3'); 
+INSERT INTO produit ( typeProduit, description, libelle, libelleCourt, prix, adulte, sexe, idTypeProduit, idNatureAliment, idNatureFourniture, idNatureVetement)VALUES ('V', 'Sweat taille Enfant pour Fille', 'Sweat Fille', '', 10, FALSE, FALSE, '2', NULL, NULL, '3');
+
+INSERT INTO produit ( typeProduit, description, libelle, libelleCourt, prix, adulte, sexe, idTypeProduit, idNatureAliment, idNatureFourniture, idNatureVetement)VALUES ('V', 'Manteau taille Adulte pour Homme', 'Manteau Homme', '', 7, TRUE, TRUE, '2', NULL, NULL, '4'); 
+INSERT INTO produit ( typeProduit, description, libelle, libelleCourt, prix, adulte, sexe, idTypeProduit, idNatureAliment, idNatureFourniture, idNatureVetement)VALUES ('V', 'Manteau taille Adulte pour Femme', 'Manteau Femme', '', 7, TRUE, FALSE, '2', NULL, NULL, '4'); 
+INSERT INTO produit ( typeProduit, description, libelle, libelleCourt, prix, adulte, sexe, idTypeProduit, idNatureAliment, idNatureFourniture, idNatureVetement)VALUES ('V', 'Manteau taille Enfant pour Garçon', 'Manteau Garcon', '', 5, FALSE, TRUE, '2', NULL, NULL, '4'); 
+INSERT INTO produit ( typeProduit, description, libelle, libelleCourt, prix, adulte, sexe, idTypeProduit, idNatureAliment, idNatureFourniture, idNatureVetement)VALUES ('V', 'Manteau taille Enfant pour Fille', 'Manteau Fille', '', 5, FALSE, FALSE, '2', NULL, NULL, '4');
 
 INSERT INTO pack(id,typePack,idTypeProduit,libelle,prix,dateAjout, idAssociation) VALUES (1,'packAssociation', 1, 'pack1',10.0, '2018-1-01 00:00:00', 7);
 INSERT INTO pack(id,typePack,idTypeProduit,libelle,prix,dateModification, idPackAssociation) VALUES (2,'packDonateur', 1, 'pack1modif',15.0, '2018-1-01 00:00:00', 1);
 
-INSERT INTO don(id,dateDon) VALUES (1,NULL);
-INSERT INTO don(id,dateDon) VALUES (2,NULL);
-INSERT INTO don(id,dateDon) VALUES (3,NULL);
 
-INSERT INTO pack_produit(idProduit,idPack) VALUES (1,1);
-INSERT INTO pack_produit(idProduit,idPack) VALUES (1,2);
-INSERT INTO pack(id,typePack,idTypeProduit,libelle,prix,dateAjout, idAssociation) VALUES (3,'packAssociation', 1, 'pack3',30.0, '2018-1-01 00:00:00', 7);
-INSERT INTO pack_produit(idProduit,idPack) VALUES (1,3);
-INSERT INTO pack(id,typePack,idTypeProduit,libelle,prix,dateAjout, idAssociation) VALUES (4,'packAssociation', 1, 'pack4',40.0, '2018-1-01 00:00:00', 8);
-INSERT INTO pack_produit(idProduit,idPack) VALUES (2,4);
-INSERT INTO pack(id,typePack,idTypeProduit,libelle,prix,dateAjout, idAssociation) VALUES (5,'packAssociation', 1, 'pack5',50.0, '2018-1-01 00:00:00', 8);
-INSERT INTO pack_produit(idProduit,idPack) VALUES (2,5);
-INSERT INTO pack(id,typePack,idTypeProduit,libelle,prix,dateAjout, idAssociation) VALUES (6,'packAssociation', 1, 'pack6',60.0, '2018-1-01 00:00:00', 8);
-INSERT INTO pack_produit(idProduit,idPack) VALUES (3,6);
-INSERT INTO pack(id,typePack,idTypeProduit,libelle,prix,dateAjout, idAssociation) VALUES (7,'packAssociation', 1, 'pack7',70.0, '2018-1-01 00:00:00', 8);
-INSERT INTO pack_produit(idProduit,idPack) VALUES (4,7);
-INSERT INTO pack(id,typePack,idTypeProduit,libelle,prix,dateAjout, idAssociation) VALUES (8,'packAssociation', 1, 'pack8',80.0, '2018-1-01 00:00:00', 8);
-INSERT INTO pack_produit(idProduit,idPack) VALUES (5,8);
+-----------Association_TypeProduiy-------------------------------
+INSERT INTO association_typeproduit (idAssociation, idTypeProduit) VALUES ('7', '1');
+INSERT INTO association_typeproduit (idAssociation, idTypeProduit) VALUES ('7', '2');
+INSERT INTO association_typeproduit (idAssociation, idTypeProduit) VALUES ('8', '1');
+INSERT INTO association_typeproduit (idAssociation, idTypeProduit) VALUES ('9', '1');
+INSERT INTO association_typeproduit (idAssociation, idTypeProduit) VALUES ('9', '3');
+INSERT INTO association_typeproduit (idAssociation, idTypeProduit) VALUES ('11', '3');
+INSERT INTO association_typeproduit (idAssociation, idTypeProduit) VALUES ('7', '3');
+INSERT INTO association_typeproduit (idAssociation, idTypeProduit) VALUES ('11', '3');
+INSERT INTO association_typeproduit (idAssociation, idTypeProduit) VALUES ('11', '1');
+
+
+INSERT INTO don(id,dateDon,idDonateur) VALUES (1,'2018-10-02 00:00:00',6);
+INSERT INTO don(id,dateDon,idDonateur) VALUES (2,'2018-10-02 00:00:00',6);
+INSERT INTO don(id,dateDon,idDonateur) VALUES (3,'2018-10-02 00:00:00',6);
+
+INSERT INTO pack(typePack,idTypeProduit,libelle,prix,dateAjout, idAssociation) VALUES ('packAssociation', 1, 'Pack Aliment',10.0, '2018-1-01 00:00:00', 7);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (1,1);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (1,2);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (1,3);
+
+INSERT INTO pack(typePack,idTypeProduit,libelle,prix,dateModification, idPackAssociation) VALUES ('packDonateur', 1, 'pack1modif',15.0, '2018-1-01 00:00:00', 1);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (2,1);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (2,2);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (2,3);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (2,4);
+
+INSERT INTO pack(typePack,idTypeProduit,libelle,prix,dateAjout, idAssociation) VALUES ('packAssociation', 1, 'Pack Aliment',30.0, '2018-1-01 00:00:00', 8);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (3,6);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (3,7);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (3,8);
+
+INSERT INTO pack(typePack,idTypeProduit,libelle,prix,dateAjout, idAssociation) VALUES ('packAssociation', 1, 'Pack Aliment',40.0, '2018-1-01 00:00:00', 9);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (4,7);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (4,8);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (4,7);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (4,8);
+
+INSERT INTO pack(typePack,idTypeProduit,libelle,prix,dateAjout, idAssociation) VALUES ('packAssociation', 1, 'Pack Aliment',50.0, '2018-1-01 00:00:00', 10);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (5,7);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (5,8);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (5,7);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (5,8);
+
+INSERT INTO pack(typePack,idTypeProduit,libelle,prix,dateAjout, idAssociation) VALUES ('packAssociation', 2, 'Pack Vetement',60.0, '2018-1-01 00:00:00', 8);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (6,97);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (6,98);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (6,99);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (6,100);
+
+INSERT INTO pack(typePack,idTypeProduit,libelle,prix,dateAjout, idAssociation) VALUES ('packAssociation', 2, 'Pack Vetement',70.0, '2018-1-01 00:00:00', 9);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (7,101);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (7,102);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (7,103);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (7,104);
+
+INSERT INTO pack(typePack,idTypeProduit,libelle,prix,dateAjout, idAssociation) VALUES ('packAssociation', 2, 'Pack Vetement',80.0, '2018-1-01 00:00:00', 10);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (8,105);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (8,106);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (8,107);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (8,108);
+
+INSERT INTO pack(typePack,idTypeProduit,libelle,prix,dateAjout, idAssociation) VALUES ('packAssociation', 2, 'Pack Vetement',60.0, '2018-1-01 00:00:00', 11);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (9,109);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (9,110);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (9,111);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (9,112);
+
+INSERT INTO pack(typePack,idTypeProduit,libelle,prix,dateAjout, idAssociation) VALUES ('packAssociation', 3, 'Pack Fourniture',70.0, '2018-1-01 00:00:00', 9);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (10,67);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (10,68);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (10,70);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (10,81);
+
+INSERT INTO pack(typePack,idTypeProduit,libelle,prix,dateAjout, idAssociation) VALUES ('packAssociation', 3, 'Pack Fourniture',80.0, '2018-1-01 00:00:00', 10);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (11,78);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (11,80);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (11,79);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (11,82);
+
+INSERT INTO pack(typePack,idTypeProduit,libelle,prix,dateAjout, idAssociation) VALUES ('packAssociation', 3, 'Pack Fourniture',80.0, '2018-1-01 00:00:00', 11);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (12,74);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (12,86);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (12,73);
+INSERT INTO pack_produit(idPack,idProduit) VALUES (12,88);
+
  

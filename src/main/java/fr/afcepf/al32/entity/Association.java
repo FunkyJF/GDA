@@ -10,11 +10,19 @@ import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
 
 import lombok.Getter;
 import lombok.Setter;
 
+@NamedQueries({
+	@NamedQuery(name="AssociationNouvelle", query="SELECT a FROM Association a WHERE a.dateAcceptation is Null And a.dateFin IS Null"),
+	@NamedQuery(name="AssociationParType", query="SELECT a FROM Association a JOIN a.typeProduits t WHERE a.dateAcceptation is not Null And a.dateFin IS Null And t.id =:id"),
+	//@NamedQuery(name="AssociationParPxPack", query="SELECT a FROM Association a JOIN a.packAssociations p WHERE a.dateAcceptation is not Null And a.dateFin IS Null And p.prix  BETWEEN :minPx AND :maxPx ")
+	
+})													
 @Entity
 @Getter @Setter
 @DiscriminatorValue("Association")//valeur de typePersonne pour cette classe
@@ -26,7 +34,7 @@ public class Association extends Personne {
 
 	   private String ape;
 
-	   private String dateAcceptation;
+	   private Date dateAcceptation;
 
 	   private Date dateFin;
 	   
@@ -55,13 +63,13 @@ public class Association extends Personne {
 	   }
 
 	   
-	   public Association(String raisonSociale, String siret, String ape, String dateAcceptation)
+	   public Association(String raisonSociale, String siret, String ape)
 	   {
 		   super();
 		   this.raisonSociale = raisonSociale;
 		   this.siret=siret;
 		   this.ape = ape;
-		   this.dateAcceptation = dateAcceptation;
+		   
 	   }
 
 }
