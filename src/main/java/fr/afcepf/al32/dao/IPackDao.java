@@ -4,6 +4,7 @@ import java.util.List;
 
 import fr.afcepf.al32.entity.Pack;
 import fr.afcepf.al32.entity.PackAssociation;
+import fr.afcepf.al32.entity.Produit;
 
 public interface IPackDao extends IGenericDao<Pack> {
 	
@@ -11,6 +12,5 @@ public interface IPackDao extends IGenericDao<Pack> {
 
 	List<PackAssociation> findAllPackAssociationByType(Long idType);
 	List<PackAssociation> findAllPackAssociationByAssociation(Long id);
-	List<PackAssociation> findAllPackAssociationByAssociationAndType(Long id, Long idType);
-	Pack packAvecProduits(Long id);
+	List<PackAssociation> findAllPackAssociationByAssociationAndType(Long id, Long idType);		
 }

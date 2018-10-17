@@ -45,10 +45,9 @@ public class ServiceProduitImpl implements IServiceProduit {
 		produitDao.save(p);
 	}
 	
-//	@Override
-//	public Produit rechercherPackAvecProduits(long idPack) {
-//		return produitDao.packAvecProduits(idPack);
-//	}
-
+	@Override
+	public List<Produit> rechercherPackAvecProduits(long idPack) {
+		return produitDao.packAvecProduits(idPack);
+	}
 
 }

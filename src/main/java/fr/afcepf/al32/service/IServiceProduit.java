@@ -7,5 +7,5 @@ import fr.afcepf.al32.entity.Produit;
 public interface IServiceProduit {
 	List<Produit> rechercherProduitDuType(long idTypeProduit);
 	void ajouterProduit(Produit p);	
-	//Produit rechercherPackAvecProduits(long idPack);
+	List<Produit> rechercherPackAvecProduits(long idPack);
 }

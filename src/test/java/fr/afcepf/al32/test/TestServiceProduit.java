@@ -24,18 +24,19 @@ public class TestServiceProduit {
 	@Autowired	
 	IServiceProduit serviceProduit;	
 	
-	@Test
-	public void testRechercherProduitDuType() {	
-		//Parametre idTypeProduit est en dur => 1L
+	//@Test
+	public void testRechercherProduitDuType() {			
 		 List<Produit> listeProduits = serviceProduit.rechercherProduitDuType(1L);	 		 
 		 for(Produit p : listeProduits) {
 			 System.out.println("produit: "+p.getLibelleCourt()+" - "+p.getPrix());						 
 		 } 
 	}
-//	@Test
-//	public void testRechercherPackAvecProduits() {
-//		Produit p = serviceProduit.rechercherPackAvecProduits(1L);
-//		Assert.assertTrue(p.getId()==1L);
-//		logger.debug("p="+p.toString());
-////	}
+	
+	@Test
+	public void testRechercherPackAvecProduits() {	
+		List<Produit> listeProduits = serviceProduit.rechercherPackAvecProduits(1L);		
+		for(Produit p : listeProduits) {
+			 System.out.println("produit: "+p.getLibelleCourt()+" - "+p.getPrix());						 
+		 } 
+	}
 }

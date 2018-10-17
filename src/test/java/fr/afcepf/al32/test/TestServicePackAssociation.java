@@ -25,7 +25,7 @@ public class TestServicePackAssociation {
 	private Logger logger = LoggerFactory.getLogger(TestServicePackAssociation.class);
 
 	@Autowired
-	private IServicePack servicePackAssociation;
+	private IServicePack servicePackAssociation;	
 	
 	//@Test
     public void ajouterPackAssociation() {
@@ -90,16 +90,5 @@ public class TestServicePackAssociation {
 			Assert.assertTrue((p.getAssociation().getId()==id) && (p.getTypeProduit().getId()==type));
 		}	
 		
-	}
-	
-	@Test
-	public void testRechercherPackAvecProduits() {
-		Pack pa = servicePackAssociation.rechercherPackAvecProduits(1L);
-	    Assert.assertTrue(pa.getId()==1L);
-	    logger.debug("pa="+pa.toString());
-//	    for(Produit o : pa.getProduits()) {        
-//	    	System.out.println(o.getLibelle());
-//        }
-	}
-	
+	}	
 }

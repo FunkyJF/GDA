@@ -12,6 +12,5 @@ public interface IServicePack {
 	List<PackAssociation> rechercherPackAssociation();	
 	List<PackAssociation> rechercherPackAssociationParType(Long idType);
 	List<PackAssociation> rechercherPackAssociationParAssociation(Long id);
-	List<PackAssociation> rechercherPackAssociationParAssociationEtType(Long id, Long idType);
-	Pack rechercherPackAvecProduits(Long id);
+	List<PackAssociation> rechercherPackAssociationParAssociationEtType(Long id, Long idType);	
 }

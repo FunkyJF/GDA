@@ -52,13 +52,13 @@ public class ProduitDaoJpa implements IProduitDao {
 				.getResultList();
 	}	
 	
-//	@Override
-//	public Produit packAvecProduits(long idPack) {
-//		String jpaRequest="SELECT cpt FROM Produit cpt INNER JOIN FETCH cpt.pack "
-//		        + " WHERE cpt.id = :idPack";		
-//		return entityManager.createQuery(jpaRequest,Produit.class)
-//	            .setParameter("idPack",idPack)
-//	            .getSingleResult();
-//	}
+    @Override
+	public List<Produit> packAvecProduits(Long idPack) {
+		String jpaRequest="SELECT pr FROM Produit pr JOIN pr.packs pa"
+		        + " WHERE pa.id = :idPack";			
+		return entityManager.createQuery(jpaRequest,Produit.class)
+	            .setParameter("idPack",idPack)
+	            .getResultList();
+	}
 
 }

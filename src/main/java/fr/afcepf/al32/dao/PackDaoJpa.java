@@ -78,14 +78,6 @@ public class PackDaoJpa implements IPackDao {
 	public List<Pack> findAll() {
 		// TODO Auto-generated method stub
 		return null;
-	}
+	}	
 	
-	@Override
-	public Pack packAvecProduits(Long idPack) {
-		String jpaRequest="SELECT cpt FROM Pack cpt INNER JOIN FETCH cpt.produits"
-		        + " WHERE cpt.id = :idPack";		
-		return entityManager.createQuery(jpaRequest,Pack.class)
-	            .setParameter("idPack",idPack)
-	            .getSingleResult();
-	}
 }
