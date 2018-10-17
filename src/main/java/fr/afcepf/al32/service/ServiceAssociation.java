@@ -67,8 +67,6 @@ public class ServiceAssociation implements IServiceAssociation {
 		}else return null;
 		
 	}
-		
-	
 
 	@Override
 	public void accepterAssociation(Long num, String dateAcc ) {

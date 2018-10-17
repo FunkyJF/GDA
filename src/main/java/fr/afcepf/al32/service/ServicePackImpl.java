@@ -1,5 +1,6 @@
 package fr.afcepf.al32.service;
 
+import java.sql.Timestamp;
 import java.util.List;
 
 import javax.annotation.PostConstruct;
@@ -13,7 +14,6 @@ import org.springframework.stereotype.Component;
 import fr.afcepf.al32.dao.IPackDao;
 import fr.afcepf.al32.entity.Pack;
 import fr.afcepf.al32.entity.PackAssociation;
-import fr.afcepf.al32.entity.Produit;
 
 
 @Component 
@@ -77,25 +77,11 @@ public class ServicePackImpl implements IServicePack {
 
 
 	@Override
-	public void ajouterProduit(Pack pa, Produit pr) 
-	{
-		if(pa.getTypeProduit().equals(pr.getTypeProduit()))
-		{
-			List<Produit> produits = pa.getProduits();
-			produits.add(pr);
-			pa.setProduits(produits);
-			packDao.save(pa);
-		}
+	public void desactiverPack(PackAssociation p) {
+		Timestamp dtefin = new Timestamp( System.currentTimeMillis() );
+		p.setDateRetrait(dtefin);
+		packDao.save(p);
 	}
 
-
-	@Override
-	public void retirerProduit(Pack pa, Produit pr) 
-	{
-		List<Produit> produits = pa.getProduits();
-		produits.remove(pr);
-		pa.setProduits(produits);
-		packDao.save(pa);
-	}	
 
 }
