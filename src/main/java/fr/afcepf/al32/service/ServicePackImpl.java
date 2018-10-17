@@ -13,6 +13,7 @@ import org.springframework.stereotype.Component;
 import fr.afcepf.al32.dao.IPackDao;
 import fr.afcepf.al32.entity.Pack;
 import fr.afcepf.al32.entity.PackAssociation;
+import fr.afcepf.al32.entity.Produit;
 
 
 @Component 
@@ -72,6 +73,29 @@ public class ServicePackImpl implements IServicePack {
 	@Override
 	public List<PackAssociation> rechercherPackAssociationParAssociationEtType(Long id, Long idType) {
 		return packDao.findAllPackAssociationByAssociationAndType(id, idType);
+	}
+
+
+	@Override
+	public void ajouterProduit(Pack pa, Produit pr) 
+	{
+		if(pa.getTypeProduit().equals(pr.getTypeProduit()))
+		{
+			List<Produit> produits = pa.getProduits();
+			produits.add(pr);
+			pa.setProduits(produits);
+			packDao.save(pa);
+		}
+	}
+
+
+	@Override
+	public void retirerProduit(Pack pa, Produit pr) 
+	{
+		List<Produit> produits = pa.getProduits();
+		produits.remove(pr);
+		pa.setProduits(produits);
+		packDao.save(pa);
 	}	
 	
 	

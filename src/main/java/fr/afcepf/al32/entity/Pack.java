@@ -75,4 +75,5 @@ public abstract class Pack
 		this.prix = prix;
 		
 	}
+
 }

@@ -90,5 +90,35 @@ public class TestServicePackAssociation {
 		}	
 		
 	}
+	/*
+	@Test
+	public void testAjoutProduitPackAssociation() {
+		PackAssociation p = (PackAssociation)servicePackAssociation.rechercherPackParNumero(4L);
+		int sizeList1=p.getProduits().size();
+		
+		servicePackAssociation.ajouterProduit(p, p.getProduits().get(1));
+		
+		PackAssociation p2 = (PackAssociation)servicePackAssociation.rechercherPackParNumero(4L);
+		int sizeList2=p2.getProduits().size();
+		
+		Assert.assertTrue(sizeList1+1 == sizeList2);
+		logger.debug("Liste1:"+sizeList1+" - "+"Liste2:"+sizeList2);
+		
+	}
 	
+	@Test
+	public void testRetraitProduitPackAssociation() {
+		PackAssociation p = (PackAssociation)servicePackAssociation.rechercherPackParNumero(4L);
+		int sizeList1=p.getProduits().size();
+		
+		servicePackAssociation.retirerProduit(p, p.getProduits().get(1));
+		
+		PackAssociation p2 = (PackAssociation)servicePackAssociation.rechercherPackParNumero(4L);
+		int sizeList2=p2.getProduits().size();
+		
+		Assert.assertTrue(sizeList1-1 == sizeList2);
+		logger.debug("Liste1:"+sizeList1+" - "+"Liste2:"+sizeList2);
+		
+	}
+	*/
 }
