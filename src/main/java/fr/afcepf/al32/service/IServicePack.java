@@ -15,5 +15,6 @@ public interface IServicePack {
 	List<PackAssociation> rechercherPackAssociationParAssociation(Long id);
 	List<PackAssociation> rechercherPackAssociationParAssociationEtType(Long id, Long idType);
 	void ajouterProduit(Pack pa, Produit pr);
-	void retirerProduit(Pack pa, Produit pr);
+	void retirerProduit(Pack pa, Produit pr);	
+
 }

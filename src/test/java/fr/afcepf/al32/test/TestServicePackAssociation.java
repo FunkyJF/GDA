@@ -15,6 +15,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import fr.afcepf.al32.config.ServiceConfig;
 import fr.afcepf.al32.entity.Pack;
 import fr.afcepf.al32.entity.PackAssociation;
+import fr.afcepf.al32.entity.Produit;
 import fr.afcepf.al32.service.IServicePack;
 
 @RunWith(SpringJUnit4ClassRunner.class)
@@ -24,7 +25,7 @@ public class TestServicePackAssociation {
 	private Logger logger = LoggerFactory.getLogger(TestServicePackAssociation.class);
 
 	@Autowired
-	private IServicePack servicePackAssociation;
+	private IServicePack servicePackAssociation;	
 	
 	//@Test
     public void ajouterPackAssociation() {
@@ -46,7 +47,7 @@ public class TestServicePackAssociation {
 		logger.debug("p="+p.toString());			
 	}
 	
-	@Test
+	//@Test
 	public void testRechercherPackAssociationTous() {
 		List<PackAssociation> listePacks = servicePackAssociation.rechercherPackAssociation();			
 		for(PackAssociation p : listePacks) {
@@ -57,7 +58,7 @@ public class TestServicePackAssociation {
 		
 	}
 	
-	@Test
+	//@Test
 	public void testRechercherPackAssociationParType() {
 		Long type = 1L;
 		List<PackAssociation> listePacks = servicePackAssociation.rechercherPackAssociationParType(type);	
@@ -68,7 +69,7 @@ public class TestServicePackAssociation {
 		
 	}
 	
-	@Test
+	//@Test
 	public void testRechercherPackAssociationParAssociation() {
 		Long id = 1L;
 		List<PackAssociation> listePacks = servicePackAssociation.rechercherPackAssociationParAssociation(id);	
@@ -79,7 +80,7 @@ public class TestServicePackAssociation {
 		
 	}
 	
-	@Test
+	//@Test
 	public void testRechercherPackAssociationParAssociationEtType() {
 		Long type = 1L;
 		Long id = 1L;
@@ -88,7 +89,7 @@ public class TestServicePackAssociation {
 		{
 			Assert.assertTrue((p.getAssociation().getId()==id) && (p.getTypeProduit().getId()==type));
 		}	
-		
+
 	}
 	/*
 	@Test
@@ -121,4 +122,5 @@ public class TestServicePackAssociation {
 		
 	}
 	*/
-}
+
+}	

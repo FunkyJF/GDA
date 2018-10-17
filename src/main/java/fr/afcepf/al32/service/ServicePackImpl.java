@@ -97,7 +97,5 @@ public class ServicePackImpl implements IServicePack {
 		pa.setProduits(produits);
 		packDao.save(pa);
 	}	
-	
-	
-	
+
 }
