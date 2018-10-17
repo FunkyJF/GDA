@@ -5,4 +5,5 @@ import fr.afcepf.al32.entity.Produit;
 
 public interface IProduitDao extends IGenericDao<Produit>{	
 	List<Produit> produitParType(Long idTypeProduit);
+	//Produit packAvecProduits(long idPack);
 }

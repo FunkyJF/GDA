@@ -10,6 +10,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import fr.afcepf.al32.dao.IProduitDao;
+import fr.afcepf.al32.entity.Pack;
 import fr.afcepf.al32.entity.Produit;
 
 @Component 
@@ -43,5 +44,11 @@ public class ServiceProduitImpl implements IServiceProduit {
 	public void ajouterProduit(Produit p) {
 		produitDao.save(p);
 	}
+	
+//	@Override
+//	public Produit rechercherPackAvecProduits(long idPack) {
+//		return produitDao.packAvecProduits(idPack);
+//	}
+
 
 }

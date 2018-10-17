@@ -74,6 +74,9 @@ public class ServicePackImpl implements IServicePack {
 		return packDao.findAllPackAssociationByAssociationAndType(id, idType);
 	}	
 	
-	
+	@Override
+	public Pack rechercherPackAvecProduits(Long idPack) {
+		return packDao.packAvecProduits(idPack);
+	}
 	
 }

@@ -110,3 +110,11 @@
 2018-10-16 16:45:46 - constructeur de ServicePersonneImpl appelé avant injections  avec personneDao=null
 2018-10-16 16:45:46 - initBean() appelée après injection avec @PostConstruct  avec personneDao=fr.afcepf.al32.dao.PersonneDaoJpa@6cbe68e9
 2018-10-16 16:45:48 - pAssociation=PackAssociation [dateAjout=2018-10-16 16:45:48.25, association=null]
+2018-10-17 10:22:10 - constructeur de ServicePackImpl appelé avant injections  avec packDao=null
+2018-10-17 10:22:10 - initBean() appelée après injection avec @PostConstruct  avec packDao=fr.afcepf.al32.dao.PackDaoJpa@7a9eccc4
+2018-10-17 10:22:10 - constructeur de ServiceProduitImpl appelé avant injections  avec produitDao=null
+2018-10-17 10:22:10 - initBean() appelée après injection avec @PostConstruct  avec produitDao=fr.afcepf.al32.dao.ProduitDaoJpa@50eb4a2c
+2018-10-17 10:24:49 - constructeur de ServicePackImpl appelé avant injections  avec packDao=null
+2018-10-17 10:24:49 - initBean() appelée après injection avec @PostConstruct  avec packDao=fr.afcepf.al32.dao.PackDaoJpa@7a9eccc4
+2018-10-17 10:24:49 - constructeur de ServiceProduitImpl appelé avant injections  avec produitDao=null
+2018-10-17 10:24:49 - initBean() appelée après injection avec @PostConstruct  avec produitDao=fr.afcepf.al32.dao.ProduitDaoJpa@50eb4a2c

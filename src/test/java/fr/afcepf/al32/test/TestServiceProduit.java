@@ -2,6 +2,7 @@ package fr.afcepf.al32.test;
 
 import java.util.List;
 
+import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.slf4j.Logger;
@@ -30,5 +31,11 @@ public class TestServiceProduit {
 		 for(Produit p : listeProduits) {
 			 System.out.println("produit: "+p.getLibelleCourt()+" - "+p.getPrix());						 
 		 } 
-	}	
+	}
+//	@Test
+//	public void testRechercherPackAvecProduits() {
+//		Produit p = serviceProduit.rechercherPackAvecProduits(1L);
+//		Assert.assertTrue(p.getId()==1L);
+//		logger.debug("p="+p.toString());
+////	}
 }
